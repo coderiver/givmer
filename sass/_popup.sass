@@ -1,0 +1,57 @@
+.has-open-popup
+	overflow: hidden
+.overlay
+	display: none
+	position: fixed
+	top: 0
+	right: 0
+	left: 0
+	bottom: 0
+	z-index: 20000
+	background: #000 
+	background: rgba(#000,.48)
+	text-align: center
+	overflow: auto
+	font-size: 0
+	&:before
+		content: ""
+		display: inline-block
+		vertical-align: middle
+		width: 0
+		height: 100% 
+	+scrollbar
+		width: 6px
+		height: 6px
+		+border-radius(4px)
+		background: #c4c4c4
+	+scrollbar-thumb
+		background: #f00
+		+border-radius(4px)
+	+scrollbar-track-piece     
+		width: 6px 
+		+border-radius(4px) 
+.popup
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	margin: 50px 0
+	width: 1000px
+	background: #fafafa
+	font-size: 12px
+	border-radius: 10px
+	text-align: left
+	+box
+	overflow: hidden
+	border-radius: 20px 
+	+box-shadow(0 0 8px rgba(#000, .6))
+	em
+		color: #817f7f 
+		a
+			color: #949494 
+	sup
+		color: #db2121   
+.popup__close
+	position: absolute
+	top: 17px
+	right: 17px
+	//+s(close)

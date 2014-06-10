@@ -1,0 +1,165 @@
+.btn
+	display: inline-block
+	padding: 9px 17px 
+	border-radius: 16px
+	//background: $red
+	color: #fff
+	font-size: 13px
+	+fb 
+	+tr(background .2s linear)
+	&:hover
+		//background: $red_d
+	&:active
+		position: relative
+		top: 1px 
+
+.checkbox-wrap
+	margin-bottom: 17px
+.checkbox
+	position: relative
+	padding-left: 24px
+	display: inline-block
+	vertical-align: middle
+	cursor: pointer
+	font-size: 0
+	text-align: left
+.checkbox__input
+	position: absolute
+	left: 0
+	top: 0
+	width: 16px
+	height: 16px
+	opacity: 0
+.checkbox__text
+	display: inline-block
+	vertical-align: middle
+	font-size: 13px
+	
+.tooltip
+	display: none
+	position: absolute
+	top: auto
+	padding-bottom: 15px
+	width: 148px
+	margin-left: -62px
+	text-align: center
+	z-index: 1000
+.tooltip__in
+	position: relative
+	display: inline-block
+	padding: 11px 16px
+	font-size: 13px
+	+box
+	text-align: left
+	line-height: 12px
+	background: #fff 
+	border-radius: 10px
+	background: rgba(255,255,255,.95)
+	+box-shadow(0 0 6px rgba(#000, .6))
+
+
+.choose
+	display: inline-block
+	margin: 15px 0 5px 
+	width: 166px
+	position: relative
+	text-align: left
+	.fa
+		position: absolute
+		top: 15px
+		background: none
+		font-size: 16px
+		color: $dark 
+	.fa-plus-circle
+		right: 17px
+	.fa-minus-circle
+		right: 40px
+.choose__main
+	border: 1px solid $border
+	padding-left: 22px
+	height: 40px
+	line-height: 40px
+	border-radius: 20px
+	background: $light 
+	font-size: 18px
+	text-shadow: 0 1px 0 #fff
+		
+.radio-wrap
+	margin-bottom: 5px
+.radio
+	display: inline-block
+	position: relative
+	cursor: pointer
+	white-space: nowrap
+	font-size: 0
+	.fa
+		margin: 0 3px 0 -5px
+	input
+		display: inline-block
+		vertical-align: middle
+		width: 14px
+		height: 14px
+		opacity: 0
+		&:checked
+			+ span
+				&:after
+					display: block
+	span  
+		display: inline-block
+		vertical-align: middle
+		position: relative
+		margin: 0
+		padding-left: 14px
+		font-size: 13px
+		white-space: normal
+		&:before
+			content: "" 
+			position: absolute
+			left: -14px
+			top: 50%
+			margin-top: -7px
+			width: 14px
+			height: 14px
+			background: #f2f2f2
+			border-radius: 50%
+			+box-shadow(inset 0 1px 4px rgba(0,0,0,.23))
+		&:after
+			content: ""
+			display: none 
+			position: absolute
+			top: 50%
+			left: -11px
+			margin-top: -4px
+			width: 8px
+			height: 8px
+			border-radius: 50%
+			background: #d92300
+			
+.rate
+	position: relative
+	height: 8px
+	overflow: hidden
+	border-radius: 10px
+	//background: $red 
+	span
+		position: absolute
+		left: 0
+		top: 0
+		bottom: 0
+		background: $yellow 
+.comment-counter
+	font-size: 14px
+	color: $dark
+
+.select
+	position: relative    
+	select
+		position: absolute
+		z-index: 2
+		cursor: pointer
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		margin: 0
+		opacity: 0
