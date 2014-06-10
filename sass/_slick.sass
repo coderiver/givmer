@@ -104,15 +104,15 @@ $slick-dot-character: "\2022" !default
 		padding: 0 4px 
 		&.slick-active
 			button
-				background: #ccc
-				opacity: 1
+				background: $blue
+				+box-shadow(none)
+				 
 	button
 		display: block
-		width: 12px
-		height: 12px
-		opacity: .53
-		background: #9f9f9f
-		+box-shadow(0 1px 0 #fff)
+		width: 14px
+		height: 14px
+		background: #e7e7e7
+		+box-shadow(inset 0 1px 5px rgba(0,0,0,.26))
 		cursor: pointer
 		+hide-text
 		border-radius: 50% 

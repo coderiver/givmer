@@ -1,0 +1,53 @@
+body
+	&.intro-page
+		background: $light 
+	.out
+		position: fixed
+		top: 0
+		right: 0
+		left: 0
+		bottom: 0
+		margin: 0
+		overflow-y: auto
+		overflow-x: hidden
+		font-size: 0
+		text-align: center
+		+scrollbar
+			width: 8px
+			height: 8px
+			border: 1px solid #d1d1d1
+			+box-shadow(inset 0 1px 5px rgba(0,0,0,.1))
+		+scrollbar-thumb
+			background: $blue
+			+border-radius(4px)
+		+scrollbar-track-piece     
+			+border-radius(4px) 
+		&:after
+			content: ""
+			display: inline-block
+			vertical-align: middle
+			height: 100% 
+			width: 0
+	.push
+		display: none
+.intro
+	display: inline-block
+	vertical-align: middle
+	width: 420px
+	font-size: 22px
+	+fl
+	color: #4d4d4d 
+	.logo
+		margin-bottom: 84px
+		font-size: 90px
+		div
+			font-size: 16px
+			+fr
+.intro__slider
+	margin-bottom: 82px
+	.slick-dots
+		margin-top: 24px
+.intro__info
+	margin: 15px 0 
+	font-size: 14px
+	+fm
