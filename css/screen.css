@@ -158,12 +158,12 @@ a { text-decoration: none; color: #3e3e3e; }
 
 html.intro-page { overflow: hidden; }
 html.intro-page body { background: whitesmoke; overflow: hidden; }
-html.intro-page .out { position: fixed; top: 0; right: 0; left: 0; bottom: 0; margin: 0; overflow-y: auto; overflow-x: auto; font-size: 0; text-align: center; }
-html.intro-page .out::-webkit-scrollbar { width: 8px; height: 8px; border: 1px solid #d1d1d1; -webkit-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1); box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1); }
-html.intro-page .out::-webkit-scrollbar-thumb { background: #00b4ff; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; }
-html.intro-page .out::-webkit-scrollbar-track-piece { -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; }
-html.intro-page .out:after { content: ""; display: inline-block; vertical-align: middle; height: 100%; width: 0; }
-html.intro-page .push { display: none; }
+
+.intro-wrap { position: fixed; top: 0; right: 0; left: 0; bottom: 0; margin: 0; overflow-y: auto; overflow-x: auto; font-size: 0; text-align: center; }
+.intro-wrap::-webkit-scrollbar { width: 8px; height: 8px; border: 1px solid #d1d1d1; -webkit-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1); box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1); }
+.intro-wrap::-webkit-scrollbar-thumb { background: #00b4ff; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; }
+.intro-wrap::-webkit-scrollbar-track-piece { -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; }
+.intro-wrap:after { content: ""; display: inline-block; vertical-align: middle; height: 100%; width: 0; }
 
 .intro { display: inline-block; vertical-align: middle; padding: 20px; width: 420px; font-size: 22px; font-family: "roboto-light", Arial, sans-serif; color: #4d4d4d; }
 .intro .logo { margin-bottom: 80px; font-size: 90px; }

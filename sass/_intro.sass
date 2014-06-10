@@ -4,35 +4,33 @@ html
 		body
 			background: $light 
 			overflow: hidden
-		.out
-			position: fixed
-			top: 0
-			right: 0
-			left: 0
-			bottom: 0
-			margin: 0
-			overflow-y: auto
-			overflow-x: auto
-			font-size: 0
-			text-align: center
-			+scrollbar
-				width: 8px
-				height: 8px
-				border: 1px solid #d1d1d1
-				+box-shadow(inset 0 1px 5px rgba(0,0,0,.1))
-			+scrollbar-thumb
-				background: $blue
-				+border-radius(4px)
-			+scrollbar-track-piece     
-				+border-radius(4px) 
-			&:after
-				content: ""
-				display: inline-block
-				vertical-align: middle
-				height: 100% 
-				width: 0
-		.push
-			display: none
+.intro-wrap
+	position: fixed
+	top: 0
+	right: 0
+	left: 0
+	bottom: 0
+	margin: 0
+	overflow-y: auto
+	overflow-x: auto
+	font-size: 0
+	text-align: center
+	+scrollbar
+		width: 8px
+		height: 8px
+		border: 1px solid #d1d1d1
+		+box-shadow(inset 0 1px 5px rgba(0,0,0,.1))
+	+scrollbar-thumb
+		background: $blue
+		+border-radius(4px)
+	+scrollbar-track-piece     
+		+border-radius(4px) 
+	&:after
+		content: ""
+		display: inline-block
+		vertical-align: middle
+		height: 100% 
+		width: 0
 .intro
 	display: inline-block
 	vertical-align: middle
