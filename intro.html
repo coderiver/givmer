@@ -9,14 +9,13 @@
 </head>
 <body>
 
-<!-- BEGIN  out-->
 <div class="intro-wrap">
 	<div class="intro">
 		<div class="logo">
 			Giv<span>me</span>r
 			<div>найдет исполнителя для любого задания!</div>
 		</div>
-		<div class="intro__slider js-intro-slider">
+		<div class="intro__slider js-slider">
 			<div>	
 				Givmer  - это онлайн сервис, где люди публикуют разнообразные задания и находят для них исполнителей в реальной жизни!
 			</div>
@@ -25,13 +24,62 @@
 			</div>
 			<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, id facilis provident doloremque placeat</div>
 		</div>
-		<a href="#" class="btn-action">Зарегистрируйтесь как исполнитель заданий</a>
+		<a href="js-popup-reg" class="btn-action js-popup-link">Зарегистрируйтесь как исполнитель заданий</a>
 		<div class="intro__info">и получите бесплатно 3 € на свой счет!</div>
 	</div>
 </div>
-<!-- END out-->
-<footer class="footer">
-</footer>
+<div class="overlay js-overlay">
+	<div class="popup popup_reg js-popup js-popup-reg">
+		<div class="popup__reg">
+			<div class="popup__reg-item">
+				<div class="popup__title">Быстрая регистрация через социальные сети:</div>
+				<div class="soc-enter">
+					<a href="#" class="soc-enter__fb"><i class="fa fa-facebook"></i>Facebook</a>
+					<a href="#" class="soc-enter__vk"><i class="fa fa-vk"></i>Вконтакте</a>
+					<a href="#" class="soc-enter__gp"><i class="fa fa-google-plus"></i>Google +</a>
+				</div>
+			</div>
+			<div class="popup__reg-item">
+				<div class="popup__title">Быстрая регистрация через ID:</div>
+				<div class="soc-enter">
+					<a href="#" class="soc-enter__id"><img src="img/id.png" alt="">ID карта</a>
+					<a href="#" class="soc-enter__mobid"><img src="img/mob-id.png" alt=""></a>
+				</div>  
+			</div>
+			<div class="popup__reg-item">
+				<div class="popup__title">Регистрация по e-mail:</div>
+				<div class="input-wrap"> 
+					<input type="email" class="input" placeholder="ваш e-mail адрес">
+				</div>
+				<div class="to-center"><input type="submit" class="btn-action" value="Зарегистрируйтесь на Givmer"> </div>
+			</div>
+		</div>
+		<div class="popup__slider">
+			<div class="popup__title">Зачем нужно регистрироваться?</div>
+			<div class="js-slider-popup">
+				<div>
+					<i class="fa fa-group"></i>
+					<p>Givmer - это честный сервис, где люди доверяют друг другу.</p>
+					<p>Поэтому мы просим идентифицироваться всех пользователей Givmer.</p>
+					<p>Всем идентифицированным пользователям мы бесплатно <span>дарим 3 €.</span></p>
+				</div>
+				<div>
+					<i class="fa fa-group"></i>
+					<p>Givmer - это честный сервис, где люди доверяют друг другу.</p>
+					<p>Поэтому мы просим идентифицироваться всех пользователей Givmer.</p>
+					<p>Всем идентифицированным пользователям мы бесплатно <span>дарим 3 €.</span></p>
+				</div>
+				<div>
+					<i class="fa fa-group"></i>
+					<p>Givmer - это честный сервис, где люди доверяют друг другу.</p>
+					<p>Поэтому мы просим идентифицироваться всех пользователей Givmer.</p>
+					<p>Всем идентифицированным пользователям мы бесплатно <span>дарим 3 €.</span></p>
+				</div>
+			</div>
+		</div>
+		<button class="popup__close js-popup-close"></button>
+	</div>
+</div>
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 
 </body>

@@ -1,3 +1,7 @@
+.has-open-popup
+	overflow: hidden
+	body
+		overflow: hidden
 .drop-list
 	position: relative
 	font-size: 13px
@@ -56,6 +60,56 @@
 		+tr
 		&:hover
 			background: $light  
+
+.soc-enter
+	text-align: justify
+	+justify
+	a
+		display: inline-block
+		margin-left: 8px
+		padding-left: 22px 
+		width: 156px
+		height: 42px
+		line-height: 42px		
+		font-size: 14px	
+		color: #fff
+		+box
+		+fm
+		border-radius: 5px 
+		+tr(opacity .2s)
+		+box-shadow(0 1px 4px rgba(0,0,0,.48), inset 0 1px 0 rgba(255,255,255,.44))
+		&:first-child
+			margin-left: 0
+		&:hover
+			opacity: 0.9
+		&:active
+			position: relative
+			top: 1px
+			+box-shadow(none)
+	.fa
+		font-size: 24px
+		margin-right: 20px
+		vertical-align: middle
+	img
+		vertical-align: middle
+	.soc-enter__id
+		padding-left: 9px
+	.soc-enter__mobid
+		padding: 0
+.soc-enter__fb
+	background: #3b5997
+.soc-enter__vk
+	background: #4e6f93
+.soc-enter__gp 
+	background: #427fed
+.soc-enter__id
+	background: #486fa5 
+	img
+		margin-right: 18px
+.soc-enter__mobid
+	text-align: center   
+	
+
 .btn-action
 	display: inline-block
 	padding: 12px 24px 13px

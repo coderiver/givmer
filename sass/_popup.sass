@@ -10,48 +10,78 @@
 	z-index: 20000
 	background: #000 
 	background: rgba(#000,.48)
-	text-align: center
 	overflow: auto
-	font-size: 0
-	&:before
-		content: ""
-		display: inline-block
-		vertical-align: middle
-		width: 0
-		height: 100% 
+	+vertical
 	+scrollbar
-		width: 6px
-		height: 6px
-		+border-radius(4px)
-		background: #c4c4c4
+		width: 8px
+		height: 8px
+		border: 1px solid #d1d1d1
+		+box-shadow(inset 0 1px 5px rgba(0,0,0,.1))
 	+scrollbar-thumb
-		background: #f00
+		background: $blue
 		+border-radius(4px)
 	+scrollbar-track-piece     
-		width: 6px 
 		+border-radius(4px) 
 .popup
 	position: relative
 	display: inline-block
 	vertical-align: middle
 	margin: 50px 0
-	width: 1000px
-	background: #fafafa
-	font-size: 12px
+	background: #fff
+	font-size: 16px
 	border-radius: 10px
 	text-align: left
 	+box
 	overflow: hidden
-	border-radius: 20px 
-	+box-shadow(0 0 8px rgba(#000, .6))
-	em
-		color: #817f7f 
-		a
-			color: #949494 
-	sup
-		color: #db2121   
+	border-radius: 5px  
+	+box-shadow(0 0 6px rgba(#000, .3))
+.popup_reg
+	width: 960px   
+	background: $light
 .popup__close
 	position: absolute
-	top: 17px
-	right: 17px
-	//+s(close)
+	top: 8px
+	right: 8px
+	+s(close)
+	opacity: .4
+	+tr(opacity .2s)
+	&:hover
+		opacity: 1
+	&:active
+		margin-top: 1px
+.popup__reg
+	float: left
+	padding: 18px 0 0 
+	border-right: 1px solid #e1e1e1 
+	+box
+	background: #fff 
+.popup__reg-item
+	border-top: 1px dashed $border_l 
+	padding: 27px 50px 30px 66px 
+	&:first-child
+		border-top: 0
+	&:last-child
+		padding-bottom: 45px
+	.btn-action
+		width: 350px
+	.input-wrap
+		margin-bottom: 25px
+.popup__title
+	margin-bottom: 22px
+	font-size: 18px
+	+fb
+.popup__slider
+	padding: 46px 25px 20px 
+	overflow: hidden
+	text-align: center
+	font-size: 16px
+	color: $gray_d 
+	.slick-slider
+		margin: 30px auto 0
+		width: 275px
+	.fa
+		margin: 3px 0 31px 
+		font-size: 90px
+		color: $blue 
+	p
+		margin-bottom: 13px
