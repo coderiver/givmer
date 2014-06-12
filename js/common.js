@@ -208,8 +208,26 @@ head.ready(function() {
 		}
 	});
 
-  	$('.js-fotorama').fotorama({
-  		dots: true
-  	});
+  	// $('.js-fotorama').fotorama({
+  	// 	dots: true
+  	// });
+  	var $fotoramaDiv = $('.js-fotorama').on('fotorama:ready', function () {
+	    //alert();
+	    $('.js-fotorama').addClass("is-ready");
+	}).fotorama();
+  	var fotorama = $fotoramaDiv.data('fotorama');
+  	$(".js-next-slide").on("click",function(){
+		fotorama.show(">");
+		return false;
+	});
+
+	$(".js-radio input").on("change",function(){
+		if ($(this).parent().attr("data-radio") == 1) {
+			$(this).parents(".js-radio-group").addClass("is-active");
+		}
+		if ($(this).parent().attr("data-radio") == 0) {
+			$(this).parents(".js-radio-group").removeClass("is-active");
+		} 
+	}); 
 
 });

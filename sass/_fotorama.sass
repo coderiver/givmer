@@ -1,3 +1,7 @@
+.fotorama
+	visibility: hidden
+	&.is-ready
+		visibility: visible
 .fotorama__html,.fotorama__stage__frame,.fotorama__stage__shaft,.fotorama__video iframe
 	position: absolute
 	width: 100%
@@ -262,8 +266,6 @@
 	background: #e7e7e7 
 	border-radius: 50%
 	+box-shadow(inset 0 1px 5px rgba(0,0,0,.26))
-	&:hover
-		background: $rose 
 
 .fotorama__nav__frame.fotorama__active
 	pointer-events: none
