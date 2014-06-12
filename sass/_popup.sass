@@ -7,7 +7,7 @@
 	right: 0
 	left: 0
 	bottom: 0
-	z-index: 20000
+	z-index: 200
 	background: #000 
 	background: rgba(#000,.48)
 	overflow: auto
@@ -37,19 +37,9 @@
 	overflow: hidden
 	border-radius: 5px  
 	+box-shadow(0 0 6px rgba(#000, .3))
-
-	
-.popup__close
-	position: absolute
-	top: 8px
-	right: 8px
-	+s(close)
-	opacity: .4
-	+tr(opacity .2s)
-	&:hover
-		opacity: 1
-	&:active
-		margin-top: 1px
+	.btn-close
+		top: 8px
+		right: 8px
 .popup__reg
 	float: left
 	padding: 18px 0 0 
@@ -199,3 +189,60 @@
 .popup__dots
 	border-top: 1px solid $border_l 
 	height: 74px
+	
+.window
+	display: none
+	position: absolute
+	top: 300px
+	left: 400px
+	z-index: 100
+	padding: 24px 22px 22px 
+	width: 375px
+	+box
+	background: #fff 
+	border-radius: 5px 
+	+box-shadow(0 0 6px rgba(#000,.5))
+	&:before
+		content: ""
+		position: absolute
+		top: 17px
+		left: -12px
+		z-index: 2
+		+arr(16,20,#fff,l) 
+	&:after
+		content: ""
+		position: absolute
+		top: 19px
+		left: -13px
+		+s(arr-shadow-l)
+	.field
+		margin-bottom: 16px
+	.checkbox
+		margin-bottom: 10px
+	.checkbox-wrap
+		margin-bottom: 8px
+	.textarea
+		textarea
+			min-height: 42px
+	.btn-close
+		top: 6px
+		right: 6px
+.window_lang
+	margin: 28px 0 0 28px 
+.window__title
+	margin-bottom: 5px
+	font-size: 14px
+	+fb
+.window__descr
+	margin-bottom: 20px
+	font-size: 12px
+.btn-close    
+	position: absolute
+	+s(close)   
+	opacity: .4
+	+tr(opacity .2s)
+	width: 15px
+	&:hover
+		opacity: 1
+	&:active
+		margin-top: 1px

@@ -219,13 +219,10 @@
 								</div>
 								<div class="field">
 									<div class="input-wrap">
-										<span class="input-wrap__title">Опишите свои преимущества: <a href="#">Хотите перевести на другие языки сайта?</a></span>
+										<span class="input-wrap__title">Опишите свои преимущества: <a href="js-window-lang" class="js-window-link">Хотите перевести на другие языки сайта?</a></span>
 										<div class="textarea">
-											<script>  
-												
-										    </script>
 											<textarea class="js-textarea" placeholder="например: “Нужно вымыть окна в 4-х комнатной кваритре на третьем этаже. Всего 8 окон. Все моющие средства и я могу предоставить...”"></textarea>
-											<span class="textarea__counter js-char-counter">500</span>
+											<span class="textarea__counter js-char-counter" data-max="500">500</span>
 										</div>
 									</div>
 								</div>
@@ -355,7 +352,7 @@
 	</div>
 </footer>
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
-<div class="overlay js-overlay" style="display:block">
+<div class="overlay js-overlay">
 	<div class="popup js-popup js-popup-greeting">
 		<div class="popup__head">
 			<div class="popup__title">Поздравляем! Теперь вы - член сообщества Givmer! Что дальше?</div>
@@ -421,8 +418,59 @@
 			</div>
 		</div>
 		<div class="popup__dots"></div>
-		<button class="popup__close js-popup-close"></button>
+		<button class="btn-close js-popup-close"></button>
 	</div>
+</div>
+<div class="window window_lang js-window js-window-lang">
+	<div class="window__title">На какие языки вы хотите внести перевод?.</div>
+	<div class="window__descr">Если вы не введете перевод на другие языки, то пользователи смогут перевести текст автоматически</div>
+	<div class="field">
+		<label class="checkbox">
+			<input type="checkbox" checked>
+			<i class="fa fa-check-square"></i>
+			<span>Английский</span>
+		</label>
+		<div class="textarea">
+			<textarea class="js-textarea" placeholder="введите перевод..."></textarea>
+			<span class="textarea__counter js-char-counter" data-max="255">255</span>
+		</div>
+	</div>
+	<div class="field">
+		<label class="checkbox">
+			<input type="checkbox" checked>
+			<i class="fa fa-check-square"></i>
+			<span>Эстонский</span>
+		</label>
+		<div class="textarea">
+			<textarea class="js-textarea" placeholder="введите перевод..."></textarea>
+			<span class="textarea__counter js-char-counter" data-max="255">255</span>
+		</div>
+	</div>
+	<div class="field">
+		<div class="checkbox-wrap">
+			<label class="checkbox">
+				<input type="checkbox">
+				<i class="fa fa-check-square"></i>
+				<span><a href="#">Финский</a></span>
+			</label>
+		</div>
+		<div class="checkbox-wrap">
+			<label class="checkbox">
+				<input type="checkbox">
+				<i class="fa fa-check-square"></i>
+				<span><a href="#">Шведский</a></span>
+			</label>
+		</div>
+		<div class="checkbox-wrap">
+			<label class="checkbox">
+				<input type="checkbox">
+				<i class="fa fa-check-square"></i>
+				<span><a href="#">Норвежский</a></span>
+			</label>
+		</div>
+	</div>
+	<button class="btn-action is-liquid">Сохранить переводы</button>
+	<button class="btn-close js-window-close"></button>
 </div>
 </body>
 </html>
