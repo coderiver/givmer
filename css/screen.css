@@ -421,7 +421,7 @@ html.intro-page body { background: whitesmoke; overflow: hidden; }
 .window .textarea textarea { min-height: 42px; }
 .window .btn-close { top: 6px; right: 6px; }
 
-.window_lang { margin: 28px 0 0 28px; }
+.window_lang { margin: 26px 0 0 28px; }
 
 .window__title { margin-bottom: 5px; font-size: 14px; font-family: "roboto-bold", Arial, sans-serif; }
 
