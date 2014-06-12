@@ -128,7 +128,7 @@ head.ready(function() {
 	});
 
 	if ($(".js-input-tel").length) {
-        $(".js-input-tel").mask("+99(999)999-99-99");
+        $(".js-input-tel").mask("+999 99 99 99 99");
     }
 
     $(".textarea textarea").focusin(function() {
@@ -207,4 +207,9 @@ head.ready(function() {
 		    $('.js-char-counter').removeClass("is-limit").text(char);
 		}
 	});
+
+  	$('.js-fotorama').fotorama({
+  		dots: true
+  	});
+
 });

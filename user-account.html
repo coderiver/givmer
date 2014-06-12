@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="has-open-popup">
 <head>
 	<meta charset="utf-8">
 	<title>user acc</title>
@@ -128,7 +128,7 @@
 							<div class="field">
 								<div class="input-wrap input-wrap_half">
 									<span class="input-wrap__title">Ваш номер телефона:</span>
-									<input type="tel" class="input js-input-tel" placeholder="+__(___)___-__-__">
+									<input type="tel" class="input js-input-tel" placeholder="+___ __ __ __ __">
 								</div>
 								<div class="input-wrap input-wrap_half">
 									<span class="input-wrap__title">e-mail адрес:</span>
@@ -355,6 +355,74 @@
 	</div>
 </footer>
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
-
+<div class="overlay js-overlay" style="display: block;">
+	<div class="popup js-popup js-popup-greeting">
+		<div class="popup__head">
+			<div class="popup__title">Поздравляем! Теперь вы - член сообщества Givmer! Что дальше?</div>
+		</div>
+		<div class="popup__main">
+			<div class="popup__fotorama">
+				<div class="js-fotorama" data-width="100%" data-height="100%">
+					<div class="popup__slide">
+						<div class="popup__step">
+							<div class="popup__title">Подтвердите свой профайл</div>
+							<div class="popup__icon"><i class="fa fa-shield"></i></div>
+							<p>Givmer - это честный сервис, где <br> люди доверяют друг другу.</p>
+							<p>Поэтому мы просим идентифицироваться всех пользователей Givmer.</p>
+							<p>Всем идентифицированным пользователям мы <br>бесплатно дарим 3 €.</p>
+							<button class="btn-submit"><i class="fa fa-shield"></i>Подтвердить профайл</button>
+						</div>
+						<div class="popup__step">
+							<div class="popup__title">Выполняйте задания</div>
+							<div class="popup__icon"><i class="fa fa-rocket"></i></div>
+							<p>Givmer - это честный сервис, где <br> люди доверяют друг другу.</p>
+							<p>Поэтому мы просим идентифицироваться всех пользователей Givmer.</p>
+							<p>Всем идентифицированным пользователям мы <br>бесплатно дарим 3 €.</p>
+							<button class="btn-link"><i class="fa fa-rocket"></i>Перейти к списку заданий</button>
+						</div>
+						<div class="popup__step">
+							<div class="popup__title">Подтвердите свой профайл</div>
+							<div class="popup__icon"><i class="fa fa-users"></i></div>
+							<p>Givmer - это сообщество инициативных людей, которые хотят помагать людям и зарабатывать!</p>
+							<p>Пригласите друга и получите бонуссные 1,5 евро на сво счет!</p>
+							<button class="btn-action"><i class="fa fa-users"></i>Пригласить друзей</button>
+						</div>
+					</div>
+					<div class="popup__slide popup__slide2">
+						<ul class="teaser">
+							<li class="teaser__item">
+								<div class="teaser__icon">
+									<i class="fa fa-lightbulb-o"></i>
+								</div>
+								<div class="teaser__title">У вас есть задание, которое вы поручили бы другому человеку?</div>
+								сделать уборку в квартире, вымыть окна, отвезти посылку, поклеить обои, посидеть с вашим ребенком и так далее...
+							</li>
+							<li class="teaser__item">
+								<div class="teaser__icon">
+									<i class="fa fa-check-square-o"></i>
+								</div>
+								<div class="teaser__title">Создайте задание, назначив ту цену, которую вы готовы заплатить.</div>
+								все исполнители Givmer - частные лица. Это означает, что вы не будете переплачивать за работу.
+							</li>
+							
+						</ul> 
+						<div class="to-center"><a href="#" class="btn-action btn-action_width">Далее<i class="fa fa-arrow-right"></i></a></div>
+					</div> 
+					<div class="popup__slide">
+						<img src="img/slider-img1.png" alt="">
+						<div class="popup__rules">
+							<p>Givmer - это сообщество инициативных людей, которые хотят помагать людям и зарабатывать!</p>
+							<p>Создайте задание, и наши исполнители с радостью его исполнят!</p>
+							<p>Начните с того, чтобы нажать на кнопку, потом на вторую....</p>
+						</div>
+						<div class="to-center"><a href="#" class="btn-action btn-action_width">Далее<i class="fa fa-arrow-right"></i></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup__dots"></div>
+		<button class="popup__close js-popup-close"></button>
+	</div>
+</div>
 </body>
 </html>
