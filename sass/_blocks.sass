@@ -160,6 +160,7 @@
 	color: #fff
 	font-size: 14px
 	+fm
+	+box
 	+box-shadow(0 1px 4px rgba(0,0,0,.48), inset 0 1px 0 rgba(255,255,255,.44))
 	+background-image(linear-gradient(bottom, #00abf1 0%, #00b3ff 100%))
 	+tr(background .2s linear)
@@ -172,9 +173,47 @@
 		position: relative
 		top: 1px 
 		+box-shadow(inset 0 1px 0 rgba(255,255,255,.44))
+	.fa
+		vertical-align: middle
+		margin-right: 7px
 .btn-action_width
 	padding: 12px 60px 13px  
-
+.btn-submit
+	display: inline-block
+	padding: 11px 24px 12px
+	border-radius: 5px
+	background: $blue
+	color: #fff
+	font-size: 14px
+	+fm
+	+box
+	+box-shadow(0 1px 4px rgba(0,0,0,.48), inset 0 1px 0 rgba(255,255,255,.44))
+	background: #87b900
+	+g(#87b900,#739d00)
+	+tr(background .2s linear)
+	text-decoration: none
+	color: #fff 
+	.fa
+		margin-right: 7px
+		vertical-align: middle
+		font-size: 16px
+	&:hover
+		background: #87b900
+		+g(#739d00,#87b900)
+	&:active
+		position: relative
+		top: 1px 
+		+box-shadow(inset 0 1px 0 rgba(255,255,255,.44))
+.is-liquid
+	width: 100%
+	text-align: center
+.sublink
+	margin-bottom: 10px
+	a
+		color: $blue
+		border-bottom: 1px dashed
+		&:hover
+			border-color: transparent 
 .btn-simple		
 	display: inline-block
 	border: 1px solid $border_l
@@ -182,14 +221,20 @@
 	font-size: 14px
 	+fr
 	border-radius: 5px 
-	color: $gray
+	color: $gray  
+	background: #fff 
 	+tr
-	.fa
+	.fa 
 		margin-right: 12px
 		font-size: 18px
 		vertical-align: middle
 	&:hover
-		border-color: $gray
+		background: $blue 
+		color: #fff   
+		border-color: transparent 
+	&:active
+		position: relative
+		top: 1px
 	
 .rating
 	+arial
@@ -200,7 +245,16 @@
 	display: inline-block
 	vertical-align: middle
 	height: 15px	
-
+.rating_big
+	.rating__in
+		display: block
+		margin-bottom: 7px
+		height: auto
+		color: $gray_d 
+		a
+			color: $blue
+			&:hover  
+				text-decoration: underline
 .status
 	display: inline-block
 	padding: 6px 12px
@@ -264,14 +318,19 @@
 	font-size: 18px
 	text-shadow: 0 1px 0 #fff
 		
+.radio-group
+	padding-left: 13px
 .radio-wrap
-	margin-bottom: 5px
+	margin-bottom: 10px
 .radio
 	display: inline-block
 	position: relative
 	cursor: pointer
 	white-space: nowrap
 	font-size: 0
+	&.is-custom
+		.fa
+			color: $green
 	input
 		display: inline-block
 		vertical-align: middle
@@ -324,6 +383,7 @@
 	cursor: pointer
 	white-space: nowrap
 	font-size: 0
+
 	input
 		display: inline-block
 		vertical-align: middle

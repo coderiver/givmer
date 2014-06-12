@@ -221,8 +221,11 @@
 									<div class="input-wrap">
 										<span class="input-wrap__title">Опишите свои преимущества: <a href="#">Хотите перевести на другие языки сайта?</a></span>
 										<div class="textarea">
-											<textarea placeholder="например: “Нужно вымыть окна в 4-х комнатной кваритре на третьем этаже. Всего 8 окон. Все моющие средства и я могу предоставить...”"></textarea>
-											<span class="textarea__counter">500</span>
+											<script>  
+												
+										    </script>
+											<textarea class="js-textarea" placeholder="например: “Нужно вымыть окна в 4-х комнатной кваритре на третьем этаже. Всего 8 окон. Все моющие средства и я могу предоставить...”"></textarea>
+											<span class="textarea__counter js-char-counter">500</span>
 										</div>
 									</div>
 								</div>
@@ -279,7 +282,59 @@
 					</div>
 				</div>
 			</div>
-			<div class="l-col2"></div>
+			<div class="l-col2 sidebar">	
+				<div class="sidebar__item">
+					<div class="title">Идентифицируйте свой аккаунт и получите <span>3 Евро в подарок!</span></div>
+					<p>Идентификация нужна для того, чтобы сделки на Givmer были максимально безопасные. Люди здесь привыкли доверять друг другу, так что докажите, что вы - это вы.</p>
+					<div class="field">
+						<div class="input-wrap">
+							<span class="input-wrap__title">Выберите способ подтверждения</span>
+							<div class="radio-group">
+								<div class="radio-wrap">
+									<label class="radio is-custom" data-check="true">
+										<input type="radio" name="name3" checked>
+										<i class="fa fa-check-circle"></i>
+										<span>через ID карту</span>
+									</label>
+								</div>
+								<div class="radio-wrap">
+									<label class="radio is-custom" data-check="false">
+										<input type="radio" name="name3">
+										<i class="fa fa-check-circle"></i>
+										<span>через Mobiil ID</span>
+									</label>
+								</div>
+								<div class="radio-wrap">
+									<label class="radio is-custom" data-check="false">
+										<input type="radio" name="name3">
+										<i class="fa fa-check-circle"></i>
+										<span>через телефон</span>
+									</label>
+								</div> 
+							</div>
+						</div>
+					</div>
+					<button class="btn-submit is-liquid"><i class="fa fa-shield"></i>Подтвердить аккаут!</button>
+				</div>
+				<div class="sidebar__item">
+					<div class="title">На вашем счету нет средств <i class="fa fa-warning"></i></div>
+					<a href="#" class="btn-action is-liquid"><i class="fa fa-tag"></i>Пополнить счет</a>
+					<div class="sublink">
+						<a href="#">узнать как полонить счет бесплатно</a>
+					</div>
+					<div class="sublink">
+						<a href="#">как используются ваши средства?</a>
+					</div>
+				</div>
+				<div class="sidebar__item">
+					<div class="title">Ваш рейтинг на сайте:</div>
+					<div class="rating rating_big">
+						<div class="rating__in js-rating-read" data-score="2"></div>
+						<span class="rating__in">
+						<a href="#">посмотреть отзывы о вас</a> (119)</span>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="push"></div> 

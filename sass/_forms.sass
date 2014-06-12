@@ -1,5 +1,10 @@
 .form
 	margin: 8px 0 
+	.input-wrap
+		.radio
+			margin: 15px 8px 0 17px 
+		.checkbox
+			margin: 0 8px 0 17px
 .form__section
 	padding: 27px 0 13px
 	position: relative
@@ -25,10 +30,7 @@
 .input-wrap
 	position: relative
 	+clr
-	.radio
-		margin: 15px 8px 0 17px 
-	.checkbox
-		margin: 0 8px 0 17px
+	
 	.to-center
 		.btn-action
 			margin-top: 50px
@@ -131,7 +133,8 @@
 	color: $blue
 	font-size: 13px
 	+fb
-
+	&.is-limit
+		color: $rose 
 .download
 	position: relative
 	height: 44px

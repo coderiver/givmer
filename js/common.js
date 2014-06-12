@@ -68,7 +68,7 @@ head.ready(function() {
 	if ($('.js-rating').length > 0) {
 		$('.js-rating').each(function(){
 			$(this).raty({
-				//width: 120,
+				width: 150,
 				hints: ['Отвратительно', 'Плохо', 'Неплохо', 'Очень хорошо', 'Отлично'],
 				starOff: 'img/star.png',
 				starOn : 'img/star-act.png',
@@ -97,7 +97,7 @@ head.ready(function() {
 	if ($('.js-rating-read').length > 0) {
 		$('.js-rating-read').each(function(){
 			$(this).raty({
-				//width: 120,
+				width: 150,
 				readOnly: true,
 				hints: ['Отвратительно', 'Плохо', 'Неплохо', 'Очень хорошо', 'Отлично'],
 				starOff: 'img/star.png',
@@ -196,5 +196,15 @@ head.ready(function() {
 			$(this).next().addClass("has-placeholder").removeClass("has-value");
 		}
 
+	});
+	$(".js-textarea").keyup(function () {  
+		var max = 500;
+		var len = $(this).val().length;
+		var char = max - len;
+		if (len >= max) {
+		    $('.js-char-counter').addClass("is-limit").text(char);
+		} else {
+		    $('.js-char-counter').removeClass("is-limit").text(char);
+		}
 	});
 });
