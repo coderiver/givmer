@@ -1,16 +1,20 @@
 .promo-slider
+	position: relative
 	height: 697px
 	overflow: hidden
+	background: #e5e0db 
+	border-bottom: 1px solid $border_l 
+	+g(#e5e0db,#f3f1ee)
 	.l-container 
 		position: relative
 		height: 697px 
 	.fotorama__stage
 		height: 697px !important
 	.fotorama__nav-wrap
-		bottom: 100px
+		bottom: 97px
 	.fotorama__nav__shaft
 		margin: 0 auto
-		padding-left: 96px
+		padding-left: 85px
 		width: 1176px
 		+box
 	.fotorama__active 
@@ -18,11 +22,11 @@
 			background: $dark 
 .promo-slider__box
 	position: absolute
-	left: 114px
+	left: 103px
 	top: 225px
 	width: 330px
 .promo-slider__title
-	margin-bottom: 20px
+	margin-bottom: 18px
 	font-size: 32px
 	+fl
 .box-create
@@ -38,5 +42,184 @@
 	.btn-action,
 	.logo
 		vertical-align: middle
+	.logo
+		margin-left: -77px
 	.btn-action
-		margin-left: 17px
+		margin-left: 12px
+		width: 200px
+		text-align: center
+		
+.promo
+	min-height: 767px
+	background: url(../img/bg.png) 0 0 repeat 
+	.l-container
+		position: relative
+		padding-top: 167px
+.promo__top
+	margin: 0 auto 87px
+	width: 450px
+	text-align: center
+	.btn-link
+		margin-bottom: 48px
+.promo__title
+	margin-bottom: 10px
+	font-size: 42px
+	+fl
+.promo__subtitle
+	margin: 10px 0 32px
+	font-size: 22px
+	+fl 
+	span
+		color: $rose 
+
+.promo__bottom	
+	margin: 0 auto
+	border-top: 1px solid #fff 
+	padding: 54px 0 20px 74px 
+	width: 87% 
+	min-height: 235px
+	+box
+	+box-shadow(0 -1px 0 $border_l)
+	.quote
+		width: 400px
+.promo__img
+	position: absolute
+	bottom: -1px
+	right: -6px
+	.user-box
+		position: absolute
+		bottom: 73px
+		right: 294px
+.quote
+	position: relative
+	padding-left: 44px
+	+fi
+	+box
+	text-align: left
+	.fa-quote-left
+		position: absolute
+		top: 0
+		left: 0
+		color: #747474
+		font-size: 20px 
+	p
+		margin-bottom: 8px
+		
+.quote__author
+	padding: 5px 0 0 
+	+clr
+.quote__author-img
+	float: left
+	margin-right: 19px
+	width: 54px
+	height: 54px
+	overflow: hidden
+	border-radius: 50% 
+	img
+		max-width: 100%
+		height: auto
+.quote__author-name
+	+fm
+	padding-top: 5px
+
+.work
+	background: #262626 url(../img/bg2.png) 0 0 repeat 
+	.l-container
+		padding: 85px 0 93px
+		+clr
+	.teaser
+		width: 500px
+.work__title 
+	margin-bottom: 15px
+	font-size: 42px
+	color: $yellow
+	+fl 
+	text-align: center
+.work__subtitle
+	font-size: 22px
+	color: #fff
+	+fl 
+	text-align: center
+.work__left
+	float: left
+	margin-top: 60px
+	padding-left: 125px
+	width: 684px
+	+box
+	border-right: 1px dashed #6a6a6a
+.work__right
+	margin-top: 60px
+	overflow: hidden
+	height: 400px
+	padding: 0 0 0 83px
+	.quote-slider
+		margin-left: -44px
+		width: 290px
+	.quote
+		color: #bcbcbc 
+		.fa
+			color: #bcbcbc 
+.work__info
+	width: 235px
+	+fl
+	color: #f6f6f6 
+	font-size: 16px
+	p 
+		margin-bottom: 10px 
+	.btn-action
+		margin: 32px 0 
+		width: 200px
+		text-align: center
+		
+.quote-slider
+	.fotorama__nav-wrap
+		bottom: 9px
+	.fotorama__dot
+		width: 13px
+		height: 13px
+		background: #545454
+		+box-shadow(0 1px 0 rgba(255,255,255,.31), inset 0 1px 2px rgba(0,0,0,.71))
+
+.stat-wrap
+	background: $light 
+	.l-container
+		width: 1000px
+	.footer
+		background: none
+		border-top: 0
+		
+.stat
+	margin: 0 auto 
+	padding: 170px 0 137px
+	width: 940px
+	text-align: center
+.stat__title
+	margin-bottom: 77px
+	font-size: 42px
+	+fl
+.stat__in
+	position: relative
+	padding-top: 10px
+	text-align: center
+	&:before
+		content: ""
+		position: absolute
+		left: 0
+		top: 0
+		+s(bracket-l)
+	&:after
+		content: ""
+		position: absolute
+		right: 0
+		top: 0
+		+s(bracket-r)
+.stat__item
+	display: inline-block
+	vertical-align: middle
+	width: 245px
+	+fl
+	font-size: 22px
+	span
+		display: block
+		font-size: 42px
+		color: $blue 

@@ -234,6 +234,11 @@
 		position: relative
 		top: 1px 
 		+box-shadow(inset 0 1px 0 rgba(255,255,255,.44))
+	&.has-not-gradient
+		background: $rose
+		&:hover
+			background: $rose_d 
+		 
 .is-liquid
 	width: 100%
 	padding-left: 0
@@ -609,10 +614,11 @@
 	font-weight: normal
 	+font-smoothing
 	+box
-	+tr(opacity .2s linear)
+	+tr
 	text-decoration: none
 	&:hover
-		opacity: .8
+		background: $dark
+		color: $yellow
 	&:active
 		position: relative
 		top: 1px 
@@ -621,3 +627,81 @@
 	.fa
 		margin: 0 13px
 		font-size: 16px
+		
+
+.user-box
+	position: relative
+	width: 310px
+	border-radius: 5px 
+	+box-shadow(0 0 6px rgba(#000,.2))
+	&.has-cloud
+		&:before
+			content: ""
+			position: absolute
+			right: -70px
+			top: -70px
+			+s(clouds) 
+.user-box__top
+	border-bottom: 1px solid $border_l  
+	padding: 10px 15px
+	background: #fff  
+	border-radius: 5px 5px 0 0
+.user-box__bottom
+	border-top: 1px solid #fff 
+	padding: 4px 18px 10px
+	background: $light 
+.user
+	+clr
+	white-space: nowrap
+.user__img
+	display: inline-block
+	vertical-align: middle
+	margin-right: 18px
+	width: 58px
+	height: 58px
+	border-radius: 0 0 5px 5px
+	overflow: hidden
+	+box
+	border-radius: 50%  
+	border: 2px solid $border_l
+	img
+		max-width: 100%
+		height: auto
+.user__info
+	display: inline-block
+	vertical-align: middle
+	white-space: normal
+	.rating
+		margin-top: 7px
+.user__name
+	color: $blue
+	font-size: 16px
+	+arial
+	font-weight: bold 
+
+
+.teaser
+	font-size: 12px
+	color: #9c9c9c 
+.teaser__item
+	margin-bottom: 28px
+	position: relative
+	padding-left: 70px
+	&:last-child
+		margin-bottom: 0 
+.teaser__icon
+	position: absolute
+	width: 70px
+	text-align: center
+	top: 2px
+	left: 0
+	.fa
+		color: $yellow
+		font-size: 28px
+	.fa-lightbulb-o
+		font-size: 32px
+.teaser__title
+	margin-bottom: 10px
+	font-size: 24px
+	color: #fff
+	+fl 
