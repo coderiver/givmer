@@ -270,4 +270,33 @@ head.ready(function() {
 		return false;
 	});
 
+	$(".js-nav a").on("click",function(){
+		var section = $(this).attr("href");
+		if (section.length) {
+			var top = $('[data-index="'+section+'"]').offset().top-$(".header").outerHeight();
+		}
+		$('html, body').animate({
+            scrollTop: top
+        }, 500);
+        return false;
+	});
+	function scroller() {
+    	var section = $(".js-screen");
+    	var doc_top = $(document).scrollTop();
+    	section.each(function(){
+    		var attr = $(this).attr("data-index");
+    		var link = $('[href="'+attr+'"]');
+    		var link_top = $(this).offset().top-$(".header").outerHeight();
+	    	if (doc_top >= link_top) {
+	    		$(".js-nav a").removeClass("is-active");
+	    		link.addClass("is-active");
+	    	}
+    	});
+    }
+    scroller();
+    $(window).scroll(function(){
+    	scroller();
+    }); 
+
+
 });
