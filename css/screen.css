@@ -65,6 +65,7 @@ a { text-decoration: none; color: #3e3e3e; }
 
 .logo { display: inline-block; color: #4d4d4d; font-family: "robotocondensed-bold", Arial, sans-serif; font-size: 32px; }
 .logo span { color: #00b4ff; }
+.logo em { font-style: normal; font-family: "roboto-light", Arial, sans-serif; }
 
 .header__nav { float: left; *zoom: 1; }
 .header__nav:after { content: " "; display: table; clear: both; }
@@ -280,6 +281,27 @@ a { text-decoration: none; color: #3e3e3e; }
 
 .progress { position: relative; height: 28px; border: 1px solid #d1d1d1; border-radius: 10px; overflow: hidden; -webkit-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1); box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1); }
 .progress span { position: absolute; top: 0; bottom: 0; left: 0; background: url(../img/progress.png) 0 0 repeat; }
+
+.btn-more { display: inline-block; padding: 13px 39px 14px; border-radius: 5px; background: #ffc600; color: #3e3e3e; font-size: 13px; font-family: "roboto-medium", Arial, sans-serif; border: 1px solid #bdbdbd; font-weight: normal; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-transition: opacity 0.2s linear; -moz-transition: opacity 0.2s linear; -o-transition: opacity 0.2s linear; transition: opacity 0.2s linear; text-decoration: none; }
+.btn-more:hover { opacity: 0.8; }
+.btn-more:active { position: relative; top: 1px; }
+.btn-more.has-icon { padding-left: 9px; }
+.btn-more .fa { margin: 0 13px; font-size: 16px; }
+
+.promo-slider { height: 697px; overflow: hidden; }
+.promo-slider .l-container { position: relative; height: 697px; }
+.promo-slider .fotorama__stage { height: 697px !important; }
+.promo-slider .fotorama__nav-wrap { bottom: 100px; }
+.promo-slider .fotorama__nav__shaft { margin: 0 auto; padding-left: 96px; width: 1176px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.promo-slider .fotorama__active .fotorama__dot { background: #3e3e3e; }
+
+.promo-slider__box { position: absolute; left: 114px; top: 225px; width: 330px; }
+
+.promo-slider__title { margin-bottom: 20px; font-size: 32px; font-family: "roboto-light", Arial, sans-serif; }
+
+.box-create { position: absolute; bottom: 0; left: 0; right: 0; z-index: 20; padding: 23px 0 18px; background: white; text-align: center; background: rgba(255, 255, 255, 0.7); }
+.box-create .btn-action, .box-create .logo { vertical-align: middle; }
+.box-create .btn-action { margin-left: 17px; }
 
 .article { padding: 0 25px 0 0; font-size: 12px; line-height: 1.2; color: #3e3e3e; font-family: Arial, sans-serif; }
 .article h1 { font-size: 24px; margin: 32px 0 24px; }

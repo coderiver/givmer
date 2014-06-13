@@ -596,3 +596,28 @@
 // 		background-position: 1000px 0
 // 	100%
 // 		background-position: 0 0
+
+.btn-more
+	display: inline-block
+	padding: 13px 39px 14px
+	border-radius: 5px
+	background: $yellow
+	color: $dark
+	font-size: 13px
+	+fm
+	border: 1px solid #bdbdbd
+	font-weight: normal
+	+font-smoothing
+	+box
+	+tr(opacity .2s linear)
+	text-decoration: none
+	&:hover
+		opacity: .8
+	&:active
+		position: relative
+		top: 1px 
+	&.has-icon 
+		padding-left: 9px
+	.fa
+		margin: 0 13px
+		font-size: 16px
