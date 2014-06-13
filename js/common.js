@@ -252,5 +252,22 @@ head.ready(function() {
 			$(this).parents(".js-radio-group").removeClass("is-active");
 		} 
 	}); 
+	$(".js-check input").on("change",function(){
+		var checkGroup = $(this).parents(".js-check-group");
+		var checkHidden = checkGroup.find(".js-check-hidden");
+		if ($(this).is(":checked")) {
+			checkHidden.removeAttr("hidden");
+			$(this).parent().addClass("is-checked");
+		}
+		else {
+			checkHidden.attr("hidden","");
+			$(this).parent().removeClass("is-checked");
+		}
+	}); 
+
+	$(".js-remove-btn").on("click",function(){
+		$(this).parents(".js-removeable").remove();
+		return false;
+	});
 
 });
