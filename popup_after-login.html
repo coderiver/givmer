@@ -1,0 +1,516 @@
+<!doctype html>
+<html class="has-open-popup">
+<head>
+	<meta charset="utf-8">
+	<title>popup after login</title>
+	<link rel="stylesheet" media="screen" href="css/screen.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+
+<!-- BEGIN  out-->
+<div class="out">
+	<header class="header">
+		<div class="l-container">
+			<a href="#" class="logo">Giv<span>me</span>r</a>
+			<div class="header__search">
+				<input type="text" class="input" placeholder="поиск заданий...">
+				<button class="fa fa-search" value="search"></button>
+			</div>
+			<a href="#" class="btn-action header__btn">Создать задание</a>
+			<div class="header__task drop-list-wrap has-right-angle js-drop">
+				<a href="" class="btn-simple js-drop-link">
+					<i class="fa fa-thumb-tack"></i>2
+				</a>
+				<ul class="drop-list js-drop-list">
+					<li>
+						<a href="#" class="drop-list__item">
+							<span class="drop-list__name">Избранные задания</span> 
+							<span class="drop-list__right">2</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="drop-list__item">
+							<span class="drop-list__name">Моя страница</span> 
+							<span class="drop-list__right">1</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="header__right">    
+				<a href="" class="btn-simple js-drop-link">
+					<i class="fa fa-tag"></i>350 €
+				</a>     
+				<div class="header__enter">
+					<div class="drop-list-wrap has-right-angle js-drop">
+						<a href="#" class="header__user js-drop-link">
+							<span class="header__user-name">Anton Matiukhin</span>
+							<div class="header__user-img">
+								<img src="http://lorempixel.com/54/54/people" alt="">
+								<span class="notific">2</span>
+							</div>
+							
+							<i class="fa fa-caret-down"></i>
+						</a>
+						<ul class="drop-list js-drop-list">
+							<li>
+								<a href="#" class="drop-list__item">
+									<span class="drop-list__name">
+										Моя страница
+										<div class="rating">
+											<div class="rating__in js-rating-small-read" data-score="4"></div>
+											<span class="rating__text">(119)</span>
+										</div>
+									</span> 
+									<span class="drop-list__right">
+										<span class="status is-approved"> <i class="fa fa-shield"></i>подтвержден!</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="drop-list__item">
+									<span class="drop-list__name">Задания, в которых я участвовал</span> 
+									<span class="drop-list__right"><span class="notific">2</span></span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="drop-list__item">
+									<span class="drop-list__name">Созданные задания</span> 
+									<span class="drop-list__right"><span class="notific is-blue">1</span></span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="drop-list__item">
+									<span class="drop-list__name">Мой счет </span> 
+									<span class="drop-list__right">
+										<span class="drop-list__info"><i class="fa fa-tag"></i>25 €</span>
+										<i class="fa fa-warning"></i>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="drop-list__item">
+									<span class="drop-list__name">Настройки профайла</span> 
+									<span class="drop-list__right">1</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>  
+			</div>                  
+		</div>
+	</header>
+	<div class="l-cols l-container">
+		<div class="l-cols-wrap"> 
+			<div class="l-col1">
+				<div class="article">
+					<div class="title">Добро пожаловать на Givmer :)</div>
+					<p>Осталось совсем чуть-чуть. Проверьте информацию и дополните свой профайл для того, чтобы другие пользователи больше вам доверяли.</p>
+				</div>
+				<div class="form">
+					<div class="form__section">
+						
+						<div class="field">
+							<div class="input-wrap input-wrap_half">
+								<span class="input-wrap__title">Ваше полное имя:</span>
+								<input type="text" class="input" placeholder="Имя">
+								<input type="text" class="input" placeholder="Фамилия">
+							</div>
+							<div class="input-wrap input-wrap_half">
+								<span class="input-wrap__title">Ваша фотография:</span>
+								<div class="download js-download">
+									<div class="download__img js-removeable">
+										<div><img src="http://lorempixel.com/54/54" alt=""></div>
+										<a href="#" class="del-link js-remove-btn"><i class="fa fa-trash-o"></i>Удалить</a>
+									</div>
+									<button class="download__btn js-download-btn"><i class="fa fa-cloud-upload"></i>Загрузите свою фотографию</button>
+									<input type="file" class="download__input js-download-input">
+								</div>
+							</div>
+						</div>
+						<div class="field">
+							<div class="input-wrap input-wrap_half">
+								<span class="input-wrap__title">Ваш номер телефона:</span>
+								<input type="tel" class="input js-input-tel" placeholder="+___ __ __ __ __">
+							</div>
+							<div class="input-wrap input-wrap_half">
+								<span class="input-wrap__title">e-mail адрес:</span>
+								<input type="email" class="input" placeholder="E-mail">
+							</div>
+						</div>
+						<div class="field">
+							<div class="input-wrap input-wrap_location">
+								<span class="input-wrap__title">Ваш номер телефона:</span>
+								<input type="text" class="input" placeholder="Ваше местоположение:">
+								<a href="#" class="btn-location">
+									<span>определить мое местоположение</span>
+									<i class="fa fa-location-arrow"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="form__section js-radio-group is-active">
+						<div class="field">
+							<div class="input-wrap">
+								<span class="input-wrap__title">Вы хотите стать исполнителем на  Givmer?</span>
+								<label class="radio js-radio" data-radio="1">
+									<input type="radio" name="name1" checked>
+									<i class="fa fa-check-circle"></i>
+									<span>Да</span>
+								</label>
+								<label class="radio js-radio" data-radio="0">
+									<input type="radio" name="name1">
+									<i class="fa fa-check-circle"></i>
+									<span>Нет</span>
+								</label>
+							</div>
+						</div>
+						<div class="form__hidden">
+							<div class="field">
+								<div class="input-wrap">
+									<span class="input-wrap__title">выберите категории, в которох вы хотите выполнять задания</span>
+									<div class="select">
+										<select class="js-select-width" multiple="multiple" >
+                                            <option value="Курьерские услуги">Курьерские услуги</option>
+                                            <option value="Компьютерная помощь">Компьютерная помощь</option>
+                                            <option value="Бытовой ремонт">Бытовой ремонт</option>
+                                            <option value="Установка и ремонт техники">Установка и ремонт техники</option>
+                                            <option value="Уборка и помощь по хозяйству">Уборка и помощь по хозяйству</option>
+                                            <option value="Виртуальных помощник">Виртуальных помощник</option>
+                                            <option value="Курьерские услуги">Курьерские услуги</option>
+                                            <option value="Компьютерная помощь">Компьютерная помощь</option>
+                                            <option value="Бытовой ремонт">Бытовой ремонт</option>
+                                            <option value="Установка и ремонт техники">Установка и ремонт техники</option>
+                                            <option value="Уборка и помощь по хозяйству">Уборка и помощь по хозяйству</option>
+                                            <option value="Виртуальных помощник">Виртуальных помощник</option>
+
+                                        </select>
+									</div>
+								</div>
+							</div>
+							<div class="field">
+								<div class="input-wrap input-wrap_half">
+									<span class="input-wrap__title">Ваш пол:</span>
+									<label class="radio" data-check="true">
+										<input type="radio" name="name2" checked>
+										<i class="fa fa-check-circle"></i>
+										<span>Мужчина</span>
+									</label>
+									<label class="radio" data-check="false">
+										<input type="radio" name="name2">
+										<i class="fa fa-check-circle"></i>
+										<span>Женщина</span>
+									</label>
+								</div>
+								<div class="input-wrap input-wrap_half">
+									<span class="input-wrap__title">Ваш возраст:</span>
+									<div class="select select_age">
+										<select class="js-select-age">
+                                            <option value="25">25</option>
+                                            <option value="25">25</option>
+                                            <option value="25">25</option>
+                                            <option value="25">25</option>
+                                            <option value="25">25</option>
+                                            <option value="25">25</option>
+                                            <option value="25">25</option>
+                                            <option value="25">25</option>
+                                            <option value="25">25</option>
+                                            <option value="25">25</option>
+                                        </select>
+									</div>
+								</div>
+							</div>
+							<div class="field">
+								<div class="input-wrap">
+									<span class="input-wrap__title">Опишите свои преимущества: <a href="js-window-lang" class="js-window-link">Хотите перевести на другие языки сайта?</a></span>
+									<div class="textarea">
+										<textarea class="js-textarea" placeholder="например: “Нужно вымыть окна в 4-х комнатной кваритре на третьем этаже. Всего 8 окон. Все моющие средства и я могу предоставить...”"></textarea>
+										<span class="textarea__counter js-char-counter" data-max="500">500</span>
+									</div>
+								</div>
+							</div>
+							<div class="field">
+								<div class="input-wrap input-wrap_half">
+									<span class="input-wrap__title">Если необходимо, прикрепите фотографии:</span>
+									<div class="input-wrap__text">можно загрузить максимально 5 изображений</div>
+								</div>
+								<div class="input-wrap input-wrap_half">
+									<div class="download js-download">
+										<input type="file" class="download__input js-download-input">
+										<button class="download__btn js-download-btn"><i class="fa fa-cloud-upload"></i>Выбрать файл для загрузки</button>
+									</div>
+								</div>
+								<div class="files-wrap">
+									<div class="file js-removeable">
+										<div class="file__img">
+											<img src="http://lorempixel.com/182/182/food" alt="">
+											<button class="fa fa-times-circle js-remove-btn"></button>
+										</div>
+									</div>
+									<div class="file js-removeable">
+										<div class="file__img">
+											<img src="http://lorempixel.com/182/182/food" alt="">
+											<button class="fa fa-times-circle js-remove-btn"></button>
+										</div>
+									</div>
+									<div class="file js-removeable">
+										<div class="file__img">
+											<img src="http://lorempixel.com/182/182/food" alt="">
+											<button class="fa fa-times-circle js-remove-btn"></button>
+										</div>
+									</div>
+									<div class="file">
+										<div class="progress">
+			                                <span style="width:50%"></span>
+			                            </div> 
+										<span>Загрузка изображения...</span>
+									</div>
+								</div>
+							</div>
+							<div class="field">
+								<div class="input-wrap">
+									<span class="input-wrap__title">Видео:</span>
+									<input type="text" class="input" placeholder="выставьте ссылку youtube">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form__section">
+						<div class="field">
+							<div class="input-wrap">
+								<div class="checkbox-wrap">
+									<label class="checkbox checkbox_link js-check">
+										<input type="checkbox" checked>
+										<i class="fa fa-check-square"></i>
+										<span>Я хочу получать уведомления на e-mail</span>
+									</label>
+								</div>
+								<div class="checkbox-wrap">
+									<label class="checkbox checkbox_link js-check">
+										<input type="checkbox" checked>
+										<i class="fa fa-check-square"></i>
+										<span>Я хочу получать SMS уведомления на телефон</span>
+									</label>
+								</div>
+								<div class="checkbox-wrap">
+									<label class="checkbox checkbox_link js-check">
+										<input type="checkbox">
+										<i class="fa fa-check-square"></i>
+										<span>Я хочу получать специальные предложения на e-mail</span>
+									</label>
+								</div>
+								<div class="to-center">
+									<input type="submit" class="btn-action btn-action_width" value="Сохранить данные">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="l-col2 sidebar">	
+				<div class="sidebar__item">
+					<div class="title">Идентифицируйте свой аккаунт и получите <span>3 Евро в подарок!</span></div>
+					<p>Идентификация нужна для того, чтобы сделки на Givmer были максимально безопасные. Люди здесь привыкли доверять друг другу, так что докажите, что вы - это вы.</p>
+					<div class="field">
+						<div class="input-wrap">
+							<span class="input-wrap__title">Выберите способ подтверждения</span>
+							<div class="radio-group">
+								<div class="radio-wrap">
+									<label class="radio is-custom" data-check="true">
+										<input type="radio" name="name3" checked>
+										<i class="fa fa-check-circle"></i>
+										<span>через ID карту</span>
+									</label>
+								</div>
+								<div class="radio-wrap">
+									<label class="radio is-custom" data-check="false">
+										<input type="radio" name="name3">
+										<i class="fa fa-check-circle"></i>
+										<span>через Mobiil ID</span>
+									</label>
+								</div>
+								<div class="radio-wrap">
+									<label class="radio is-custom" data-check="false">
+										<input type="radio" name="name3">
+										<i class="fa fa-check-circle"></i>
+										<span>через телефон</span>
+									</label>
+								</div> 
+							</div>
+						</div>
+					</div>
+					<button class="btn-submit is-liquid"><i class="fa fa-shield"></i>Подтвердить аккаут!</button>
+				</div>
+				<div class="sidebar__item">
+					<div class="title">На вашем счету нет средств <i class="fa fa-warning"></i></div>
+					<a href="#" class="btn-action is-liquid"><i class="fa fa-tag"></i>Пополнить счет</a>
+					<div class="sublink">
+						<a href="#">узнать как полонить счет бесплатно</a>
+					</div>
+					<div class="sublink">
+						<a href="#">как используются ваши средства?</a>
+					</div>
+				</div>
+				<div class="sidebar__item">
+					<div class="title">Ваш рейтинг на сайте:</div>
+					<div class="rating rating_big">
+						<div class="rating__in js-rating-read" data-score="2"></div>
+						<span class="rating__in">
+						<a href="#">посмотреть отзывы о вас</a> (119)</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END out-->
+<footer class="footer">
+	<div class="l-container">
+		<div class="footer__nav">
+			<a href="js-popup-greeting" class="js-popup-link">О Givmer </a>
+			<a href="#">Партнерам</a>
+			<a href="#">Вакансии</a>
+			<a href="#">Условия пользования сайта </a>
+			<a href="#">Политика конфиденциальности</a>
+		</div>
+		<div class="footer__info">
+			© 2014 Givmer
+		</div>
+	</div>
+</footer>
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+<div class="overlay js-overlay" style="display:block">
+	<div class="popup js-popup js-popup-greeting">
+		<div class="popup__head">
+			<div class="popup__title">Поздравляем! Теперь вы - член сообщества Givmer! Что дальше?</div>
+		</div>
+		<div class="popup__main">
+			<div class="popup__fotorama">
+				<div class="js-fotorama" data-width="100%" data-height="100%">
+					<div class="popup__slide">
+						<img src="img/slider-img1.png" alt="">
+						<div class="popup__rules">
+							<p>Givmer - это сообщество инициативных людей, которые хотят помагать людям и зарабатывать!</p>
+							<p>Создайте задание, и наши исполнители с радостью его исполнят!</p>
+							<p>Начните с того, чтобы нажать на кнопку, потом на вторую....</p>
+						</div>
+						<div class="to-center"><a href="#" class="btn-action btn-action_width js-next-slide">Далее<i class="fa fa-arrow-right"></i></a></div>
+					</div>
+					<div class="popup__slide popup__slide2">
+						<ul class="teaser">
+							<li class="teaser__item">
+								<div class="teaser__icon">
+									<i class="fa fa-lightbulb-o"></i>
+								</div>
+								<div class="teaser__title">У вас есть задание, которое вы поручили бы другому человеку?</div>
+								сделать уборку в квартире, вымыть окна, отвезти посылку, поклеить обои, посидеть с вашим ребенком и так далее...
+							</li>
+							<li class="teaser__item">
+								<div class="teaser__icon">
+									<i class="fa fa-check-square-o"></i>
+								</div>
+								<div class="teaser__title">Создайте задание, назначив ту цену, которую вы готовы заплатить.</div>
+								все исполнители Givmer - частные лица. Это означает, что вы не будете переплачивать за работу.
+							</li>
+							
+						</ul> 
+						<div class="to-center"><a href="#" class="btn-action btn-action_width js-next-slide">Далее<i class="fa fa-arrow-right"></i></a></div>
+					</div> 
+					<div class="popup__slide">
+						<div class="popup__step">
+							<div class="popup__title">Подтвердите свой профайл</div>
+							<div class="popup__icon"><i class="fa fa-shield"></i></div>
+							<p>Givmer - это честный сервис, где <br> люди доверяют друг другу.</p>
+							<p>Поэтому мы просим идентифицироваться всех пользователей Givmer.</p>
+							<p>Всем идентифицированным пользователям мы <br>бесплатно дарим 3 €.</p>
+							<button class="btn-submit"><i class="fa fa-shield"></i>Подтвердить профайл</button>
+						</div>
+						<div class="popup__step">
+							<div class="popup__title">Выполняйте задания</div>
+							<div class="popup__icon"><i class="fa fa-rocket"></i></div>
+							<p>Givmer - это честный сервис, где <br> люди доверяют друг другу.</p>
+							<p>Поэтому мы просим идентифицироваться всех пользователей Givmer.</p>
+							<p>Всем идентифицированным пользователям мы <br>бесплатно дарим 3 €.</p>
+							<button class="btn-link"><i class="fa fa-rocket"></i>Перейти к списку заданий</button>
+						</div>
+						<div class="popup__step">
+							<div class="popup__title">Подтвердите свой профайл</div>
+							<div class="popup__icon"><i class="fa fa-users"></i></div>
+							<p>Givmer - это сообщество инициативных людей, которые хотят помагать людям и зарабатывать!</p>
+							<p>Пригласите друга и получите бонуссные 1,5 евро на сво счет!</p>
+							<button class="btn-action"><i class="fa fa-users"></i>Пригласить друзей</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup__dots"></div>
+		<button class="btn-close js-popup-close"></button>
+	</div>
+</div>
+<div class="window window_lang js-window js-window-lang">
+	<div class="window__title">На какие языки вы хотите внести перевод?.</div>
+	<div class="window__descr">Если вы не введете перевод на другие языки, то пользователи смогут перевести текст автоматически</div>
+	<div class="field js-check-group">
+		<label class="checkbox checkbox_link js-check">
+			<input type="checkbox">
+			<i class="fa fa-check-square"></i>
+			<span><em>Английский</em></span>
+		</label>
+		<div class="textarea js-check-hidden" hidden>
+			<textarea class="js-textarea" placeholder="введите перевод..."></textarea>
+			<span class="textarea__counter js-char-counter" data-max="255">255</span>
+		</div>
+	</div>
+	<div class="field js-check-group">
+		<label class="checkbox checkbox_link js-check">
+			<input type="checkbox">
+			<i class="fa fa-check-square"></i>
+			<span><em>Эстонский</em></span>
+		</label>
+		<div class="textarea js-check-hidden" hidden>
+			<textarea class="js-textarea" placeholder="введите перевод..."></textarea>
+			<span class="textarea__counter js-char-counter" data-max="255">255</span>
+		</div>
+	</div>
+	<div class="field js-check-group">
+		<label class="checkbox checkbox_link js-check">
+			<input type="checkbox">
+			<i class="fa fa-check-square"></i>
+			<span><em>Финский</em></span>
+		</label>
+		<div class="textarea js-check-hidden" hidden>
+			<textarea class="js-textarea" placeholder="введите перевод..."></textarea>
+			<span class="textarea__counter js-char-counter" data-max="255">255</span>
+		</div>
+	</div>
+	<div class="field js-check-group">
+		<label class="checkbox checkbox_link js-check">
+			<input type="checkbox">
+			<i class="fa fa-check-square"></i>
+			<span><em>Шведский</em></span>
+		</label>
+		<div class="textarea js-check-hidden" hidden>
+			<textarea class="js-textarea" placeholder="введите перевод..."></textarea>
+			<span class="textarea__counter js-char-counter" data-max="255">255</span>
+		</div>
+	</div>
+	<div class="field js-check-group">
+		<label class="checkbox checkbox_link js-check">
+			<input type="checkbox">
+			<i class="fa fa-check-square"></i>
+			<span><em>Норвежский</em></span>
+		</label>
+		<div class="textarea js-check-hidden" hidden>
+			<textarea class="js-textarea" placeholder="введите перевод..."></textarea>
+			<span class="textarea__counter js-char-counter" data-max="255">255</span>
+		</div>
+	</div>
+	<button class="btn-action is-liquid">Сохранить переводы</button>
+	<button class="btn-close js-window-close"></button>
+</div>
+</body>
+</html>
