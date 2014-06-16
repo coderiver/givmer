@@ -345,10 +345,11 @@ a { text-decoration: none; color: #3e3e3e; }
 .promo-slider .fotorama__nav-wrap { bottom: 97px; }
 .promo-slider .fotorama__nav__shaft { margin: 0 auto; padding-left: 85px; width: 1176px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .promo-slider .fotorama__active .fotorama__dot { background: #3e3e3e; }
+.promo-slider .fotorama__active .promo-slider__box { top: 225px; visibility: visible; opacity: 1; }
 
 .promo-slider__in { height: 697px; }
 
-.promo-slider__box { position: absolute; left: 103px; top: 225px; width: 330px; }
+.promo-slider__box { position: absolute; left: 103px; top: 275px; width: 330px; opacity: 0; visibility: hidden; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
 
 .promo-slider__title { margin-bottom: 18px; font-size: 32px; font-family: "roboto-light", Arial, sans-serif; }
 

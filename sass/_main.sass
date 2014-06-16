@@ -20,13 +20,20 @@
 	.fotorama__active 
 		.fotorama__dot
 			background: $dark 
+		.promo-slider__box
+			top: 225px
+			visibility: visible
+			opacity: 1
 .promo-slider__in
 	height: 697px
 .promo-slider__box
 	position: absolute
 	left: 103px
-	top: 225px
+	top: 275px
 	width: 330px
+	opacity: 0
+	visibility: hidden
+	+tr(all .2s linear)
 .promo-slider__title
 	margin-bottom: 18px
 	font-size: 32px
