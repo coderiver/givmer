@@ -34,6 +34,7 @@
 		span
 			color: #5c5c5c 
 
+
 .ui-multiselect span.ui-icon
 	position: absolute     
 	top: 50%
@@ -81,13 +82,22 @@
 	max-height: 263px
 	height: auto
 	border-radius: 5px 
-	+box
 	+box-shadow(0 0 6px rgba(#000,.2))
 	&.is-full-width
 		margin-left: -3px
+		+box
 		width: 800px !important
 	&.is-small
+		+box
 		width: 100px !important
+	&.has-not-checkbox
+		.ui-multiselect-checkboxes 
+			label 
+				span
+					padding-left: 0
+					&:before,
+					&:after
+						display: none
 .ui-multiselect-checkboxes
 	position: relative
 	overflow-x: hidden

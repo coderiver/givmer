@@ -201,337 +201,341 @@
 				window.onload = loadScript;
 			</script>
 	</div>
-	<div class="result">
-		<div class="result__top">
-			<div class="result__in">
-				<div class="input-wrap">
-					<div class="input-wrap__left">
-						<span class="input-wrap__title">Категория заданий</span>
-					</div>
-					<div class="input-wrap__right">
-						<div class="select">
-							<select class="js-select-multi" multiple="multiple" >
-                                <option value="Курьерские услуги">Курьерские услуги</option>
-                                <option value="Компьютерная помощь">Компьютерная помощь</option>
-                                <option value="Бытовой ремонт">Бытовой ремонт</option>
-                                <option value="Установка и ремонт техники">Установка и ремонт техники</option>
-                                <option value="Уборка и помощь по хозяйству">Уборка и помощь по хозяйству</option>
-                                <option value="Виртуальных помощник">Виртуальных помощник</option>
-                                <option value="Курьерские услуги">Курьерские услуги</option>
-                                <option value="Компьютерная помощь">Компьютерная помощь</option>
-                                <option value="Бытовой ремонт">Бытовой ремонт</option>
-                                <option value="Установка и ремонт техники">Установка и ремонт техники</option>
-                                <option value="Уборка и помощь по хозяйству">Уборка и помощь по хозяйству</option>
-                                <option value="Виртуальных помощник">Виртуальных помощник</option>
-                            </select>
+	<div class="result js-result">
+		<div class="result__scroll js-scroll">
+			<div class="result__top js-result-filter">
+				<div class="result__in">
+					<div class="input-wrap">
+						<div class="input-wrap__left">
+							<span class="input-wrap__title is-long">Категория заданий</span>
+							<a href="#" class="show-filter js-show-filter">Фильтры<i class="fa fa-cogs"></i> </a>
 						</div>
-					</div>
-				</div>
-				<div class="input-wrap input-wrap_location">
-					<div class="input-wrap__left">
-						<span class="input-wrap__title">География заданий:</span>
-					</div>
-					<div class="input-wrap__right">
-						<div class="select">
-							<select class="js-select-multi" multiple="multiple" >
-                                <option value="Курьерские услуги">Курьерские услуги</option>
-                                <option value="Компьютерная помощь">Компьютерная помощь</option>
-                                <option value="Бытовой ремонт">Бытовой ремонт</option>
-                                <option value="Установка и ремонт техники">Установка и ремонт техники</option>
-                                <option value="Уборка и помощь по хозяйству">Уборка и помощь по хозяйству</option>
-                                <option value="Виртуальных помощник">Виртуальных помощник</option>
-                                <option value="Курьерские услуги">Курьерские услуги</option>
-                                <option value="Компьютерная помощь">Компьютерная помощь</option>
-                                <option value="Бытовой ремонт">Бытовой ремонт</option>
-                                <option value="Установка и ремонт техники">Установка и ремонт техники</option>
-                                <option value="Уборка и помощь по хозяйству">Уборка и помощь по хозяйству</option>
-                                <option value="Виртуальных помощник">Виртуальных помощник</option>
-                            </select>
-						</div>
-						<a href="#" class="btn-location">
-							<span>определить мое местоположение</span>
-							<i class="fa fa-location-arrow"></i>
-						</a>
-					</div>
-				</div>
-				<div class="input-wrap">
-					<div class="input-wrap__left">
-						<span class="input-wrap__title">Приоритет заданий</span>
-					</div>
-					<div class="input-wrap__right">
-						<div class="checkbox-rap">
-							<label class="checkbox checkbox_simple checkbox_medium js-check">
-								<input type="checkbox">
-								<i class="fa fa-check"></i>
-								<span>Показывать только срочные задания</span>
-							</label>
-						</div>
-					</div>
-				</div>
-				<div class="input-wrap">
-					<div class="input-wrap__left">
-						<span class="input-wrap__title">Плата за выполнение</span>
-					</div>  
-					<div class="input-wrap__right">
-						<div class="ui-slider js-ui-slider-range" data-min="0" data-max="1200">
-							<div class="ui-slider__range">
-								<span class="ui-slider__from">
-									<span class="js-ui-slider-from"></span> €
-								</span>
-								<span class="ui-slider__to">
-									<span class="js-ui-slider-to"></span> €
-								</span>
-							</div>
-							<div class="ui-slider__main">
-								<div class="js-ui-slider-main"></div>
+						<div class="input-wrap__right"> 
+							<div class="select">
+								<select class="js-select-single has-not-checkbox">
+	                                <option value="Курьерские услуги">Курьерские услуги</option>
+	                                <option value="Компьютерная помощь">Компьютерная помощь</option>
+	                                <option value="Бытовой ремонт">Бытовой ремонт</option>
+	                                <option value="Установка и ремонт техники">Установка и ремонт техники</option>
+	                                <option value="Уборка и помощь по хозяйству">Уборка и помощь по хозяйству</option>
+	                                <option value="Виртуальных помощник">Виртуальных помощник</option>
+	                                <option value="Курьерские услуги">Курьерские услуги</option>
+	                                <option value="Компьютерная помощь">Компьютерная помощь</option>
+	                                <option value="Бытовой ремонт">Бытовой ремонт</option>
+	                                <option value="Установка и ремонт техники">Установка и ремонт техники</option>
+	                                <option value="Уборка и помощь по хозяйству">Уборка и помощь по хозяйству</option>
+	                                <option value="Виртуальных помощник">Виртуальных помощник</option>
+	                            </select>
 							</div>
 						</div>
-						<div class="checkbox-rap">
-							<label class="checkbox checkbox_simple checkbox_medium js-check">
-								<input type="checkbox" checked>
-								<i class="fa fa-check"></i>
-								<span>Показать задания с открытой ценой</span>
-							</label>
+					</div>
+					<div class="input-wrap input-wrap_location is-long">
+						<div class="input-wrap__left">
+							<span class="input-wrap__title">География заданий:</span>
+						</div>
+						<div class="input-wrap__right">
+							<div class="select">
+								<select class="js-select-single has-not-checkbox">
+	                                <option value="Курьерские услуги">Курьерские услуги</option>
+	                                <option value="Компьютерная помощь">Компьютерная помощь</option>
+	                                <option value="Бытовой ремонт">Бытовой ремонт</option>
+	                                <option value="Установка и ремонт техники">Установка и ремонт техники</option>
+	                                <option value="Уборка и помощь по хозяйству">Уборка и помощь по хозяйству</option>
+	                                <option value="Виртуальных помощник">Виртуальных помощник</option>
+	                                <option value="Курьерские услуги">Курьерские услуги</option>
+	                                <option value="Компьютерная помощь">Компьютерная помощь</option>
+	                                <option value="Бытовой ремонт">Бытовой ремонт</option>
+	                                <option value="Установка и ремонт техники">Установка и ремонт техники</option>
+	                                <option value="Уборка и помощь по хозяйству">Уборка и помощь по хозяйству</option>
+	                                <option value="Виртуальных помощник">Виртуальных помощник</option>
+	                            </select>
+							</div>
+							<a href="#" class="btn-location">
+								<span>определить мое местоположение</span>
+								<i class="fa fa-location-arrow"></i>
+							</a>
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
-		<div class="result__sort">
-			<div class="result__in">
-				<div class="result__sort-item1">Сортировать</div>
-				<div class="result__sort-item2"><a href="#">по дате добавления</a></div>
-				<div class="result__sort-item3"><a href="#">по дате исполнения <i class="fa fa-sort-amount-asc"></i></a> </div>
-				<div class="result__sort-item4"><a href="#">по цене</a></div>
-			</div>
-		</div>
-		<div class="result__list">
-			<div class="job">
-				<div class="job__in">
-					<div class="job__main">
-						<div class="job__title">
-							<a href="#">Забрать и доставить посылку</a>
-							<span class="job__categ">Курьерские услуги</span>
+					<div class="input-wrap is-long">
+						<div class="input-wrap__left">
+							<span class="input-wrap__title">Приоритет заданий</span>
 						</div>
-						<a href="#" class="btn-stump is-active"><i class="fa fa-thumb-tack"></i></a>
-						<div class="job__descr">Необходимо забрать 3 костюма и доставить не позже 18:30 и даже сделать это очень аккуратно и бережно! Я приеду и проверю все...</div>
-						<div class="job__address"><i class="fa fa-map-marker"></i> Masina 22, Tallinn, Eesti - Mahtra 39, Tallinn, Eesti</div>
-					</div>
-					<div class="job__employer">
-						<div class="job__employer-name">
-							<a href="#">Andrei Nikonorovichus</a>
-						</div>
-						<div class="rating">
-							<div class="rating__in js-rating-small-read" data-score="2"></div>
-							<span class="rating__in">(6)</span>
-						</div>
-						<span class="status is-approved"><i class="fa fa-shield"></i>подтвержден!</span>
-					</div>
-					<div class="job__info">
-						<a class="price" href="#">
-							<span class="price__icon"><i class="fa fa-tag"></i></span>
-							<span>2500 €</span> / задание
-						</a>
-						<div class="job__attr">
-							<i class="fa fa-clock-o"></i>	  
-							<div>
-								<p>23.05.2014  (13:00)  </p>    
-								<p>по  25.05.2014  (18:00)</p>
+						<div class="input-wrap__right">
+							<div class="checkbox-rap">
+								<label class="checkbox checkbox_simple checkbox_medium js-check">
+									<input type="checkbox">
+									<i class="fa fa-check"></i>
+									<span>Показывать только срочные задания</span>
+								</label>
 							</div>
 						</div>
-						<div class="job__attr">
-							<i class="fa fa-bolt"></i>
-							<div>Cрочное задание</div>
-						</div>
 					</div>
-				</div>
-			</div>
-			<div class="job">
-				<div class="job__in">
-					<div class="job__main">
-						<div class="job__title">
-							<a href="#">Забрать и доставить посылку</a>
-							<span class="job__categ">Курьерские услуги</span>
-						</div>
-						<a href="#" class="btn-stump"><i class="fa fa-thumb-tack"></i></a>
-						<div class="job__descr">Необходимо забрать 3 костюма и доставить не позже 18:30 и даже сделать это очень аккуратно и бережно! Я приеду и проверю все...</div>
-						<div class="job__address"><i class="fa fa-map-marker"></i> Masina 22, Tallinn, Eesti - Mahtra 39, Tallinn, Eesti</div>
-					</div>
-					<div class="job__employer">
-						<div class="job__employer-name">
-							<a href="#">Anton </a>
-						</div>
-						<div class="rating">
-							<div class="rating__in js-rating-small-read" data-score="2"></div>
-							<span class="rating__in">(6)</span>
-						</div>
-					</div>
-					<div class="job__info">
-						<a class="price-open" href="#">
-							Открытая цена
-						</a>
-						<div class="job__attr">
-							<i class="fa fa-clock-o"></i>	  
-							<div>
-								<p>23.05.2014  (13:00)  </p>    
-								<p>по  25.05.2014  (18:00)</p>
+					<div class="input-wrap is-long">
+						<div class="input-wrap__left">
+							<span class="input-wrap__title">Плата за выполнение</span>
+						</div>  
+						<div class="input-wrap__right">
+							<div class="ui-slider js-ui-slider-range" data-min="0" data-max="1200">
+								<div class="ui-slider__range">
+									<span class="ui-slider__from">
+										<span class="js-ui-slider-from"></span> €
+									</span>
+									<span class="ui-slider__to">
+										<span class="js-ui-slider-to"></span> €
+									</span>
+								</div>
+								<div class="ui-slider__main">
+									<div class="js-ui-slider-main"></div>
+								</div>
+							</div>
+							<div class="checkbox-rap">
+								<label class="checkbox checkbox_simple checkbox_medium js-check">
+									<input type="checkbox" checked>
+									<i class="fa fa-check"></i>
+									<span>Показать задания с открытой ценой</span>
+								</label>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="job">
-				<div class="job__in">
-					<div class="job__main">
-						<div class="job__title">
-							<a href="#">Забрать и доставить посылку</a>
-							<span class="job__categ">Курьерские услуги</span>
-						</div>
-						<a href="#" class="btn-stump is-active"><i class="fa fa-thumb-tack"></i></a>
-						<div class="job__descr">Необходимо забрать 3 костюма и доставить не позже 18:30 и даже сделать это очень аккуратно и бережно! Я приеду и проверю все...</div>
-						<div class="job__address"><i class="fa fa-map-marker"></i> Masina 22, Tallinn, Eesti - Mahtra 39, Tallinn, Eesti</div>
-					</div>
-					<div class="job__employer">
-						<div class="job__employer-name">
-							<a href="#">Andrei Nikonorovichus</a>
-						</div>
-						<div class="rating">
-							<div class="rating__in js-rating-small-read" data-score="2"></div>
-							<span class="rating__in">(6)</span>
-						</div>
-						<span class="status is-approved"><i class="fa fa-shield"></i>подтвержден!</span>
-					</div>
-					<div class="job__info">
-						<a class="price" href="#">
-							<span class="price__icon"><i class="fa fa-tag"></i></span>
-							<span>2500 €</span> / задание
-						</a>
-						<div class="job__attr">
-							<i class="fa fa-clock-o"></i>	  
-							<div>
-								<p>23.05.2014  (13:00)  </p>    
-								<p>по  25.05.2014  (18:00)</p>
-							</div>
-						</div>
-						<div class="job__attr">
-							<i class="fa fa-bolt"></i>
-							<div>Cрочное задание</div>
-						</div>
-					</div>
+			<div class="result__sort">
+				<div class="result__in">
+					<div class="result__sort-item1">Сортировать</div>
+					<div class="result__sort-item2"><a href="#">по дате добавления</a></div>
+					<div class="result__sort-item3"><a href="#">по дате исполнения <i class="fa fa-sort-amount-asc"></i></a> </div>
+					<div class="result__sort-item4"><a href="#">по цене</a></div>
 				</div>
 			</div>
-			<div class="job">
-				<div class="job__in">
-					<div class="job__main">
-						<div class="job__title">
-							<a href="#">Забрать и доставить посылку</a>
-							<span class="job__categ">Курьерские услуги</span>
+			<div class="result__list">
+				<div class="job">
+					<div class="job__in">
+						<div class="job__main">
+							<div class="job__title">
+								<a href="#">Забрать и доставить посылку</a>
+								<span class="job__categ">Курьерские услуги</span>
+							</div>
+							<a href="#" class="btn-favorite js-btn-favorite is-active"><i class="fa fa-thumb-tack"></i></a>
+							<div class="job__descr">Необходимо забрать 3 костюма и доставить не позже 18:30 и даже сделать это очень аккуратно и бережно! Я приеду и проверю все...</div>
+							<div class="job__address"><i class="fa fa-map-marker"></i> Masina 22, Tallinn, Eesti - Mahtra 39, Tallinn, Eesti</div>
 						</div>
-						<a href="#" class="btn-stump"><i class="fa fa-thumb-tack"></i></a>
-						<div class="job__descr">Необходимо забрать 3 костюма и доставить не позже 18:30 и даже сделать это очень аккуратно и бережно! Я приеду и проверю все...</div>
-						<div class="job__address"><i class="fa fa-map-marker"></i> Masina 22, Tallinn, Eesti - Mahtra 39, Tallinn, Eesti</div>
-					</div>
-					<div class="job__employer">
-						<div class="job__employer-name">
-							<a href="#">Anton </a>
+						<div class="job__employer">
+							<div class="job__employer-name">
+								<a href="#">Andrei Nikonorovichus</a>
+							</div>
+							<div class="rating">
+								<div class="rating__in js-rating-small-read" data-score="2"></div>
+								<span class="rating__in">(6)</span>
+							</div>
+							<span class="status is-approved"><i class="fa fa-shield"></i>подтвержден!</span>
 						</div>
-						<div class="rating">
-							<div class="rating__in js-rating-small-read" data-score="2"></div>
-							<span class="rating__in">(6)</span>
-						</div>
-					</div>
-					<div class="job__info">
-						<a class="price-open" href="#">
-							Открытая цена
-						</a>
-						<div class="job__attr">
-							<i class="fa fa-clock-o"></i>	  
-							<div>
-								<p>23.05.2014  (13:00)  </p>    
-								<p>по  25.05.2014  (18:00)</p>
+						<div class="job__info">
+							<a class="price" href="#">
+								<span class="price__icon"><i class="fa fa-tag"></i></span>
+								<span>2500 €</span> / задание
+							</a>
+							<div class="job__attr">
+								<i class="fa fa-clock-o"></i>	  
+								<div>
+									<p>23.05.2014  (13:00)  </p>    
+									<p>по  25.05.2014  (18:00)</p>
+								</div>
+							</div>
+							<div class="job__attr">
+								<i class="fa fa-bolt"></i>
+								<div>Cрочное задание</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="job">
-				<div class="job__in">
-					<div class="job__main">
-						<div class="job__title">
-							<a href="#">Забрать и доставить посылку</a>
-							<span class="job__categ">Курьерские услуги</span>
+				<div class="job">
+					<div class="job__in">
+						<div class="job__main">
+							<div class="job__title">
+								<a href="#">Забрать и доставить посылку</a>
+							</div>
+							<a href="#" class="btn-favorite js-btn-favorite"><i class="fa fa-thumb-tack"></i></a>
+							<div class="job__descr">Необходимо забрать 3 костюма и доставить не позже 18:30 и даже сделать это очень аккуратно и бережно! Я приеду и проверю все...</div>
+							<div class="job__address"><i class="fa fa-map-marker"></i> Masina 22, Tallinn, Eesti - Mahtra 39, Tallinn, Eesti</div>
 						</div>
-						<a href="#" class="btn-stump is-active"><i class="fa fa-thumb-tack"></i></a>
-						<div class="job__descr">Необходимо забрать 3 костюма и доставить не позже 18:30 и даже сделать это очень аккуратно и бережно! Я приеду и проверю все...</div>
-						<div class="job__address"><i class="fa fa-map-marker"></i> Masina 22, Tallinn, Eesti - Mahtra 39, Tallinn, Eesti</div>
-					</div>
-					<div class="job__employer">
-						<div class="job__employer-name">
-							<a href="#">Andrei Nikonorovichus</a>
-						</div>
-						<div class="rating">
-							<div class="rating__in js-rating-small-read" data-score="2"></div>
-							<span class="rating__in">(6)</span>
-						</div>
-						<span class="status is-approved"><i class="fa fa-shield"></i>подтвержден!</span>
-					</div>
-					<div class="job__info">
-						<a class="price" href="#">
-							<span class="price__icon"><i class="fa fa-tag"></i></span>
-							<span>2500 €</span> / задание
-						</a>
-						<div class="job__attr">
-							<i class="fa fa-clock-o"></i>	  
-							<div>
-								<p>23.05.2014  (13:00)  </p>    
-								<p>по  25.05.2014  (18:00)</p>
+						<div class="job__employer">
+							<div class="job__employer-name">
+								<a href="#">Anton </a>
+							</div>
+							<div class="rating">
+								<div class="rating__in js-rating-small-read" data-score="2"></div>
+								<span class="rating__in">(6)</span>
 							</div>
 						</div>
-						<div class="job__attr">
-							<i class="fa fa-bolt"></i>
-							<div>Cрочное задание</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="job">
-				<div class="job__in">
-					<div class="job__main">
-						<div class="job__title">
-							<a href="#">Забрать и доставить посылку</a>
-							<span class="job__categ">Курьерские услуги</span>
-						</div>
-						<a href="#" class="btn-stump"><i class="fa fa-thumb-tack"></i></a>
-						<div class="job__descr">Необходимо забрать 3 костюма и доставить не позже 18:30 и даже сделать это очень аккуратно и бережно! Я приеду и проверю все...</div>
-						<div class="job__address"><i class="fa fa-map-marker"></i> Masina 22, Tallinn, Eesti - Mahtra 39, Tallinn, Eesti</div>
-					</div>
-					<div class="job__employer">
-						<div class="job__employer-name">
-							<a href="#">Anton </a>
-						</div>
-						<div class="rating">
-							<div class="rating__in js-rating-small-read" data-score="2"></div>
-							<span class="rating__in">(6)</span>
-						</div>
-					</div>
-					<div class="job__info">
-						<a class="price-open" href="#">
-							Открытая цена
-						</a>
-						<div class="job__attr">
-							<i class="fa fa-clock-o"></i>	  
-							<div>
-								<p>23.05.2014  (13:00)  </p>    
-								<p>по  25.05.2014  (18:00)</p>
+						<div class="job__info">
+							<a class="price-open" href="#">
+								Открытая цена
+							</a>
+							<div class="job__attr">
+								<i class="fa fa-clock-o"></i>	  
+								<div>
+									<p>23.05.2014  (13:00)  </p>    
+									<p>по  25.05.2014  (18:00)</p>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				<div class="job">
+					<div class="job__in">
+						<div class="job__main">
+							<div class="job__title">
+								<a href="#">Забрать и доставить посылку</a>
+								<span class="job__categ">Курьерские услуги</span>
+							</div>
+							<a href="#" class="btn-favorite js-btn-favorite is-active"><i class="fa fa-thumb-tack"></i></a>
+							<div class="job__descr">Необходимо забрать 3 костюма и доставить не позже 18:30 и даже сделать это очень аккуратно и бережно! Я приеду и проверю все...</div>
+							<div class="job__address"><i class="fa fa-map-marker"></i> Masina 22, Tallinn, Eesti - Mahtra 39, Tallinn, Eesti</div>
+						</div>
+						<div class="job__employer">
+							<div class="job__employer-name">
+								<a href="#">Andrei Nikonorovichus</a>
+							</div>
+							<div class="rating">
+								<div class="rating__in js-rating-small-read" data-score="2"></div>
+								<span class="rating__in">(6)</span>
+							</div>
+							<span class="status is-approved"><i class="fa fa-shield"></i>подтвержден!</span>
+						</div>
+						<div class="job__info">
+							<a class="price" href="#">
+								<span class="price__icon"><i class="fa fa-tag"></i></span>
+								<span>2500 €</span> / задание
+							</a>
+							<div class="job__attr">
+								<i class="fa fa-clock-o"></i>	  
+								<div>
+									<p>23.05.2014  (13:00)  </p>    
+									<p>по  25.05.2014  (18:00)</p>
+								</div>
+							</div>
+							<div class="job__attr">
+								<i class="fa fa-bolt"></i>
+								<div>Cрочное задание</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="job">
+					<div class="job__in">
+						<div class="job__main">
+							<div class="job__title">
+								<a href="#">Забрать и доставить посылку</a>
+								<span class="job__categ">Курьерские услуги</span>
+							</div>
+							<a href="#" class="btn-favorite js-btn-favorite"><i class="fa fa-thumb-tack"></i></a>
+							<div class="job__descr">Необходимо забрать 3 костюма и доставить не позже 18:30 и даже сделать это очень аккуратно и бережно! Я приеду и проверю все...</div>
+							<div class="job__address"><i class="fa fa-map-marker"></i> Masina 22, Tallinn, Eesti - Mahtra 39, Tallinn, Eesti</div>
+						</div>
+						<div class="job__employer">
+							<div class="job__employer-name">
+								<a href="#">Anton </a>
+							</div>
+							<div class="rating">
+								<div class="rating__in js-rating-small-read" data-score="2"></div>
+								<span class="rating__in">(6)</span>
+							</div>
+						</div>
+						<div class="job__info">
+							<a class="price-open" href="#">
+								Открытая цена
+							</a>
+							<div class="job__attr">
+								<i class="fa fa-clock-o"></i>	  
+								<div>
+									<p>23.05.2014  (13:00)  </p>    
+									<p>по  25.05.2014  (18:00)</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="job">
+					<div class="job__in">
+						<div class="job__main">
+							<div class="job__title">
+								<a href="#">Забрать и доставить посылку</a>
+								<span class="job__categ">Курьерские услуги</span>
+							</div>
+							<a href="#" class="btn-favorite js-btn-favorite is-active"><i class="fa fa-thumb-tack"></i></a>
+							<div class="job__descr">Необходимо забрать 3 костюма и доставить не позже 18:30 и даже сделать это очень аккуратно и бережно! Я приеду и проверю все...</div>
+							<div class="job__address"><i class="fa fa-map-marker"></i> Masina 22, Tallinn, Eesti - Mahtra 39, Tallinn, Eesti</div>
+						</div>
+						<div class="job__employer">
+							<div class="job__employer-name">
+								<a href="#">Andrei Nikonorovichus</a>
+							</div>
+							<div class="rating">
+								<div class="rating__in js-rating-small-read" data-score="2"></div>
+								<span class="rating__in">(6)</span>
+							</div>
+							<span class="status is-approved"><i class="fa fa-shield"></i>подтвержден!</span>
+						</div>
+						<div class="job__info">
+							<a class="price" href="#">
+								<span class="price__icon"><i class="fa fa-tag"></i></span>
+								<span>2500 €</span> / задание
+							</a>
+							<div class="job__attr">
+								<i class="fa fa-clock-o"></i>	  
+								<div>
+									<p>23.05.2014  (13:00)  </p>    
+									<p>по  25.05.2014  (18:00)</p>
+								</div>
+							</div>
+							<div class="job__attr">
+								<i class="fa fa-bolt"></i>
+								<div>Cрочное задание</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="job">
+					<div class="job__in">
+						<div class="job__main">
+							<div class="job__title">
+								<a href="#">Забрать и доставить посылку</a>
+								<span class="job__categ">Курьерские услуги</span>
+							</div>
+							<a href="#" class="btn-favorite js-btn-favorite"><i class="fa fa-thumb-tack"></i></a>
+							<div class="job__descr">Необходимо забрать 3 костюма и доставить не позже 18:30 и даже сделать это очень аккуратно и бережно! Я приеду и проверю все...</div>
+							<div class="job__address"><i class="fa fa-map-marker"></i> Masina 22, Tallinn, Eesti - Mahtra 39, Tallinn, Eesti</div>
+						</div>
+						<div class="job__employer">
+							<div class="job__employer-name">
+								<a href="#">Anton </a>
+							</div>
+							<div class="rating">
+								<div class="rating__in js-rating-small-read" data-score="2"></div>
+								<span class="rating__in">(6)</span>
+							</div>
+						</div>
+						<div class="job__info">
+							<a class="price-open" href="#">
+								Открытая цена
+							</a>
+							<div class="job__attr">
+								<i class="fa fa-clock-o"></i>	  
+								<div>
+									<p>23.05.2014  (13:00)  </p>    
+									<p>по  25.05.2014  (18:00)</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="job-more">
+					<div>
+						<i class="fa fa-spinner fa-spin"></i>
+					</div>
+				</div>
 			</div>
-			<a class="job-more" href="#">
-				<i class="fa fa-spinner fa-spin"></i>
-			</a>
-		</div>
+		</div> 
 	</div>
 </div>
 <!-- END out-->
