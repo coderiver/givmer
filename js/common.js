@@ -179,7 +179,7 @@ head.ready(function() {
 			$(this).next().addClass("has-placeholder").removeClass("has-value");
 		}
 
-	});;
+	});
 	$(".js-select-width").multiselect({
 		selectedList: 7,
 		noneSelectedText: $(this).attr("data-placeholder"),
@@ -198,7 +198,7 @@ head.ready(function() {
 			$(this).next().addClass("has-placeholder").removeClass("has-value");
 		}
 
-	});;
+	});
 	$(".js-select-age").multiselect({
 		selectedList: 1,
 		noneSelectedText: $(this).attr("data-placeholder"),
@@ -297,6 +297,44 @@ head.ready(function() {
     $(window).scroll(function(){
     	scroller();
     }); 
+
+    function ui_slider_range() {
+		$(".js-ui-slider-range").each(function(){
+			var slider = $(this).find(".js-ui-slider-main");
+			var slider_min = $(this).find(".ui-slider-handle");
+			var input_from = $(this).find(".js-ui-slider-from");
+			var input_to = $(this).find(".js-ui-slider-to");
+			var min_val = +$(this).attr("data-min");
+			var max_val = +$(this).attr("data-max");
+			slider_min.addClass("js-slider-min");
+			slider.slider({
+				range: true,
+				min: min_val,
+				max: max_val,
+				step: 50,	
+				values: [ min_val, max_val ],
+				slide: function( event, ui ) {
+					$(this).find(".ui-slider-handle").html("<span></span>");
+					$(this).find(".ui-slider-range").next().addClass("slider__min")
+					$(this).find(".ui-slider-range").next().next().addClass("slider__max");
+					input_from.text(ui.values[0]);
+					input_to.text(ui.values[1]);
+					//handle_0.text(ui.values[0]);
+					//handle_1.text(ui.values[1]);
+				}
+			});
+			//console.log(handle_0);
+			//console.log(handle_1);
+			$(this).find(".ui-slider-handle").html("<span></span>");
+			$(this).find(".ui-slider-range").next().addClass("ui-slider__min")
+			$(this).find(".ui-slider-range").next().next().addClass("ui-slider__max");
+			//handle_0.text(slider.slider( "values", 0 ));
+			//handle_1.text(slider.slider( "values", 1 ));
+			input_from.text(slider.slider( "values", 0 ));
+			input_to.text(slider.slider( "values", 1 ));
+		});
+	}
+	ui_slider_range();
 
 
 });

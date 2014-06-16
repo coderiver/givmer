@@ -1,0 +1,220 @@
+.job-results
+	position: relative
+	overflow-y: hidden
+	.out
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 60px
+		overflow: hidden
+	.footer
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+	.header
+		position: relative
+		z-index: 10
+		height: 71px
+		padding: 0
+		+clr
+.header__left-part
+	position: absolute
+	left: 0
+	top: 15px
+	bottom: 0
+	width: 43%
+.header__right-part
+	position: absolute
+	left: 43%
+	right: 0
+	top: 15px
+	bottom: 0
+	width: 57%
+.header__right-in
+	width: 720px
+	+clr
+.map
+	position: absolute
+	left: 0
+	top: 71px
+	bottom: 0
+	width: 43%
+	background: #e9e6da
+.result
+	position: absolute
+	top: 71px
+	right: 0
+	left: 43%
+	z-index: 2
+	bottom: 0
+	overflow-x: hidden 
+	overflow-y: auto
+	background: #fff 
+	+box-shadow(0 0 6px rgba(#000,.4))
+	+scrollbar
+		width: 8px
+		height: 8px
+		border: 1px solid #d1d1d1
+		+border-radius(4px)
+		+box-shadow(inset 0 1px 5px rgba(0,0,0,.1))
+	+scrollbar-thumb
+		background: $blue
+		+border-radius(4px)
+	+scrollbar-track-piece     
+		+border-radius(4px)
+	
+.result__top
+	padding: 13px 0 22px 
+	background: $light 
+.result__in
+	padding-left: 24px
+	width: 722px
+	+box
+	.input-wrap
+		margin-bottom: 9px
+.google-map
+	width: 100%
+	height: 100%
+	
+.input-wrap__left
+	position: relative
+	padding: 16px 0 0 
+	float: left
+	width: 240px
+	width: 31%
+	.input-wrap__title
+		color: #808080 
+		font-size: 13px
+.input-wrap__right
+	position: relative
+	float: left
+	width: 69%
+	.checkbox-rap
+		padding-top: 7px
+	.ui-slider
+		margin: 0 5px 
+.input-wrap_location
+	.ui-multiselect	
+		padding-right: 195px
+		+text-overflow
+		&:after
+			right: 190px
+
+.result__sort
+	border-top: 1px solid $border_l 
+	background: $light 
+	+fb
+	font-size: 13px
+	color: #808080 
+	.result__in
+		display: table
+		padding: 0
+		div
+			display: table-cell
+			padding: 20px 0 
+			vertical-align: middle
+		.result__sort-item1
+			padding-left: 24px
+			width: 217px
+		.result__sort-item2
+			width: 200px
+		.result__sort-item3
+			width: 200px	
+		.result__sort-item4
+			text-align: center
+	.fa  
+		color: $blue 
+		
+.job
+	position: relative
+	border-top: 1px solid $border_l 
+	font-size: 12px
+	+arial
+	color: $dark 
+	+tr
+	&:before
+		content: ""
+		position: absolute
+		left: -17px
+		top: 24px
+		opacity: 0 
+		visibility: hidden
+		+s(arr-shadow-gray-l) 
+		+tr
+	&:hover
+		background: $light 
+		&:before
+			opacity: 1
+			visibility: visible
+	a
+		color: $blue
+.job__in
+	padding: 15px 0 21px 24px
+	width: 722px
+	+box
+	+clr
+.job__main
+	position: relative
+	float: left
+	width: 387px
+	+box
+	.btn-stump
+		position: absolute
+		top: -7px
+		right: 7px
+.job__title
+	margin-bottom: 11px
+	width: 335px
+	a
+		+fb
+		font-size: 18px 
+.job__categ
+	display: block
+	font-style: italic
+	font-size: 12px
+	color: #808080 
+.job__descr
+	margin: 0 0 13px 
+.job__address
+	margin: 13px 0 0
+	.fa
+		margin-right: 11px
+		color: $blue 
+		font-size: 16px
+.job__employer
+	float: left
+	width: 127px
+	text-align: center
+	.rating
+		margin-bottom: 9px
+.job__employer-name
+	margin-bottom: 13px
+	text-align: center
+	max-width: 90%
+.job__info
+	overflow: hidden
+	padding-left: 22px
+	text-align: right
+	.fa
+		font-size: 16px
+	.fa-bolt
+		color: $rose 
+.job__attr
+	margin-top: 10px
+	text-align: left
+	.fa
+		float: left
+		margin-right: 14px
+	div
+		overflow: hidden
+		
+.job-more
+	display: block
+	padding: 17px 0 
+	border-top: 1px solid $border_l 
+	text-align: center
+	.fa
+		font-size: 43px
+		color: #808080 
