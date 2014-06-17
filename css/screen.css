@@ -522,7 +522,7 @@ html.intro-page body { background: whitesmoke; overflow: hidden; }
 .result__scroll::-webkit-scrollbar-thumb { background: #00b4ff; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; }
 .result__scroll::-webkit-scrollbar-track-piece { -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; }
 
-.result__top { padding: 13px 0; background: whitesmoke; border-bottom: 1px solid #d1d1d1; }
+.result__top { padding: 13px 0 0; background: whitesmoke; border-bottom: 1px solid #d1d1d1; }
 .result__top .show-filter { display: none; }
 
 .result__in { padding-left: 24px; width: 722px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
@@ -540,7 +540,7 @@ html.intro-page body { background: whitesmoke; overflow: hidden; }
 .input-wrap_location .ui-multiselect { padding-right: 195px; overflow: hidden; -ms-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; }
 .input-wrap_location .ui-multiselect:after { right: 190px; }
 
-.result__sort { background: whitesmoke; font-family: "roboto-bold", Arial, sans-serif; font-size: 14px; color: gray; }
+.result__sort { margin-top: 22px; border-top: 1px solid #d1d1d1; background: whitesmoke; font-family: "roboto-bold", Arial, sans-serif; font-size: 14px; color: gray; }
 .result__sort a { font-size: 14px; font-family: "roboto-medium", Arial, sans-serif; }
 .result__sort .result__in { display: table; padding: 0; }
 .result__sort .result__in div { display: table-cell; padding: 18px 0 19px; vertical-align: middle; }
@@ -553,7 +553,7 @@ html.intro-page body { background: whitesmoke; overflow: hidden; }
 .show-filter { font-family: "roboto-bold", Arial, sans-serif; color: #3e3e3e; font-size: 13px; }
 .show-filter .fa { padding-left: 5px; font-size: 18px; vertical-align: middle; }
 
-.job { position: relative; border-top: 1px solid #d1d1d1; font-size: 12px; font-family: Arial, sans-serif; color: #3e3e3e; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
+.job { position: relative; border-bottom: 1px solid #d1d1d1; font-size: 12px; font-family: Arial, sans-serif; color: #3e3e3e; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
 .job:before { content: ""; position: absolute; left: -17px; top: 24px; opacity: 0; visibility: hidden; background: url('../img/icons-s0f54cd02d3.png') 0 -161px no-repeat; width: 17px; height: 15px; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
 .job:hover { background: whitesmoke; }
 .job:hover:before { opacity: 1; visibility: visible; }
@@ -588,7 +588,6 @@ html.intro-page body { background: whitesmoke; overflow: hidden; }
 .job__attr .fa { float: left; margin-right: 14px; }
 .job__attr div { overflow: hidden; }
 
-.job-more { border-top: 1px solid #d1d1d1; }
 .job-more div { display: block; width: 720px; padding: 17px 0; text-align: center; }
 .job-more .fa { font-size: 43px; color: gray; }
 
