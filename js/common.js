@@ -11,13 +11,15 @@ head.ready(function() {
 		//$(".js-select-list").hide();
 		//$(".js-select").removeClass("is-active");
 		$(".js-drop").removeClass("is-active");
+		$(".js-drop-link").removeClass("is-active");
 		//$(".js-item-popup").fadeOut(200);
 		$(".js-window").fadeOut(200);
 	});
 
 	$(".js-drop-link").on("click", function(event){
 		$(this).parents(".js-drop").toggleClass("is-active");
-		event.stopPropagation();f
+		$(this).toggleClass("is-active");
+		event.stopPropagation();
 		return false;
 	});
 

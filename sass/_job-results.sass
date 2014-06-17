@@ -16,7 +16,7 @@
 	.header
 		position: relative
 		z-index: 10
-		height: 71px
+		height: 71px 
 		padding: 0
 		+clr
 .header__left-part
@@ -86,7 +86,7 @@
 .result__top
 	padding: 13px 0 0
 	background: $light 
-	border-bottom: 1px solid $border_l
+	border-bottom: 1px solid $border
 	.show-filter
 		display: none
 .result__in
@@ -125,7 +125,7 @@
 
 .result__sort 
 	margin-top: 22px
-	border-top: 1px solid $border_l 
+	border-top: 1px solid $border 
 	background: $light 
 	+fb
 	font-size: 14px
@@ -133,6 +133,7 @@
 	a
 		font-size: 14px
 		+fm
+		color: $dark 
 	.result__in
 		display: table
 		padding: 0
@@ -164,7 +165,7 @@
 
 .job
 	position: relative
-	border-bottom: 1px solid $border_l 
+	border-bottom: 1px solid $border 
 	font-size: 12px
 	+arial
 	color: $dark 
@@ -183,8 +184,6 @@
 		&:before
 			opacity: 1
 			visibility: visible
-	a
-		color: $blue
 .job__in
 	padding: 15px 0 24px 24px
 	width: 722px
@@ -249,7 +248,7 @@
 		overflow: hidden
 		
 .job-more
-	//border-top: 1px solid $border_l 
+	//border-top: 1px solid $border 
 	div
 		display: block
 		width: 720px
@@ -258,3 +257,148 @@
 	.fa
 		font-size: 43px
 		color: #808080 
+.job-info
+	position: relative
+.job-info__head
+	+clr
+	margin-bottom: 22px
+	.btn-favorite
+		margin-right: 16px
+.job-info__col
+	float: left
+	width: 50%
+	text-align: right
+	&:first-child
+		text-align: left
+.job-info__title
+	font-size: 18px
+	color: $blue
+	+fb
+.job-info__categ
+	font-size: 12px
+	color: #808080
+	+fi 
+
+.job-info__footer
+	margin-top: 24px
+	+clr
+	.map-address
+		float: left
+	.link-hide
+		float: right
+.map-address
+	font-size: 14px
+	+fb
+	span
+		display: inline-block
+		vertical-align: middle
+		margin-right: 27px
+	i
+		display: inline-block
+		margin-right: 9px
+		vertical-align: middle
+		width: 26px
+		height: 26px
+		text-align: center
+		line-height: 26px 
+		font-style: normal
+		font-size: 15px
+		color: #fff 
+		border-radius: 50% 
+		background: $blue 
+		
+.link-hide
+	color: $blue
+	font-size: 12px   
+.map-static
+	position: relative
+	height: 340px
+	overflow: hidden
+	&:before,
+	&:after
+		content: ""
+		position: absolute
+		left: 0
+		right: 0
+		height: 1px
+		z-index: 2
+	&:before
+		top: -2px  
+		+box-shadow(0 0 7px rgba(#000,1))
+	&:after
+		bottom: -2px  
+		+box-shadow(0 0 7px rgba(#000,1))
+		
+.task-info
+	float: right
+	width: 52%
+	font-size: 12px
+	+arial
+.time
+	position: relative
+	margin-bottom: 15px
+	padding-left: 19px
+	font-size: 12px
+	+arial
+	.fa-clock-o
+		position: absolute
+		top: 0
+		left: 0
+		font-size: 16px
+.time__title
+	margin-bottom: 7px
+	font-size: 14px
+	+fb
+	color: $dark
+	.fa
+		font-size: 16px
+.task-info__attr
+	position: relative
+	margin-bottom: 18px
+	padding-left: 19px
+	.fa
+		position: absolute
+		top: 0
+		left: 0
+		font-size: 16px
+	.fa-bolt
+		color: $rose 
+.task-info__links
+	padding-left: 19px
+	li
+		position: relative
+		margin-bottom: 2px
+		padding-right: 30px
+		color: $gray
+	a
+		display: inline-block
+		border-bottom: 1px dashed 
+		color: $gray
+		font-size: 12px 
+		line-height: 1
+		&:hover
+			border-color: transparent 
+	span
+		position: absolute
+		right: 0
+		top: 0
+.author
+	float: left  
+	width: 40%
+	+arial
+	color: $gray 
+	font-size: 12px
+	.rating
+		margin-bottom: 29px  
+.author__name
+	display: inline-block
+	margin: 7px 0 
+	color: $blue 
+.author__title
+	font-size: 14px
+	+fb
+	color: $dark 
+
+.take-job
+	display: block
+	+box

@@ -19,7 +19,7 @@
 		right: -25px
 		bottom: 0
 		height: 1px
-		border-top: 1px dashed $border_l  
+		border-top: 1px dashed $border  
 	&.is-active
 		.form__hidden
 			display: block
@@ -35,6 +35,25 @@
 	.to-center
 		.btn-action
 			margin-top: 50px
+.input-wrap__btn
+	position: absolute
+	bottom: 5px
+	right: 0
+	z-index: 3
+	border-left: 1px solid $border 
+	padding: 0 13px 
+	height: 33px
+	line-height: 33px
+	font-size: 13px
+	color: $gray 
+	span,.fa
+		display: inline-block
+		vertical-align: middle
+	.fa
+		color: $dark
+		font-size: 16px 
+
+
 .input-wrap_half
 	display: inline-block
 	vertical-align: top
@@ -80,7 +99,7 @@
 	+fm
 	background: #fff 
 	color: $dark
-	border: 1px solid $border_l
+	border: 1px solid $border
 	border-radius: 5px 
 	+box-shadow(inset 0 1px 5px rgba(0,0,0,.1))
 	//+tr
@@ -98,7 +117,7 @@
 	  
 	overflow-y: auto
 	overflow-x: hidden 
-	border: 1px solid $border_l
+	border: 1px solid $border
 	border-radius: 5px 
 	+box
 	+box-shadow(inset 0 1px 5px rgba(0,0,0,.1))  

@@ -4,10 +4,8 @@
 	line-height: 1.2
 	color: $dark
 	+arial
-	span
-		//color: $orange 
-	h1,h2,h3,h4,h5,h6   
-		//color: $black
+	p
+		margin-bottom: 9px
 	h1
 		font-size: 24px
 		margin: 32px 0 24px
@@ -64,5 +62,46 @@
 				counter-increment: list2  
 				content: counter(list2) ". "
 
-.main
-	padding: 30px 0 
+.comments-wrap
+	position: relative
+	.all-comments-link
+		margin: 20px 33px 0 0
+.comments-wrap__head
+	padding: 35px 0 23px
+	font-size: 13px
+	color: #808080
+	strong
+		font-size: 14px
+		+fb
+		font-weight: normal
+		color: $dark 
+
+.comment
+	border-bottom: 1px dotted $border
+	margin: 0 33px 
+	padding: 14px 0
+.comment__head
+	+clr
+	margin-bottom: 12px
+	.user
+		float: left
+	.user__img
+		margin-right: 10px
+.comment__meta
+	float: right
+	padding-top: 10px
+	font-size: 12px
+	+arial
+	color: $gray 
+.comment__body
+	padding-left: 71px
+.to-right
+	text-align: right
+.all-comments-link
+	display: inline-block
+	font-size: 12px
+	color: $gray
+	border-bottom: 1px dotted  
+	&:hover
+		border-color: transparent 
+		
