@@ -371,10 +371,10 @@ head.ready(function() {
 			$(this).parents(".js-result").removeClass("has-fixed-filter has-not-filters");
 		}
     }); 
- //    $("body").on("click",".js-show-filter",function(){
-	// 	$(this).parents(".js-result").removeClass("has-not-filters");
-	// 	return false;
-	// });
+    $("body").on("click",".js-show-filter",function(){
+		$(this).parents(".js-result").removeClass("has-not-filters");
+		return false;
+	});
 	$(window).scroll(function(){
     	scroller();
     }); 

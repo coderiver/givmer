@@ -512,9 +512,9 @@ html.intro-page body { background: whitesmoke; overflow: hidden; }
 
 .result { position: absolute; top: 71px; right: 0; left: 43%; z-index: 2; bottom: 0; -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.4); -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.4); box-shadow: 0 0 6px rgba(0, 0, 0, 0.4); }
 .result.has-fixed-filter .result__top { position: absolute; top: 0; left: 0; right: 0; z-index: 10; }
-.result.has-not-filters .is-long { display: none; }
+.result.has-fixed-filter .result__scroll { padding-top: 70px; }
+.result.has-not-filters .is-hidden { display: none; }
 .result.has-not-filters .input-wrap { margin-bottom: 0; }
-.result.has-not-filters .result__scroll { padding-top: 70px; }
 .result.has-not-filters .show-filter { display: block; }
 
 .result__scroll { overflow-x: hidden; overflow-y: auto; background: white; height: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
