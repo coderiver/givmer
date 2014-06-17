@@ -688,9 +688,15 @@
 
 .user-box
 	position: relative
+	margin-bottom: 10px
 	width: 310px
 	border-radius: 5px 
-	+box-shadow(0 0 6px rgba(#000,.2))
+	border: 1px solid $border
+	+tr
+	&:hover
+		+box-shadow(0 0 6px rgba(#000,.2))
+		.user-box__top
+			background: #fff 
 	&.has-cloud
 		&:before
 			content: ""
@@ -698,10 +704,14 @@
 			right: -70px
 			top: -70px
 			+s(clouds) 
+.user-box_white
+	.user-box__top
+		background: #fff 
 .user-box__top
 	border-bottom: 1px solid $border  
-	padding: 10px 15px
-	background: #fff  
+	padding: 10px 15px 
+	background: $light
+	+tr
 	border-radius: 5px 5px 0 0
 .user-box__bottom
 	border-top: 1px solid #fff 
@@ -714,7 +724,7 @@
 .user__img
 	display: inline-block
 	vertical-align: middle
-	margin-right: 18px
+	margin-right: 10px
 	width: 58px
 	height: 58px
 	border-radius: 0 0 5px 5px
@@ -729,8 +739,13 @@
 	display: inline-block
 	vertical-align: middle
 	white-space: normal
-	.rating
-		margin-top: 7px
+.user__meta
+	.rating,
+	.status
+		display: inline-block
+		vertical-align: middle
+	.status
+		margin-left: 4px
 .user__name
 	color: $blue
 	font-size: 16px
