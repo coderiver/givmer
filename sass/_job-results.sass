@@ -310,6 +310,11 @@
 .link-hide
 	color: $blue
 	font-size: 12px   
+	&.is-active
+		.fa
+			+rotate(180)
+	.fa
+		+tr
 .map-static
 	position: relative
 	height: 340px
@@ -408,8 +413,7 @@
 	&:hover	
 		color: #fff 
 		.take-job__text
-			background: $rose 
-			+g(#fe0066,#d50055)
+			color: $border
 	&:active
 		position: relative
 		top: 1px

@@ -127,7 +127,10 @@
 								<span><i>A</i>Masina 22, Tallinn, Eesti </span>
 								<span><i>B</i>Mahtra 39, Tallinn, Eesti	</span>
 							</div>
-							<a href="#" class="link-hide js-map-key">Скрыть карту <i class="fa fa-angle-up"></i></a>
+							<a href="#" class="link-hide js-map-key">
+							<span class="js-map-key-on">Скрыть карту</span>
+							<span class="js-map-key-off" hidden>Раскрыть карту</span>
+							<i class="fa fa-angle-up"></i></a>
 						</div>
 					</div>
 				</div>
@@ -154,9 +157,9 @@
 									<i class="fa fa-bolt"></i>
 									<div>Cрочное задание</div>
 								</div>
-								<ul class="task-info__links">
-									<li><a href="#">Комментарии</a><span>(7)</span></li>
-									<li><a href="#">Кандидаты</a><span>(15)</span></li>
+								<ul class="task-info__links js-nav">
+									<li><a href="js-ancor-comments">Комментарии</a><span>(7)</span></li>
+									<li><a href="js-ancor-cand">Кандидаты</a><span>(15)</span></li>
 								</ul>
 							</div>
 						</div>
@@ -177,7 +180,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="map-static">
+		<div class="map-static js-map">
 			<div id="map-canvas" class="google-map"></div>
 			<script>
 			  	function initialize() {
@@ -193,8 +196,8 @@
 				      	mapTypeId: google.maps.MapTypeId.ROADMAP
 				    }
 				    var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-				    var image = 'img/marker.png';
-				    var image_act = 'img/marker-active.png';
+				    var image_a = 'img/marker-a.png';
+				    var image_b = 'img/marker-b.png';
 				    var myLatLng1 = new google.maps.LatLng(59.437094, 24.741932);
 				   	var myLatLng2 = new google.maps.LatLng(59.439713, 24.747082);
 				   	// var myLatLng3 = new google.maps.LatLng(40.739322, -73.993279);
@@ -204,13 +207,13 @@
 					      position: myLatLng1,
 					      map: map,
 					      title: 'Uluru (Ayers Rock)', 
-					      icon: image
+					      icon: image_a
 					});
 					var marker2 = new google.maps.Marker({
 					      position: myLatLng2,
 					      map: map,
 					      title: 'Uluru (Ayers Rock)', 
-					      icon: image_act
+					      icon: image_b
 					});
 					// var marker3 = new google.maps.Marker({
 					//       position: myLatLng3,
@@ -273,18 +276,57 @@
 			<div class="l-cols-wrap"> 
 				<div class="l-col1">
 					<div class="l-col1__in">
-						<a href="#" class="btn-key is-liquid">Задать вопрос автору задания</a>
-						<div class="comments-wrap">
+						<a href="#" class="btn-key is-liquid js-ask-btn">Задать вопрос автору задания</a>
+						<div class="comments-wrap js-ask">
 							<div class="comments-wrap__head">
-								<strong>Публичные комментарии:</strong>
-								<p>жто публичные комментарии. Их видят все пользователи</p>
+								<strong>Задать вопрос автору задания:</strong>
+								<p>это личные сообщения. Их видите только вы иавтор задания</p>
 							</div>
 							<div class="input-wrap input-wrap_comment">
-								<input type="text" class="input" placeholder="напишите свaой комментарий...">
-								<a href="#" class="input-wrap__btn">
-									<i class="fa fa-level-down"></i>
-								</a>
+								<div class="textarea">
+									<textarea class="js-textarea" placeholder="напишите свой комментарий..."></textarea>
+									<span class="textarea__counter js-char-counter" data-max="500">500</span>
+								</div>
 							</div>
+							<button class="btn-action is-liquid"><i class="fa fa-level-down"></i>Отправить</button>
+							<div class="comment">
+								<div class="comment__head">
+									<div class="user">
+										<a class="user__img" href="#">
+											<img src="http://lorempixel.com/54/54" alt="">
+										</a>
+										<div class="user__info">
+											<a href="#" class="user__name">Леонид Корабельников </a>
+											<div class="rating">
+												<div class="rating__in js-rating-small" data-score="3"></div>
+												<span class="rating__text">(119)</span>
+											</div>
+										</div>
+									</div>
+									<div class="comment__meta">
+										20 минут назад
+									</div>
+								</div>
+								<div class="comment__body">
+									<div class="quote">
+										<i class="fa fa-quote-left"></i>
+										Я всегда был не против подработать. Я передвигаюсь постоянно на машине, поэтому часто беру на Givmer задания по курьерским услугам. Выполняю по несколько заданий в день, и за месяц у меня получается неплохой дополнительный заработок...
+									</div>	
+								</div>
+							</div>
+						</div>
+						<div class="comments-wrap" data-index="js-ancor-comments">
+							<div class="comments-wrap__head">
+								<strong>Публичные комментарии:</strong>
+								<p>это публичные комментарии. Их видят все пользователи</p>
+							</div>
+							<div class="input-wrap input-wrap_comment">
+								<div class="textarea">
+									<textarea class="js-textarea" placeholder="напишите свой комментарий..."></textarea>
+									<span class="textarea__counter js-char-counter" data-max="500">500</span>
+								</div>
+							</div>
+							<button class="btn-action is-liquid"><i class="fa fa-unlock-alt"></i>Отправить</button>
 							<div class="comment">
 								<div class="comment__head">
 									<div class="user">
@@ -341,7 +383,7 @@
 				</div>
 				<div class="l-col2 sidebar sidebar_with-bg">	
 					<div class="sidebar__item">
-						<div class="candidates">
+						<div class="candidates" data-index="js-ancor-cand">
 							<div class="candidates__title">Кандидаты на выполнене этого задания:</div>
 							<div class="user-box">
 								<div class="user-box__top">
@@ -440,6 +482,88 @@
 	</div>
 </footer>
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+<div class="overlay js-overlay" style="display:block">
+	<div class="popup popup_white-bg popup_payment js-popup js-popup-greeting">
+		<div class="popup__title">Выберите сумму, на которую пополнить ваш счет</div>
+		<div class="popup__main">
+			<div class="cards-wrap">
+				<div class="card js-card">
+					<div class="card__in">
+						<div class="card__main">
+							<div class="card__price">1<sub>€</sub></div>
+						</div>
+						<div class="card__footer">
+							<div>
+								<span>Вы сможете выполнить <br> 1 задание </span>
+								и самостоятельно привлекать исполнителей в ваши задания!
+							</div>
+						</div>
+					</div>
+					<i class="card__icon"></i>
+				</div>
+				<div class="card is-active js-card">
+					<div class="card__in">
+						<div class="card__main">
+							<div class="card__price">3<sub>€</sub></div>
+							<div class="card__pop">самый популярный выбор</div>
+						</div>
+						<div class="card__footer">
+							<div>
+								<span>Вы сможете выполнить <br> 3 задание </span>
+								и самостоятельно привлекать исполнителей в ваши задания!
+							</div>
+						</div>
+					</div>
+					<i class="card__icon"></i>
+				</div>
+				<div class="card js-card">
+					<div class="card__in">
+						<div class="card__main">
+							<div class="card__price">5<sub>€</sub></div>
+						</div>
+						<div class="card__footer">
+							<div>
+								<span>Вы сможете выполнить <br> 5 задание </span>
+								и самостоятельно привлекать исполнителей в ваши задания!
+							</div>
+						</div>
+					</div>
+					<i class="card__icon"></i>
+				</div>
+			</div>
+		</div>
+		<div class="popup__payment">
+			<div class="popup__title">Выберите способ оплаты:</div>
+			<div class="payment">
+				<a href="#" class="payment__link payment_mod">
+					<img src="img/pay1.png" alt="">
+					<i class="fa fa-check-circle"></i>
+				</a>
+				<a href="#" class="payment__link">
+					<img src="img/pay2.png" alt="">
+					<i class="fa fa-check-circle"></i>
+				</a>
+				<a href="#" class="payment__link">
+					<img src="img/pay3.png" alt="">
+					<i class="fa fa-check-circle"></i>
+				</a>
+				<a href="#" class="payment__link">
+					<img src="img/pay4.png" alt="">
+					<i class="fa fa-check-circle"></i>
+				</a>
+				<a href="#" class="payment__link payment_mod">
+					<img src="img/pay5.png" alt="">
+					<i class="fa fa-check-circle"></i>
+				</a>
+				<a href="#" class="payment__link">
+					<img src="img/pay6.png" alt="">
+					<i class="fa fa-check-circle"></i>
+				</a>
+			</div>
+		</div>
+		<button class="btn-close js-popup-close"></button>
+	</div>
+</div>
 <div class="window window_lang js-window js-window-lang">
 	<div class="window__title">На какие языки вы хотите внести перевод?.</div>
 	<div class="window__descr">Если вы не введете перевод на другие языки, то пользователи смогут перевести текст автоматически</div>
@@ -503,3 +627,4 @@
 </div>
 </body>
 </html>
+

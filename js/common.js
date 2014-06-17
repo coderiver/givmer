@@ -381,6 +381,30 @@ head.ready(function() {
     	scroller();
     }); 
 
-
+	$(".js-map-key").on("click",function(){
+		if ($(this).hasClass("is-active")) {
+			$(this).removeClass("is-active")
+			$(this).find("span").removeAttr("hidden");
+			$(this).find(".js-map-key-off").attr("hidden","");
+			$(".js-map").slideDown(200);
+		}
+		else {
+			$(this).addClass("is-active")
+			$(this).find("span").removeAttr("hidden");
+			$(this).find(".js-map-key-on").attr("hidden","");
+			$(".js-map").slideUp(200);
+		}
+		return false;
+	});
+	$(".js-ask").hide();
+	$(".js-ask-btn").on("click",function(){
+		$(".js-ask").slideToggle(200);
+		return false;
+	});
+	$(".js-card").on("click",function(){
+		$(".js-card").removeClass("is-active");
+		$(this).addClass("is-active");
+		return false;
+	});
 	
 });
