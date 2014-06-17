@@ -67,6 +67,7 @@ a:hover { color: #0096d4; }
 .header .btn-action { padding: 12px 42px 13px; }
 
 .logo { display: inline-block; color: #4d4d4d; font-family: "robotocondensed-bold", Arial, sans-serif; font-size: 32px; }
+.logo:hover { color: #4d4d4d; }
 .logo span { color: #00b4ff; }
 .logo em { font-style: normal; font-family: "roboto-light", Arial, sans-serif; }
 
@@ -111,7 +112,7 @@ a:hover { color: #0096d4; }
 .notific { display: inline-block; vertical-align: middle; width: 20px; height: 20px; background: #ff0066; border-radius: 50%; text-align: center; line-height: 20px; font-size: 13px; font-family: "roboto-bold", Arial, sans-serif; color: white; }
 .notific.is-blue { background: #00b4ff; }
 
-.footer { position: relative; min-height: 60px; overflow: hidden; border-top: 1px solid #d1d1d1; padding: 17px 0 12px; background: white; font-size: 12px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.footer { position: relative; min-height: 60px; overflow: hidden; border-top: 1px solid #d1d1d1; padding: 24px 0 12px; background: white; font-size: 12px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .footer .l-container { *zoom: 1; }
 .footer .l-container:after { content: " "; display: table; clear: both; }
 
@@ -678,7 +679,7 @@ html.intro-page body { background: whitesmoke; overflow: hidden; }
 
 .author__title { font-size: 14px; font-family: "roboto-bold", Arial, sans-serif; color: #3e3e3e; }
 
-.take-job { display: block; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.take-job { display: block; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; background: #3e3e3e; color: white; }
 
 .slick-slider { position: relative; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: none; touch-action: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
