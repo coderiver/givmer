@@ -143,7 +143,7 @@
 								<div class="author__title">Автор задания:</div>
 								<a href="#" class="author__name">Andrei Nikonorovichus</a>
 								<div class="rating">
-									<div class="rating__in js-rating-small" data-score="3"></div>
+									<div class="rating__in js-rating-small-read" data-score="3"></div>  
 									<span class="rating__text">(119)</span>
 								</div>
 								<p>Задание создано:  </p>
@@ -166,9 +166,11 @@
 							</div>
 						</div>
 						<div class="set-price">
-							<input type="text" class="input" placeholder="0">
-							<span>€</span>
-							<input type="submit" class="set-price__btn" value="Предложить цену">
+							<form>
+								<input type="text" class="input js-digits-only" placeholder="0" name="sum">
+								<span>€</span>
+								<input type="submit" class="set-price__btn" value="Предложить цену">
+							</form>
 							<div class="window window_price-error js-window" style="display:block">
 								<div class="window__title">На вашем счете недостаточно средств</div>
 								<div class="window__descr"

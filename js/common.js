@@ -435,5 +435,83 @@ head.ready(function() {
             
         });
     }
+
+ //    function validate() {
+	// 	$(".js-validate").each(function(){
+	// 		if ($(this).length > 0) {
+	// 			$(this).validate({
+	// 				errorClass: "has-error",
+	// 				rules: {
+	// 					sum: {
+	// 						minlength: 1,
+	// 						digit: true,
+	// 						required: true,
+	// 					},
+	// 					firstname: "required",
+	// 					lastname: "required",
+	// 					username: {
+	// 						required: true,
+	// 						minlength: 2
+	// 					},
+	// 					password: {
+	// 						required: true,
+	// 						minlength: 5
+	// 					},
+	// 					confirm_password: {
+	// 						required: true,
+	// 						minlength: 5,
+	// 						equalTo: "#password"
+	// 					},
+	// 					email: {
+	// 						required: true,
+	// 						email: true
+	// 					},
+	// 					tel: {
+	// 						required: true,
+	// 						minlength: 2,
+	// 					},
+	// 					address: {
+	// 						minlength: 2
+	// 					},
+	// 					message: {
+	// 						minlength: 4
+	// 					}
+	// 				},
+	// 				messages: {
+	// 					sum: "Только цыфры",
+	// 					firstname: "Вас так зовут?",
+	// 					lastname: "У вас такая фамилия?",
+	// 					password: {
+	// 						required: "Пароли не совпадают",
+	// 						minlength: "Минимум 5 символов"
+	// 					},
+	// 					confirm_password: {
+	// 						required: "Пароли не совпадают",
+	// 						minlength: "Минимум 5 символов",
+	// 						equalTo: "Пароли не совпадают"
+	// 					},
+	// 					email: "Неверный формат",
+	// 					address: "Это Ваш адрес?",
+	// 					tel: {
+	// 						required: "Телефон с ошибкой",
+	// 						phoneUS: "Please enter a valid phone number: (e.g. 19999999999 or 9999999999)"
+	// 					},
+	// 					message: {
+	// 						required: "Это Ваш вопрос?",
+	// 						minlength: "Это Ваш вопрос?"
+	// 					}
+	// 				}
+	// 			});
+	// 		}
+	// 	});
+	// }
+		
+	// validate();
+
+	$(".js-digits-only").keypress(function (e) {
+	    if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+	        return false;
+	    }
+   	});
 	
 });
