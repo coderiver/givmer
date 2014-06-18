@@ -269,17 +269,17 @@ head.ready(function() {
 		return false;
 	});
 
-	$(".js-radio input").on("change",function(){
-		if ($(this).parent().attr("data-radio") == 1) {
-			$(this).parents(".js-radio-group").addClass("is-active");
-		}
-		if ($(this).parent().attr("data-radio") == 0) {
-			$(this).parents(".js-radio-group").removeClass("is-active");
-		} 
-	}); 
+	// $(".js-radio input").on("change",function(){
+	// 	if ($(this).parent().attr("data-radio") == 1) {
+	// 		$(this).parents(".js-radio-group").addClass("is-active");
+	// 	}
+	// 	if ($(this).parent().attr("data-radio") == 0) {
+	// 		$(this).parents(".js-radio-group").removeClass("is-active");
+	// 	} 
+	// }); 
 	$(".js-check input").on("change",function(){
-		var checkGroup = $(this).parents(".js-check-group");
-		var checkHidden = checkGroup.find(".js-check-hidden");
+		var checkGroup = $(this).parents(".js-radio-group");
+		var checkHidden = checkGroup.find(".js-radio-hidden");
 		if ($(this).is(":checked")) {
 			checkHidden.removeAttr("hidden");
 			$(this).parent().addClass("is-checked");
@@ -288,6 +288,20 @@ head.ready(function() {
 			checkHidden.attr("hidden","");
 			$(this).parent().removeClass("is-checked");
 		}
+	}); 
+	$(".js-radio input").on("change",function(){
+		var radio = $(this).parents(".js-radio");
+		var radioGroup = $(this).parents(".js-radio-group");
+		var radioHidden = radio.find(".js-radio-hidden");
+		if ($(this).is(":checked")) {
+			//radioHidden.removeAttr("hidden");
+			radioGroup.find(".js-radio").removeClass("is-checked");
+			radio.addClass("is-checked");
+		}
+		// else {
+		// 	//radioHidden.attr("hidden","");
+		// 	radioGroup.removeClass("is-checked");
+		// }
 	}); 
 
 	$(".js-remove-btn").on("click",function(){

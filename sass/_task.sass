@@ -1,6 +1,7 @@
 .categ
 	position: relative 
 	float: left
+	margin: 0 8px 8px 0 
 	padding: 22px 10px 0
 	width: 184px
 	height: 184px
@@ -15,17 +16,19 @@
 	&:hover
 		+box-shadow(0 0 6px rgba(#000,.15))
 		&:before
-			+gray-zero
-			opacity: 1
+			+sp(cat-angle-act)
+		@for $i from 1 through 12
+			.icon-cat-#{$i}
+				+s(cat#{$i}-act)
 	&:before
 		content: ""
 		position: absolute
 		top: 0
 		left: 0
-		+s(cat-angle-act)
-		+gray
-		+tr
-		opacity: 0.2
+		+s(cat-angle)
+		// +gray
+		// +tr
+		// opacity: 0.2
 	&:after
 		content: "\f058"
 		position: absolute
@@ -34,12 +37,17 @@
 		z-index: 2
 		font-size: 20px
 		color: #fff 
+		
 .categ__icon
 	display: block
 	height: 114px 
 	i
 		display: inline-block
+	@for $i from 1 through 12
+		.icon-cat-#{$i}
+			+s(cat#{$i})
 .categ__title
 	font-size: 14px
-	color: $gray
+	color: $dark
 	+fb 
+

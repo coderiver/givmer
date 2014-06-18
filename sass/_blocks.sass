@@ -399,154 +399,7 @@
 	font-size: 18px
 	text-shadow: 0 1px 0 #fff
 		
-.radio-group
-	padding-left: 13px
-.radio-wrap
-	margin-bottom: 10px
-.radio
-	display: inline-block
-	position: relative
-	cursor: pointer
-	white-space: nowrap
-	font-size: 0
-	&.is-custom
-		.fa
-			color: $green
-	input
-		display: inline-block
-		vertical-align: middle
-		width: 17px
-		height: 17px
-		opacity: 0
-		visibility: hidden
-		&:checked
-			+ .fa
-				&:after
-					display: none
-				&:before
-					display: block
-	span	
-		display: inline-block
-		vertical-align: middle
-		position: relative
-		margin: 0
-		padding-left: 14px
-		font-size: 13px
-		+fr
-		white-space: normal
-	.fa
-		position: relative
-		display: inline-block
-		margin-left: -17px
-		vertical-align: middle
-		font-size: 20px
-		width: 17px
-		height: 17px
-		color: $blue 
-		&:after
-			content: ""
-			position: absolute
-			left: 0
-			top: 0
-			border: 1px solid $border
-			border-radius: 50% 
-			width: 17px
-			height: 17px
-			background: $light	
-			+box-shadow(inset 0 0 5px rgba(0,0,0,.1))
-			+box
-		&:before
-			display: none
 
-.checkbox-wrap
-	margin-bottom: 10px
-.checkbox
-	display: inline-block
-	position: relative
-	cursor: pointer
-	white-space: nowrap
-	font-size: 0
-	input
-		display: inline-block
-		vertical-align: middle
-		width: 18px
-		height: 18px
-		opacity: 0
-		visibility: hidden
-		&:checked
-			+ .fa
-				&:after
-					display: none
-				&:before
-					display: block
-	span	 
-		display: inline-block
-		vertical-align: middle
-		position: relative
-		margin: 0
-		padding-left: 13px
-		font-size: 13px
-		+fr
-		white-space: normal
-	a
-		display: inline-block
-		line-height: 1
-		color: $blue
-		border-bottom: 1px dashed	
-	.fa
-		position: relative
-		display: inline-block
-		margin-left: -17px
-		vertical-align: middle
-		font-size: 20px
-		width: 17px
-		height: 17px
-		color: $blue 
-		&:after
-			content: ""
-			position: absolute
-			left: 0
-			top: 0
-			border: 1px solid $border
-			width: 17px
-			height: 17px
-			border-radius: 3px 
-			background: #fff
-			+box-shadow(inset 0 0 5px rgba(0,0,0,.1)) 
-			+box
-		&:before
-			display: none
-.checkbox_link
-	&.is-checked
-		em
-			color: $dark 
-			border-color: transparent 
-	em
-		display: inline-block
-		line-height: 1
-		font-style: normal
-		color: $blue
-		border-bottom: 1px dashed	
-.checkbox_medium
-	span
-		padding-top: 1px
-		font-size: 14px
-		+fm	
-.checkbox_simple
-	.fa
-		font-size: 14px
-		&:before
-			position: relative
-			z-index: 2
-			left: 2px
-			top: 1px
-	input
-		&:checked
-			+ .fa
-				&:after
-					display: block
-				&:before
-					display: block
 .rate
 	position: relative
 	height: 8px
@@ -869,3 +722,30 @@
 	&:active
 		position: relative
 		top: 1px
+		
+.btn-del
+	position: relative
+	+fa
+	font-size: 20px
+	color: $dark
+	background: none 
+	&:before
+		content: "\f057"
+	&:hover
+		color: $rose 
+	&:active
+		top: 1px
+.btn-add
+	display: inline-block
+	position: relative
+	font-size: 13px
+	color: $blue
+	+tr
+	background: none 
+	.fa
+		margin-right: 3px
+	&:hover
+		color: $blue_d  
+	&:active
+		top: 1px
+		

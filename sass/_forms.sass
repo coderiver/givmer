@@ -31,7 +31,8 @@
 .input-wrap
 	position: relative
 	+clr
-	
+	.radio-wrap
+		padding-left: 13px
 	.to-center
 		.btn-action
 			margin-top: 50px
@@ -58,8 +59,8 @@
 .input-wrap_half
 	display: inline-block
 	vertical-align: top
-	margin-left: 7px
-	width: 384px
+	margin-left: 1%
+	width: 49.5%
 	&:first-child
 		margin-left: 0
 	.input
@@ -113,11 +114,71 @@
 		color: #808080 
 	&.has-error
 		border-color: $rose 
-
+.input_with-counter
+	padding-right: 50px
+.input-wrap__counter
+	position: absolute
+	right: 22px
+	bottom: 14px
+	color: $blue
+	z-index: 2
+	font-size: 13px
+	+fb
+	&.is-limit
+		color: $rose 
+		
+.input-date,
+.input-time
+	position: relative
+	display: inline-block
+	margin-right: 12px
+	vertical-align: middle
+	.input
+		padding-left: 17px
+.input-date
+	width: 143px 
+	.input
+		padding-right: 35px
+	.fa-calendar-o
+		position: absolute
+		top: 50%
+		margin-top: -9px
+		right: 17px
+		color: $gray
+		z-index: 3
+		font-size: 18px 
+.input-time
+	width: 93px 
+	.input
+		padding-right: 30px
+	.ui-multiselect
+		padding: 0 20px 0 17px
+		&:after
+			right: 17px 
+			+arr(8,6,$gray,b)
+.input-address
+	margin-bottom: 11px
+	padding-left: 13px
+	.map-address
+		float: none
+		span
+			margin-right: 8px
+	.input-address__body,
+	.map-address,
+	.btn-del
+		display: inline-block
+		vertical-align: middle
+	.btn-del
+		margin-left: 11px
+	.btn-add
+		margin-left: 43px
+.input-address__body
+	position: relative
+	width: 676px
 .textarea
 	position: relative
 	padding: 8px 10px 8px 20px
-	  
+	background: #fff 
 	overflow-y: auto
 	overflow-x: hidden 
 	border: 1px solid $border
@@ -237,3 +298,175 @@
 	width: 77px
 	.ui-multiselect
 		padding-left: 15px
+		
+.form-section
+	border-top: 1px dashed $border 
+	padding: 25px 0 
+	background: $light 
+.form-col
+	width: 768px
+
+.radio-group
+	padding-left: 13px
+.radio-wrap
+	margin-bottom: 10px
+.radio
+	display: inline-block
+	position: relative
+	cursor: pointer
+	white-space: nowrap
+	font-size: 0
+	&.is-custom
+		.fa
+			color: $green
+	input
+		display: inline-block
+		vertical-align: middle
+		width: 17px
+		height: 17px
+		opacity: 0
+		visibility: hidden
+		&:checked
+			+ .fa
+				&:after
+					display: none
+				&:before
+					display: block
+	span	
+		display: inline-block
+		vertical-align: middle
+		position: relative
+		margin: 0
+		padding-left: 14px
+		font-size: 13px
+		+fr
+		white-space: normal
+	.fa
+		position: relative
+		display: inline-block
+		margin-left: -17px
+		vertical-align: middle
+		font-size: 20px
+		width: 17px
+		height: 17px
+		color: $blue 
+		&:after
+			content: ""
+			position: absolute
+			left: 0
+			top: 0
+			border: 1px solid $border
+			border-radius: 50% 
+			width: 17px
+			height: 17px
+			background: $light	
+			+box-shadow(inset 0 0 5px rgba(0,0,0,.1))
+			+box
+		&:before
+			display: none
+.radio_link
+	em
+		color: $blue
+		border-bottom: 1px dashed 
+		font-style: normal
+.is-checked  
+	.radio_link
+		em
+			color: $dark
+			border-color: transparent 
+	.radio-extend
+		&.is-hidden
+			display: block
+.radio-extend
+	padding: 13px 0 13px 30px
+	&.is-hidden
+		display: none
+.checkbox-wrap
+	margin-bottom: 10px
+.checkbox
+	display: inline-block
+	position: relative
+	cursor: pointer
+	white-space: nowrap
+	font-size: 0
+	input
+		display: inline-block
+		vertical-align: middle
+		width: 18px
+		height: 18px
+		opacity: 0
+		visibility: hidden
+		&:checked
+			+ .fa
+				&:after
+					display: none
+				&:before
+					display: block
+	span	 
+		display: inline-block
+		vertical-align: middle
+		position: relative
+		margin: 0
+		padding-left: 13px
+		font-size: 13px
+		+fr
+		white-space: normal
+	a
+		display: inline-block
+		line-height: 1
+		color: $blue
+		border-bottom: 1px dashed	
+	.fa
+		position: relative
+		display: inline-block
+		margin-left: -17px
+		vertical-align: middle
+		font-size: 20px
+		width: 17px
+		height: 17px
+		color: $blue 
+		&:after
+			content: ""
+			position: absolute
+			left: 0
+			top: 0
+			border: 1px solid $border
+			width: 17px
+			height: 17px
+			border-radius: 3px 
+			background: #fff
+			+box-shadow(inset 0 0 5px rgba(0,0,0,.1)) 
+			+box
+		&:before
+			display: none
+.checkbox_link
+	&.is-checked
+		em
+			color: $dark 
+			border-color: transparent 
+	em
+		display: inline-block
+		line-height: 1
+		font-style: normal
+		color: $blue
+		border-bottom: 1px dashed	
+.checkbox_medium
+	span
+		padding-top: 1px
+		font-size: 14px
+		+fm	
+.checkbox_simple
+	.fa
+		font-size: 14px
+		&:before
+			position: relative
+			z-index: 2
+			left: 2px
+			top: 1px
+	input
+		&:checked
+			+ .fa
+				&:after
+					display: block
+				&:before
+					display: block
