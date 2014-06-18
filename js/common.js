@@ -406,5 +406,14 @@ head.ready(function() {
 		$(this).addClass("is-active");
 		return false;
 	});
+	$(".js-payment-radio").on("click",function(){
+		$(".js-payment-radio").removeClass("is-active");
+		$(this).addClass("is-active");
+		//$(this).find("input").trigger("click");
+		return false;
+
+	});
+
+  
 	
 });

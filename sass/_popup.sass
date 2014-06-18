@@ -352,12 +352,24 @@
 		+fm
 
 .popup__payment
+	position: relative
 	border-top: 1px solid $border 
 	padding: 34px 0 40px 
 	background: $light 
+	
+.payment
+	margin: 0 auto
+	width: 600px 
+	font-size: 0
+	.btn-action
+		display: block
+		margin: 25px auto 0
+		width: 350px
 .payment__link
+	position: relative
 	display: inline-block
 	vertical-align: middle
+	margin: 0 8px 8px 0 
 	height: 64px
 	line-height: 64px
 	width: 182px
@@ -366,13 +378,60 @@
 	background: #fff
 	border-radius: 10px 
 	border: 1px solid $border
+	+fa
+	&.is-active
+		&:before,
+		&:after
+			display: block
+	&:before
+		display: none
+		position: absolute
+		top: 4px
+		left: 4px
+		z-index: 2
+		font-size: 20px
+		color: $dark 
+		content: "\f058"
+	&:after
+		display: none
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+		+s(pay-act) 
 	img
 		vertical-align: middle
 		max-width: 100%
 		max-height: 100%
-	.fa
-		display: none
-		color: $dark 
-.payment_mod
+	// .fa
+	// 	//display: none
+	// 	color: $dark   
+	// 	font-size: 20px
+.payment_mod    
 	line-height: 1
 	text-align: left
+	
+.popup__badge
+	position: absolute
+	top: 0
+	left: 0
+	//font-size: 14px
+	//color: #fff
+	// +s(badge)
+	// span
+	// 	position: absolute
+	// 	top: 107px  
+	// 	left: -37px
+	// 	width: 265px
+	// 	height: 50px
+	// 	line-height: 50px
+	// 	+gpu
+	// 	margin: -89px 0 0 17px
+	// 	-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865482, M12=0.7071067811865466, M21=-0.7071067811865466, M22=0.7071067811865482, SizingMethod='auto expand')"
+	// 	+rotate(-45)
+	// 	-webkit-transform-origin: center
+	// 	transform-origin: center
+  
+	.fa
+		margin-right: 7px
+		font-size: 20px

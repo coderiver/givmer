@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="has-open-popup">
 <head>
 	<meta charset="utf-8">
 	<title>job result with map</title>
@@ -535,31 +535,35 @@
 		<div class="popup__payment">
 			<div class="popup__title">Выберите способ оплаты:</div>
 			<div class="payment">
-				<a href="#" class="payment__link payment_mod">
+				<a href="#" class="payment__link js-payment-radio payment_mod">
 					<img src="img/pay1.png" alt="">
-					<i class="fa fa-check-circle"></i>
+					<input type="radio" hidden name="radio-pay">
 				</a>
-				<a href="#" class="payment__link">
+				<a href="#" class="payment__link js-payment-radio">
 					<img src="img/pay2.png" alt="">
-					<i class="fa fa-check-circle"></i>
+					<input type="radio" hidden name="radio-pay">
 				</a>
-				<a href="#" class="payment__link">
+				<a href="#" class="payment__link js-payment-radio">
 					<img src="img/pay3.png" alt="">
-					<i class="fa fa-check-circle"></i>
+					<input type="radio" hidden name="radio-pay">
 				</a>
-				<a href="#" class="payment__link">
+				<a href="#" class="payment__link js-payment-radio">
 					<img src="img/pay4.png" alt="">
-					<i class="fa fa-check-circle"></i>
+					<input type="radio" hidden name="radio-pay">
 				</a>
-				<a href="#" class="payment__link payment_mod">
+				<a href="#" class="payment__link js-payment-radio payment_mod is-active">
 					<img src="img/pay5.png" alt="">
-					<i class="fa fa-check-circle"></i>
+					<input type="radio" hidden name="radio-pay" checked>
 				</a>
-				<a href="#" class="payment__link">
+				<a href="#" class="payment__link js-payment-radio">
 					<img src="img/pay6.png" alt="">
-					<i class="fa fa-check-circle"></i>
+					<input type="radio" hidden name="radio-pay">
 				</a>
+				<button class="btn-action">Отправить платеж!</button>
 			</div>
+			<div class="popup__badge">
+				<img src="img/badge-free.png" alt="">
+			</div>				
 		</div>
 		<button class="btn-close js-popup-close"></button>
 	</div>
