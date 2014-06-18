@@ -215,6 +215,29 @@
 	
 .window_lang
 	margin: 26px 0 0 28px 
+.window_inside-parent
+	top: 100%
+	margin-top: 11px
+	+arial
+	&:before
+		right: 102px 
+		top: -12px
+		left: auto
+		+arr(14,12,#fff,t)
+	&:after
+		right: 99px
+		top: -13px
+		left: auto
+		+s(arr-shadow)
+	&.has-centered-arr
+		&:before
+			left: 50%
+			margin-left: -6px
+			right: auto
+		&:after
+			left: 50%
+			margin-left: -11px
+			right: auto
 .window__title
 	margin-bottom: 5px
 	font-size: 14px

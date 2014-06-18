@@ -1,3 +1,20 @@
+.page-head
+	padding: 30px 0 
+	+clr
+.page-head__title
+	float: left
+	max-width: 50%
+	font-size: 18px
+	+fb
+	color: $dark 
+.page-head__opt
+	position: relative
+	float: right
+	max-width: 50%
+	.window
+		right: -21px
+		left: auto
+		width: 311px
 .article
 	padding: 0 25px 0 0 
 	font-size: 12px
@@ -125,10 +142,17 @@
 .to-right
 	text-align: right
 .link-all
+	position: relative
 	display: inline-block
 	font-size: 12px
 	color: $gray
 	border-bottom: 1px dotted  
+	.fa-question-circle
+		position: absolute
+		left: -20px
+		top: 1px
+		font-size: 13px
 	&:hover
 		border-color: transparent 
 		
+

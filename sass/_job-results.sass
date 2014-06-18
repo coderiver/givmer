@@ -475,10 +475,17 @@
 	.fa-warning
 		color: $yellow 
 .border-divider
+	position: relative
+	z-index: 2
 	height: 0
 	background: none
-	border-top: 1px dashed $border 
-	
+	&:before
+		content: ""
+		position: absolute
+		left: -3000px
+		right: -3000px
+		height: 0 
+		border-top: 1px dashed $border 
 .set-price
 	position: relative
 	margin: 30px 0 0 
@@ -504,22 +511,9 @@
 		font-size: 18px
 		color: $dark 
 	.window
-		top: 100%
 		left: 0
 		right: 0
-		margin-top: 11px
 		width: auto
-		+arial
-		&:before
-			right: 102px 
-			top: -16px
-			left: auto
-			+arr(16,20,#fff,t)
-		&:after
-			right: 99px
-			top: -14px
-			left: auto
-			+s(arr-shadow)
 .set-price__btn
 	float: left 
 	width: 59%

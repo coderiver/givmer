@@ -513,5 +513,10 @@ head.ready(function() {
 	        return false;
 	    }
    	});
+   	$(".js-show-window").on("click",function(){
+		$(this).parent().find(".js-window").fadeToggle(200);
+		return false;
+
+	});
 	
 });
