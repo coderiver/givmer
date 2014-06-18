@@ -414,6 +414,26 @@ head.ready(function() {
 
 	});
 
-  
+  	if ($(".js-fancybox").length) {
+        $(".js-fancybox").fancybox({
+            openEffect  : 'elastic',
+            closeEffect : 'elastic',
+            nextEffect : 'fade',
+            prevEffect : 'fade',
+            padding: 0,
+            helpers: {
+                overlay: {
+                  locked: false
+                }
+            },
+            beforeShow: function() {
+                //$("body").addClass("has-open-popup");   
+            },
+            afterClose: function() {
+                //$("body").removeClass("has-open-popup");  
+            },
+            
+        });
+    }
 	
 });
