@@ -1,0 +1,274 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>create-task</title>
+	<link rel="stylesheet" media="screen" href="css/screen.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+
+<!-- BEGIN  out-->
+<div class="out">
+	<header class="header">
+		<div class="l-container">
+			<a href="#" class="logo">Giv<span>me</span>r</a>
+			<div class="header__search">
+				<input type="text" class="input" placeholder="поиск заданий...">
+				<button class="fa fa-search" value="search"></button>
+			</div>
+			<a href="#" class="btn-action header__btn">Создать задание</a>
+			<div class="header__task drop-list-wrap has-right-angle js-drop">
+				<a href="" class="btn-simple js-drop-link">
+					<i class="fa fa-thumb-tack"></i>2
+				</a>
+				<ul class="drop-list js-drop-list">
+					<li>
+						<a href="#" class="drop-list__item">
+							<span class="drop-list__name">Избранные задания</span> 
+							<span class="drop-list__right">2</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="drop-list__item">
+							<span class="drop-list__name">Моя страница</span> 
+							<span class="drop-list__right">1</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="header__right">    
+				<a href="" class="btn-simple js-drop-link">
+					<i class="fa fa-tag"></i>350 €
+				</a>     
+				<div class="header__enter">
+					<div class="drop-list-wrap has-right-angle js-drop">
+						<a href="#" class="header__user js-drop-link">
+							<span class="header__user-name">Anton Matiukhin</span>
+							<div class="header__user-img">
+								<img src="http://lorempixel.com/54/54/people" alt="">
+								<span class="notific">2</span>
+							</div>
+							
+							<i class="fa fa-caret-down"></i>
+						</a>
+						<ul class="drop-list js-drop-list">
+							<li>
+								<a href="#" class="drop-list__item">
+									<span class="drop-list__name">
+										Моя страница
+										<div class="rating">
+											<div class="rating__in js-rating-small-read" data-score="4"></div>
+											<span class="rating__text">(119)</span>
+										</div>
+									</span> 
+									<span class="drop-list__right">
+										<span class="status is-approved"> <i class="fa fa-shield"></i>подтвержден!</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="drop-list__item">
+									<span class="drop-list__name">Задания, в которых я участвовал</span> 
+									<span class="drop-list__right"><span class="notific">2</span></span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="drop-list__item">
+									<span class="drop-list__name">Созданные задания</span> 
+									<span class="drop-list__right"><span class="notific is-blue">1</span></span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="drop-list__item">
+									<span class="drop-list__name">Мой счет </span> 
+									<span class="drop-list__right">
+										<span class="drop-list__info"><i class="fa fa-tag"></i>25 €</span>
+										<i class="fa fa-warning"></i>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="drop-list__item">
+									<span class="drop-list__name">Настройки профайла</span> 
+									<span class="drop-list__right">1</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>  
+			</div>                  
+		</div>
+	</header>
+	<div class="l-container">
+		
+	</div>
+</div>
+<!-- END out-->
+<footer class="footer">
+	<div class="l-container">
+		<div class="footer__nav">
+			<a href="js-popup-greeting" class="js-popup-link">О Givmer </a>
+			<a href="#">Партнерам</a>
+			<a href="#">Вакансии</a>
+			<a href="#">Условия пользования сайта </a>
+			<a href="#">Политика конфиденциальности</a>
+		</div>
+		<div class="footer__info">
+			© 2014 Givmer
+		</div>
+	</div>
+</footer>
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+<div class="overlay js-overlay">
+	<div class="popup popup_white-bg popup_payment js-popup js-popup-greeting">
+		<div class="popup__title">Выберите сумму, на которую пополнить ваш счет</div>
+		<div class="popup__main">
+			<div class="cards-wrap">
+				<div class="card js-card">
+					<div class="card__in">
+						<div class="card__main">
+							<div class="card__price">1<sub>€</sub></div>
+						</div>
+						<div class="card__footer">
+							<div>
+								<span>Вы сможете выполнить <br> 1 задание </span>
+								и самостоятельно привлекать исполнителей в ваши задания!
+							</div>
+						</div>
+					</div>
+					<i class="card__icon"></i>
+				</div>
+				<div class="card is-active js-card">
+					<div class="card__in">
+						<div class="card__main">
+							<div class="card__price">3<sub>€</sub></div>
+							<div class="card__pop">самый популярный выбор</div>
+						</div>
+						<div class="card__footer">
+							<div>
+								<span>Вы сможете выполнить <br> 3 задание </span>
+								и самостоятельно привлекать исполнителей в ваши задания!
+							</div>
+						</div>
+					</div>
+					<i class="card__icon"></i>
+				</div>
+				<div class="card js-card">
+					<div class="card__in">
+						<div class="card__main">
+							<div class="card__price">5<sub>€</sub></div>
+						</div>
+						<div class="card__footer">
+							<div>
+								<span>Вы сможете выполнить <br> 5 задание </span>
+								и самостоятельно привлекать исполнителей в ваши задания!
+							</div>
+						</div>
+					</div>
+					<i class="card__icon"></i>
+				</div>
+			</div>
+		</div>
+		<div class="popup__payment">
+			<div class="popup__title">Выберите способ оплаты:</div>
+			<div class="payment">
+				<a href="#" class="payment__link js-payment-radio payment_mod">
+					<img src="img/pay1.png" alt="">
+					<input type="radio" hidden name="radio-pay">
+				</a>
+				<a href="#" class="payment__link js-payment-radio">
+					<img src="img/pay2.png" alt="">
+					<input type="radio" hidden name="radio-pay">
+				</a>
+				<a href="#" class="payment__link js-payment-radio">
+					<img src="img/pay3.png" alt="">
+					<input type="radio" hidden name="radio-pay">
+				</a>
+				<a href="#" class="payment__link js-payment-radio">
+					<img src="img/pay4.png" alt="">
+					<input type="radio" hidden name="radio-pay">
+				</a>
+				<a href="#" class="payment__link js-payment-radio payment_mod is-active">
+					<img src="img/pay5.png" alt="">
+					<input type="radio" hidden name="radio-pay" checked>
+				</a>
+				<a href="#" class="payment__link js-payment-radio">
+					<img src="img/pay6.png" alt="">
+					<input type="radio" hidden name="radio-pay">
+				</a>
+				<button class="btn-action">Отправить платеж!</button>
+			</div>
+			<div class="popup__badge">
+				<img src="img/badge-free.png" alt="">
+			</div>				
+		</div>
+		<button class="btn-close js-popup-close"></button>
+	</div>
+</div>
+<div class="window window_lang js-window js-window-lang">
+	<div class="window__title">На какие языки вы хотите внести перевод?.</div>
+	<div class="window__descr">Если вы не введете перевод на другие языки, то пользователи смогут перевести текст автоматически</div>
+	<div class="field js-check-group">
+		<label class="checkbox checkbox_link js-check">
+			<input type="checkbox">
+			<i class="fa fa-check-square"></i>
+			<span><em>Английский</em></span>
+		</label>
+		<div class="textarea js-check-hidden" hidden>
+			<textarea class="js-textarea" placeholder="введите перевод..."></textarea>
+			<span class="textarea__counter js-char-counter" data-max="255">255</span>
+		</div>
+	</div>
+	<div class="field js-check-group">
+		<label class="checkbox checkbox_link js-check">
+			<input type="checkbox">
+			<i class="fa fa-check-square"></i>
+			<span><em>Эстонский</em></span>
+		</label>
+		<div class="textarea js-check-hidden" hidden>
+			<textarea class="js-textarea" placeholder="введите перевод..."></textarea>
+			<span class="textarea__counter js-char-counter" data-max="255">255</span>
+		</div>
+	</div>
+	<div class="field js-check-group">
+		<label class="checkbox checkbox_link js-check">
+			<input type="checkbox">
+			<i class="fa fa-check-square"></i>
+			<span><em>Финский</em></span>
+		</label>
+		<div class="textarea js-check-hidden" hidden>
+			<textarea class="js-textarea" placeholder="введите перевод..."></textarea>
+			<span class="textarea__counter js-char-counter" data-max="255">255</span>
+		</div>
+	</div>
+	<div class="field js-check-group">
+		<label class="checkbox checkbox_link js-check">
+			<input type="checkbox">
+			<i class="fa fa-check-square"></i>
+			<span><em>Шведский</em></span>
+		</label>
+		<div class="textarea js-check-hidden" hidden>
+			<textarea class="js-textarea" placeholder="введите перевод..."></textarea>
+			<span class="textarea__counter js-char-counter" data-max="255">255</span>
+		</div>
+	</div>
+	<div class="field js-check-group">
+		<label class="checkbox checkbox_link js-check">
+			<input type="checkbox">
+			<i class="fa fa-check-square"></i>
+			<span><em>Норвежский</em></span>
+		</label>
+		<div class="textarea js-check-hidden" hidden>
+			<textarea class="js-textarea" placeholder="введите перевод..."></textarea>
+			<span class="textarea__counter js-char-counter" data-max="255">255</span>
+		</div>
+	</div>
+	<button class="btn-action is-liquid">Сохранить переводы</button>
+	<button class="btn-close js-window-close"></button>
+</div>
+</body>
+</html>
+
