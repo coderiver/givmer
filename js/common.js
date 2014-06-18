@@ -386,15 +386,15 @@ head.ready(function() {
 			$(this).removeClass("is-active")
 			$(this).find("span").removeAttr("hidden");
 			$(this).find(".js-map-key-off").attr("hidden","");
-			$(".js-map").slideDown(200);
+			$(".js-map").removeClass("is-inactive").find(".google-map").slideDown(200);
 		}
 		else {
 			$(this).addClass("is-active")
 			$(this).find("span").removeAttr("hidden");
 			$(this).find(".js-map-key-on").attr("hidden","");
-			$(".js-map").slideUp(200);
+			$(".js-map").addClass("is-inactive").find(".google-map").slideUp(200);
 		}
-		return false;
+		return false;  
 	});
 	$(".js-ask").hide();
 	$(".js-ask-btn").on("click",function(){

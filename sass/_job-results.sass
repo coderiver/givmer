@@ -317,8 +317,9 @@
 		+tr
 .map-static
 	position: relative
-	height: 340px
 	overflow: hidden
+	&.is-inactive
+		border-top: 1px dashed $border 
 	&:before,
 	&:after
 		content: ""
@@ -333,6 +334,8 @@
 	&:after
 		bottom: -2px  
 		+box-shadow(0 0 7px rgba(#000,1))
+	.google-map
+		height: 340px
 		
 .task-info
 	float: right

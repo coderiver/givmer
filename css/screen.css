@@ -672,10 +672,12 @@ html.intro-page body { background: whitesmoke; overflow: hidden; }
 .link-hide.is-active .fa { -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); }
 .link-hide .fa { -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
 
-.map-static { position: relative; height: 340px; overflow: hidden; }
+.map-static { position: relative; overflow: hidden; }
+.map-static.is-inactive { border-top: 1px dashed #d1d1d1; }
 .map-static:before, .map-static:after { content: ""; position: absolute; left: 0; right: 0; height: 1px; z-index: 2; }
 .map-static:before { top: -2px; -webkit-box-shadow: 0 0 7px black; -moz-box-shadow: 0 0 7px black; box-shadow: 0 0 7px black; }
 .map-static:after { bottom: -2px; -webkit-box-shadow: 0 0 7px black; -moz-box-shadow: 0 0 7px black; box-shadow: 0 0 7px black; }
+.map-static .google-map { height: 340px; }
 
 .task-info { float: right; width: 52%; font-size: 12px; font-family: Arial, sans-serif; }
 
