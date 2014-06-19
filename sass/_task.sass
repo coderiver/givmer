@@ -15,6 +15,11 @@
 	+fa
 	&:hover
 		+box-shadow(0 0 6px rgba(#000,.15))
+		@for $i from 1 through 12
+			.icon-cat-#{$i}
+				+s(cat#{$i}-act)
+	&.is-active
+		+box-shadow(0 0 6px rgba(#000,.15))
 		&:before
 			+sp(cat-angle-act)
 		@for $i from 1 through 12

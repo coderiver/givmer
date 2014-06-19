@@ -1,8 +1,8 @@
 <!doctype html>
-<html>
+<html class="has-open-popup">
 <head>
 	<meta charset="utf-8">
-	<title>create-task</title>
+	<title>popup login</title>
 	<link rel="stylesheet" media="screen" href="css/screen.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
@@ -524,6 +524,38 @@
 		</div>
 	</div>
 </footer>
+<div class="overlay js-overlay" style="display:block">
+	<div class="popup popup_login js-popup js-popup-reg">
+		<div class="popup__reg-item">
+			<div class="popup__title">Авторизация через социальные сети:</div>
+			<div class="soc-enter">
+				<a href="#" class="soc-enter__fb"><i class="fa fa-facebook"></i>Facebook</a>
+				<a href="#" class="soc-enter__vk"><i class="fa fa-vk"></i>Вконтакте</a>
+				<a href="#" class="soc-enter__gp"><i class="fa fa-google-plus"></i>Google +</a>
+			</div>
+		</div>
+		<div class="popup__reg-item">
+			<div class="popup__title">Авторизация  через ID:</div>
+			<div class="soc-enter">
+				<a href="#" class="soc-enter__id"><img src="img/id.png" alt="">ID карта</a>
+				<a href="#" class="soc-enter__mobid"><img src="img/mob-id.png" alt=""></a>
+			</div>  
+		</div>
+		<div class="popup__reg-item">
+			<div class="popup__title">Авторизация по паролю:</div>
+			<div class="field">
+				<div class="input-wrap input-wrap_half">
+					<input type="email" class="input" placeholder="ваш e-mail адрес">
+				</div>
+				<div class="input-wrap input-wrap_half">
+					<input type="password" class="input" placeholder="пароль">
+				</div>
+			</div>
+			<div class="to-center"><input type="submit" class="btn-action" value="Войти на Givmer"> </div>
+		</div>
+		<button class="btn-close js-popup-close"></button>
+	</div>
+</div>
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 <div class="overlay js-overlay">
 	<div class="popup popup_white-bg popup_payment js-popup js-popup-greeting">
@@ -760,6 +792,7 @@
 	</ul>
 	<button class="btn-close js-window-close"></button>
 </div>
+
 </body>
 </html>
 

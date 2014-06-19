@@ -65,17 +65,47 @@ head.ready(function() {
 	$(".js-popup").on("click", function(event){
 		event.stopPropagation();
 	});
+
+	function listHeight() {	
+		var list = $(".js-window-list");
+		list.each(function(){
+			var height_el = $(this).find("li").height();
+   			var length = $(this).find("li").length;
+   			var height = height_el*length;
+   			if (height > $(this).outerHeight()) {
+   				$(this).addClass("has-scroll");
+   			}
+   			else {
+   				$(this).removeClass("has-scroll");
+   			}
+		});
+   	}
+
 	$(".js-window-link").on("click", function(event){
-		//$(".js-overlay").fadeOut(200);
 		var left = $(this).offset().left + $(this).outerWidth();
 		var top = $(this).offset().top;
 		var popup = $(this).attr("href");
-		//$("html").addClass("has-open-popup");
-		$("."+popup).css({
-			top: top,
-			left: left
-		});
+		var popup_height = $("."+popup).outerHeight();
+		if (popup_height > ($(".out").height()-top)) {
+			$("."+popup).addClass("is-top-popup");
+			
+			$("."+popup).css({
+				top: 'auto',
+				left: left,
+				bottom: $(window).height()-top
+			});
+		}
+		else {
+			$("."+popup).addClass("is-bottom-popup");
+			$("."+popup).css({
+				top: top,
+				left: left
+			});
+		}
+		
 		$("."+popup).fadeIn(200);
+
+		listHeight();
 		event.stopPropagation();
 		return false; 
 	});
@@ -86,6 +116,15 @@ head.ready(function() {
 	});
 	$(".js-window").on("click", function(event){
 		event.stopPropagation();
+	});
+
+	$(".js-price-list a").on("click", function(event){
+		var price = $(this).attr("data-price");
+		$(".js-price-list a").removeClass("is-active");
+		$(this).addClass("is-active");
+		$(".js-input-price").focus().val(price);
+		event.stopPropagation();	
+		return false;
 	});
 
 	//rating
@@ -278,8 +317,8 @@ head.ready(function() {
 	// 	} 
 	// }); 
 	$(".js-check input").on("change",function(){
-		var checkGroup = $(this).parents(".js-radio-group");
-		var checkHidden = checkGroup.find(".js-radio-hidden");
+		var checkGroup = $(this).parents(".js-check-group");
+		var checkHidden = checkGroup.find(".js-check-hidden");
 		if ($(this).is(":checked")) {
 			checkHidden.removeAttr("hidden");
 			$(this).parent().addClass("is-checked");
@@ -304,10 +343,24 @@ head.ready(function() {
 		// }
 	}); 
 
-	$(".js-remove-btn").on("click",function(){
+	$("body").on("click",".js-remove-btn",function(){
 		$(this).parents(".js-removeable").remove();
 		return false;
 	});
+
+	$("body").on("click",".js-add-btn",function(){
+		var new_el = $(this).attr("data-hidden");
+		var html = $("."+new_el).html();
+		if ($(this).parents(".js-add-btn-wrap")) {
+			$(this).parents(".js-add-btn-wrap").before(html);
+		}
+		else {
+			$(this).before(html);
+		}
+		
+		return false;
+	});
+	
 
 	$(".js-nav a").on("click",function(){
 		var section = $(this).attr("href");
@@ -532,5 +585,6 @@ head.ready(function() {
 		return false;
 
 	});
+   
 	
 });
