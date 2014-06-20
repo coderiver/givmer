@@ -522,6 +522,8 @@ a:hover { color: #0096d4; }
 .user-box__status { position: relative; border-top: 1px solid white; padding: 6px 15px 9px; text-align: left; border-radius: 0 0 5px 5px; *zoom: 1; -webkit-box-shadow: 0 -1px 0 #e3e3e3; -moz-box-shadow: 0 -1px 0 #e3e3e3; box-shadow: 0 -1px 0 #e3e3e3; }
 .user-box__status:after { content: " "; display: table; clear: both; }
 .user-box__status .fa-check-circle { margin-right: 10px; color: #ff0066; }
+.user-box__status .fa-check { font-size: 20px; margin-right: 7px; color: #3e3e3e; }
+.user-box__status .fa-ban { color: #3e3e3e; }
 .user-box__status .window_inside-parent { top: auto; bottom: 43px; left: 11px; width: 311px; }
 .user-box__status .window_inside-parent:before { top: auto; bottom: -12px; width: 0px; height: 0px; border-style: solid; border-width: 12px 7px 0 7px; border-color: white transparent transparent transparent; }
 .user-box__status .window_inside-parent:after { top: auto; bottom: -14px; background: url('../img/icons-sc149204730.png') 0 -2268px no-repeat; width: 22px; height: 14px; }
