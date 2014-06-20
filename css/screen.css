@@ -664,7 +664,7 @@ html.intro-page body { background: whitesmoke; overflow: hidden; }
 
 .result { position: absolute; top: 71px; right: 0; left: 43%; z-index: 2; bottom: 0; -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.4); -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.4); box-shadow: 0 0 6px rgba(0, 0, 0, 0.4); }
 .result.has-fixed-filter .result__top { position: absolute; top: 0; left: 0; right: 0; z-index: 10; }
-.result.has-fixed-filter .result__scroll { padding-top: 70px; }
+.result.has-fixed-filter .result__list { margin-top: 234px; }
 .result.has-not-filters .is-hidden { display: none; }
 .result.has-not-filters .input-wrap { margin-bottom: 0; }
 .result.has-not-filters .show-filter { display: block; }

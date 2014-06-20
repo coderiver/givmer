@@ -480,13 +480,16 @@ head.ready(function() {
     }); 
 
     function fixedSort() {
-    	var top = $(".js-sort").offset().top;
-    	if ($(document).scrollTop() > top) {
-    		$(".js-sort").parents(".result").addClass("is-fixed-sort");
+    	if ($(".js-sort").length) {  
+    		var top = $(".js-sort").offset().top;
+	    	if ($(document).scrollTop() > top) {
+	    		$(".js-sort").parents(".result").addClass("is-fixed-sort");
+	    	}
+	    	else {
+	    		$(".js-sort").parents(".result").removeClass("is-fixed-sort");
+	    	}
     	}
-    	else {
-    		$(".js-sort").parents(".result").removeClass("is-fixed-sort");
-    	}
+    	
     }
     fixedSort();
 
