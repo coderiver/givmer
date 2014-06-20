@@ -363,7 +363,6 @@ head.ready(function() {
 	
 
 	$(".js-nav a").on("click",function(){
-		alert();
 		var section = $(this).attr("href");
 		if (section.length) {
 			var top = $('[data-index="'+section+'"]').offset().top-$(".header").outerHeight();
@@ -598,5 +597,17 @@ head.ready(function() {
 		$(this).parents(".user-box").find(".js-message").slideUp(200);
 		return false;
 	});
+   $(".js-show-task").on("click",function(){
+		$(this).parents(".user-box").find(".js-task").slideToggle(200);
+		
+		var section = $(this).attr("href");
+		var top = $('.js-task').offset().top;
+		$('html, body').animate({
+            scrollTop: top
+        }, 500);
+        return false;
+	});
+
+
 	
 });
