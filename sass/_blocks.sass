@@ -228,13 +228,14 @@
 	+g(#fe0066,#d50055)
 	+tr(background .2s linear)
 	text-decoration: none
-	color: #fff 
+	color: #fff  
 	.fa
 		margin-right: 7px
 		vertical-align: middle
 		font-size: 16px
 	&:hover
 		background: $rose
+		color: #fff 
 		+g(#d50055,#fe0066)
 	&:active
 		position: relative
@@ -317,6 +318,17 @@
 		margin-right: 10px
 	.fa-level-down
 		+rotate(90)
+.btn-key_normal
+	+fr
+	text-align: left
+	font-size: 13px
+	.fa
+		margin-right: 14px
+		font-size: 18px
+.btn-key_cancel
+	color: $gray
+	.fa
+		color: $gray 
 .rating
 	+arial
 	font-size: 12px
@@ -325,7 +337,7 @@
 .rating__text
 	display: inline-block
 	vertical-align: middle
-	height: 15px	
+	height: 15px	 
 .rating_big
 	.rating__in
 		display: block
@@ -545,82 +557,6 @@
 		margin: 0 13px
 		font-size: 16px
 		
-
-.user-box
-	position: relative
-	margin-bottom: 10px
-	width: 310px
-	border-radius: 5px 
-	border: 1px solid $border
-	+tr
-	&:hover
-		+box-shadow(0 0 6px rgba(#000,.2))
-		.user-box__top
-			background: #fff 
-	&.has-cloud
-		&:before
-			content: ""
-			position: absolute
-			right: -70px
-			top: -70px
-			+s(clouds) 
-.user-box__status
-	border-top: 1px solid #fff
-	padding: 6px 21px 9px 
-	text-align: left
-	+box-shadow(0 -1px 0 #e3e3e3)
-	.fa-check-circle
-		margin-right: 10px
-		color: $rose 
-.user-box_white
-	.user-box__top
-		background: #fff 
-.user-box__top
-	border-bottom: 1px solid $border  
-	padding: 10px 15px 
-	background: $light
-	+tr
-	border-radius: 5px 5px 0 0
-.user-box__bottom
-	border-top: 1px solid #fff 
-	padding: 4px 18px 10px
-	background: #fafafa
-	border-radius: 0 0 5px 5px
-.user
-	+clr
-	white-space: nowrap
-.user__img
-	display: inline-block
-	vertical-align: middle
-	margin-right: 10px
-	width: 58px
-	height: 58px
-	border-radius: 0 0 5px 5px
-	overflow: hidden
-	+box
-	border-radius: 50%  
-	border: 2px solid $border
-	img
-		max-width: 100%
-		height: auto
-.user__info
-	display: inline-block
-	vertical-align: middle
-	white-space: normal
-.user__meta
-	.rating,
-	.status
-		display: inline-block
-		vertical-align: middle
-	.status
-		margin-left: 4px
-.user__name
-	color: $blue
-	font-size: 16px
-	+arial
-	font-weight: bold 
-
-
 .teaser
 	font-size: 12px
 	color: #9c9c9c 
@@ -749,3 +685,38 @@
 	&:active
 		top: 1px
 		
+.btn-write
+	float: right
+	padding: 6px 20px 
+	text-align: center
+	color: #fff
+	font-size: 12px
+	+arial
+	background: $blue
+	border-radius: 20px 
+	+tr
+	&:hover
+		color: #fff
+		background: $blue_d
+	&:active
+		position: relative
+		top: 1px
+.btn-choose
+	float: left
+	padding: 6px 20px 
+	text-align: center
+	color: #fff
+	font-size: 12px
+	+arial
+	background: $rose
+	border-radius: 20px 
+	+tr
+	&:hover
+		color: #fff
+		background: $rose_d
+	&:active
+		position: relative
+		top: 1px
+	.fa
+		margin-right: 10px
+		font-size: 14px
