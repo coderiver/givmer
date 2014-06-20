@@ -363,6 +363,7 @@ head.ready(function() {
 	
 
 	$(".js-nav a").on("click",function(){
+		alert();
 		var section = $(this).attr("href");
 		if (section.length) {
 			var top = $('[data-index="'+section+'"]').offset().top-$(".header").outerHeight();
