@@ -553,3 +553,43 @@
 	border-radius: 0 5px 5px 0
 	&:hover
 		color: $border 
+		
+.result_static
+	position: relative
+	top: 0
+	left: 0
+	right: 0
+	+box-shadow(none)
+	.result__in
+		width: 100%
+		padding-left: 0
+		+clr
+		.result__sort-item3
+			width: 313px
+	.result__sort
+		.checkbox_medium
+			color: $dark 
+	&.is-fixed-sort
+		.result__top
+			margin-bottom: 61px
+		.result__sort
+			position: fixed
+			top: 0
+			left: 0
+			right: 0
+			margin: 0
+			border-bottom: 1px solid $border 			
+.result__left-col
+	float: left
+	width: 628px
+	.input-wrap__left
+		width: 25%
+		padding-top: 4px
+	.input-wrap__right
+		width: 75%
+.result__right-col
+	padding-left: 72px
+	overflow: hidden
+	.input-wrap__left
+		width: 30%
+		padding-top: 4px

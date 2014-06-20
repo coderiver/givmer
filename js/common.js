@@ -426,6 +426,44 @@ head.ready(function() {
 	}
 	ui_slider_range();
 
+	 function ui_slider_age() {
+		$(".js-ui-slider-age").each(function(){
+			var slider = $(this).find(".js-ui-slider-main");
+			var slider_min = $(this).find(".ui-slider-handle");
+			var input_from = $(this).find(".js-ui-slider-from");
+			var input_to = $(this).find(".js-ui-slider-to");
+			var min_val = +$(this).attr("data-min");
+			var max_val = +$(this).attr("data-max");
+			slider_min.addClass("js-slider-min");
+			slider.slider({
+				range: true,
+				min: min_val,
+				max: max_val,
+				step: 1,	
+				values: [ min_val, max_val ],
+				slide: function( event, ui ) {
+					$(this).find(".ui-slider-handle").html("<span></span>");
+					$(this).find(".ui-slider-range").next().addClass("slider__min")
+					$(this).find(".ui-slider-range").next().next().addClass("slider__max");
+					input_from.text(ui.values[0]);
+					input_to.text(ui.values[1]);
+					//handle_0.text(ui.values[0]);
+					//handle_1.text(ui.values[1]);
+				}
+			});
+			//console.log(handle_0);
+			//console.log(handle_1);
+			$(this).find(".ui-slider-handle").html("<span></span>");
+			$(this).find(".ui-slider-range").next().addClass("ui-slider__min")
+			$(this).find(".ui-slider-range").next().next().addClass("ui-slider__max");
+			//handle_0.text(slider.slider( "values", 0 ));
+			//handle_1.text(slider.slider( "values", 1 ));
+			input_from.text(slider.slider( "values", 0 ));
+			input_to.text(slider.slider( "values", 1 ));
+		});
+	}
+	ui_slider_age();
+
 	$(".js-btn-favorite").on("click",function(){
 		$(this).toggleClass("is-active");
 		return false;
@@ -440,12 +478,25 @@ head.ready(function() {
 			$(this).parents(".js-result").removeClass("has-fixed-filter has-not-filters");
 		}
     }); 
+
+    function fixedSort() {
+    	var top = $(".js-sort").offset().top;
+    	if ($(document).scrollTop() > top) {
+    		$(".js-sort").parents(".result").addClass("is-fixed-sort");
+    	}
+    	else {
+    		$(".js-sort").parents(".result").removeClass("is-fixed-sort");
+    	}
+    }
+    fixedSort();
+
     $("body").on("click",".js-show-filter",function(){
 		$(this).parents(".js-result").removeClass("has-not-filters");
 		return false;
 	});
 	$(window).scroll(function(){
     	scroller();
+    	fixedSort();
     }); 
 
 	$(".js-map-key").on("click",function(){

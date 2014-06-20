@@ -364,7 +364,7 @@
 		opacity: 0
 		visibility: hidden
 		&:checked
-			+ .fa
+			+ i.fa
 				&:after
 					display: none
 				&:before
@@ -378,7 +378,7 @@
 		font-size: 13px
 		+fr
 		white-space: normal
-	.fa
+	i.fa
 		position: relative
 		display: inline-block
 		margin-left: -17px
@@ -453,7 +453,7 @@
 		opacity: 0
 		visibility: hidden
 		&:checked
-			+ .fa
+			+ i.fa
 				&:after
 					display: none
 				&:before
@@ -472,7 +472,7 @@
 		line-height: 1
 		color: $blue
 		border-bottom: 1px dashed	
-	.fa
+	i.fa
 		position: relative
 		display: inline-block
 		margin-left: -17px
@@ -495,6 +495,11 @@
 			+box
 		&:before
 			display: none
+	.fa-male,
+	.fa-female
+		margin-right: 5px
+		color: $gray
+		font-size: 17px 
 .checkbox_link
 	&.is-checked
 		em
@@ -512,7 +517,7 @@
 		font-size: 14px
 		+fm	
 .checkbox_simple
-	.fa
+	i.fa
 		font-size: 14px
 		&:before
 			position: relative
@@ -521,8 +526,13 @@
 			top: 1px
 	input
 		&:checked
-			+ .fa
+			+ i.fa
 				&:after
 					display: block
 				&:before
 					display: block
+					
+.check-gender
+	padding-top: 10px
+	.checkbox
+		margin-right: 35px
