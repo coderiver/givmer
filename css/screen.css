@@ -720,11 +720,13 @@ html.intro-page body { background: whitesmoke; overflow: hidden; }
 .accordion { border-bottom: 1px solid white; padding: 15px 45px 15px 27px; -webkit-box-shadow: inset 0 -1px 0 #e3e3e3; -moz-box-shadow: inset 0 -1px 0 #e3e3e3; box-shadow: inset 0 -1px 0 #e3e3e3; }
 .accordion.is-active { background: #f9f9f9; }
 .accordion.is-active .accordion__title:before { -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+.accordion.has-not-list .accordion__title:before { display: none; }
 .accordion:first-child { border-top: 1px solid white; -webkit-box-shadow: 0 -1px 0 #e3e3e3, inset 0 -1px 0 #e3e3e3; -moz-box-shadow: 0 -1px 0 #e3e3e3, inset 0 -1px 0 #e3e3e3; box-shadow: 0 -1px 0 #e3e3e3, inset 0 -1px 0 #e3e3e3; }
 
 .accordion__title { position: relative; font-size: 16px; font-family: "roboto-medium", Arial, sans-serif; cursor: pointer; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
 .accordion__title span { display: block; max-width: 280px; }
 .accordion__title:before { content: "\f107"; position: absolute; right: -13px; top: 0; font-family: FontAwesome; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-size: 16px; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
+.accordion__title a { color: #3e3e3e; }
 
 .accordion__list { display: none; padding: 15px 0 0 20px; font-size: 14px; }
 .accordion__list li { border-top: 1px solid #d1d1d1; }

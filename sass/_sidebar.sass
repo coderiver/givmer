@@ -69,6 +69,10 @@
 		.accordion__title
 			&:before
 				+rotate(180)
+	&.has-not-list
+		.accordion__title
+			&:before
+				display: none
 	&:first-child
 		border-top:  1px solid #fff 
 		+box-shadow(0 -1px 0 #e3e3e3,inset 0 -1px 0 #e3e3e3)
@@ -88,7 +92,9 @@
 		top: 0
 		+fa
 		font-size: 16px  
-		+tr
+		+tr 
+	a
+		color: $dark 
 .accordion__list
 	display: none
 	padding: 15px 0 0 20px
