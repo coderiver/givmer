@@ -671,13 +671,13 @@ head.ready(function() {
         $(".js-accordion-list").hide();
         $(".js-accordion-title").click(function(){
             if ($(this).parent().hasClass("js-one-active")) {
-                $(".js-accordion-title").removeClass("is-active");
+                $(".js-accordion").removeClass("is-active");
                 $(".js-accordion-list").slideUp("fast");
-                $(this).toggleClass("is-active");
+                $(this).parent().toggleClass("is-active");
                 $(this).parents(".js-accordion").find(".js-accordion-list").slideToggle("fast");
             }
             else {
-                $(this).toggleClass("is-active");
+                $(this).parent().toggleClass("is-active");
                 $(this).parents(".js-accordion").find(".js-accordion-list").slideToggle("fast");
             }
             

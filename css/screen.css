@@ -493,7 +493,7 @@ a:hover { color: #0096d4; }
 .post hr { margin: 16px 0 38px; border: 0; height: 1px; background: gainsboro; }
 .post blockquote { position: relative; margin: 27px 0 23px; padding-left: 35px; font-size: 12px; }
 .post blockquote:before { content: "\f071"; position: absolute; left: 0; top: 4px; color: #ffc600; font-family: FontAwesome; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-size: 19px; }
-.post span { display: block; margin-bottom: 12px; padding: 20px; border-radius: 7px; color: white; background: #00b4ff; }
+.post span { display: block; margin-bottom: 12px; padding: 20px; border-radius: 7px; color: white; font-size: 15px; font-family: "roboto-light", Arial, sans-serif; background: #00b4ff; }
 .post span:last-child { color: #3e3e3e; background: whitesmoke; }
 .post ul { margin: 10px 0 20px 5px; }
 .post ul li { position: relative; margin-bottom: 5px; padding-left: 13px; }
@@ -715,7 +715,10 @@ html.intro-page body { background: whitesmoke; overflow: hidden; }
 .sidebar__item .btn-key { margin-bottom: 9px; }
 .sidebar__item .btn-wrap { margin: 30px 0; }
 
+.sidebar__text p { margin-bottom: 10px; }
+
 .accordion { border-bottom: 1px solid white; padding: 15px 45px 15px 27px; -webkit-box-shadow: inset 0 -1px 0 #e3e3e3; -moz-box-shadow: inset 0 -1px 0 #e3e3e3; box-shadow: inset 0 -1px 0 #e3e3e3; }
+.accordion.is-active { background: #f9f9f9; }
 .accordion:first-child { border-top: 1px solid white; -webkit-box-shadow: 0 -1px 0 #e3e3e3, inset 0 -1px 0 #e3e3e3; -moz-box-shadow: 0 -1px 0 #e3e3e3, inset 0 -1px 0 #e3e3e3; box-shadow: 0 -1px 0 #e3e3e3, inset 0 -1px 0 #e3e3e3; }
 
 .accordion__title { position: relative; font-size: 16px; font-family: "roboto-medium", Arial, sans-serif; cursor: pointer; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
