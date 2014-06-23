@@ -662,6 +662,9 @@ head.ready(function() {
         return false;
 	});
 
-
+   $(".js-select select").on("change",function(){
+		var	val = $(this).val();
+		$(this).parent().find(".js-select-text").text(val);
+	});
 	
 });

@@ -456,3 +456,72 @@
 		max-width: 100%
 		border: 1px solid $border
 
+.table
+	margin-top: 23px
+	font-size: 14px
+	+fm
+	color: $gray_d
+	td,th
+		padding: 17px 20px
+		text-align: left
+		border-bottom: 1px solid #e5e5e5   
+		vertical-align: middle
+	th
+		color: $dark
+		font-weight: normal
+		+fb 
+		font-size: 14px
+	td
+		text-align: left
+		5 
+	.is-paid
+		.table__sum
+			color: $blue 
+	.is-progress
+		.table__sum
+			color: $gray
+	.is-inactive
+		td
+			color: $gray
+.table_money
+	thead
+		a
+			color: $dark
+			&.is-active
+				.fa
+					color: $blue
+		.fa
+			margin-left: 7px
+			color: $gray
+			font-size: 12px 
+	tbody
+		.fa
+			margin-right: 7px
+			font-size: 12px
+			color: $gray_d 
+.table__download
+	a
+		color: $blue
+		font-size: 13px
+		+tr
+		&:hover
+			color: $blue_d 
+			.fa
+				color: $blue_d 
+		.fa
+			font-size: 18px
+			color: $blue 
+			+tr
+.table__user
+	span
+		display: block
+		font-size: 12px
+		color: #525252 
+	a
+		.fa
+			color: $blue 
+			font-size: 13px
+.table__status
+	.status
+		.fa
+			color: #fff 

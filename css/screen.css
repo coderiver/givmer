@@ -283,6 +283,13 @@ a:hover { color: #0096d4; }
 .select { position: relative; }
 .select select { position: absolute; z-index: 2; cursor: pointer; top: 0; left: 0; width: 100%; height: 100%; margin: 0; opacity: 0; }
 
+.select-simple { display: inline-block; position: relative; }
+.select-simple:hover .select-simple__link span { border-color: transparent; }
+.select-simple select { position: absolute; z-index: 2; cursor: pointer; top: 0; left: 0; height: 100%; margin: 0; opacity: 0; padding: 0 5px; }
+
+.select-simple__link { display: inline-block; }
+.select-simple__link span { border-bottom: 1px dashed gray; }
+
 .files-wrap { *zoom: 1; padding: 18px 0; }
 .files-wrap:after { content: " "; display: table; clear: both; }
 
@@ -610,6 +617,29 @@ a:hover { color: #0096d4; }
 
 .video { max-width: 100%; margin: 20px 0; overflow: hidden; }
 .video iframe { display: block; max-width: 100%; border: 1px solid #d1d1d1; }
+
+.table { margin-top: 23px; font-size: 14px; font-family: "roboto-medium", Arial, sans-serif; color: #4d4d4d; }
+.table td, .table th { padding: 17px 20px; text-align: left; border-bottom: 1px solid #e5e5e5; vertical-align: middle; }
+.table th { color: #3e3e3e; font-weight: normal; font-family: "roboto-bold", Arial, sans-serif; font-size: 14px; }
+.table td { text-align: left; }
+.table .is-paid .table__sum { color: #00b4ff; }
+.table .is-progress .table__sum { color: gray; }
+.table .is-inactive td { color: gray; }
+
+.table_money thead a { color: #3e3e3e; }
+.table_money thead a.is-active .fa { color: #00b4ff; }
+.table_money thead .fa { margin-left: 7px; color: gray; font-size: 12px; }
+.table_money tbody .fa { margin-right: 7px; font-size: 12px; color: #4d4d4d; }
+
+.table__download a { color: #00b4ff; font-size: 13px; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
+.table__download a:hover { color: #0096d4; }
+.table__download a:hover .fa { color: #0096d4; }
+.table__download a .fa { font-size: 18px; color: #00b4ff; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
+
+.table__user span { display: block; font-size: 12px; color: #525252; }
+.table__user a .fa { color: #00b4ff; font-size: 13px; }
+
+.table__status .status .fa { color: white; }
 
 html.intro-page { overflow: hidden; }
 html.intro-page body { background: whitesmoke; overflow: hidden; }
@@ -1166,6 +1196,9 @@ html.intro-page body { background: whitesmoke; overflow: hidden; }
 .input-wrap__btn span, .input-wrap__btn .fa { display: inline-block; vertical-align: middle; }
 .input-wrap__btn .fa { color: #3e3e3e; font-size: 16px; -ms-transform: rotate(90deg); -webkit-transform: rotate(90deg); transform: rotate(90deg); }
 
+.input-wrap_invite .input { display: inline-block; margin-right: 10px; width: 543px; }
+.input-wrap_invite .btn-key { display: inline-block; width: 238px; }
+
 .input-wrap_half { display: inline-block; vertical-align: top; margin-left: 1%; width: 49.5%; }
 .input-wrap_half:first-child { margin-left: 0; }
 .input-wrap_half .input { margin-bottom: 11px; }
@@ -1274,6 +1307,7 @@ html.intro-page body { background: whitesmoke; overflow: hidden; }
 .form-col { width: 768px; }
 
 .radio-group { padding-left: 13px; }
+.radio-group .status { margin: 4px 0; }
 
 .radio-wrap { margin-bottom: 10px; }
 
@@ -1327,6 +1361,8 @@ html.intro-page body { background: whitesmoke; overflow: hidden; }
 
 .check-gender { padding-top: 10px; }
 .check-gender .checkbox { margin-right: 35px; }
+
+.invite-friend { margin: 26px 0; font-size: 0; }
 
 .ui-multiselect { position: relative; overflow: hidden; display: block; padding: 0 20px; width: 100% !important; margin: 0; height: 44px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-size: 14px; font-family: "roboto-medium", Arial, sans-serif; border: 1px solid #d1d1d1; border-radius: 5px; background: white; text-align: left; -webkit-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1); box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1); }
 .ui-multiselect span { color: gray; }
