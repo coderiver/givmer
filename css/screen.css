@@ -723,7 +723,7 @@ html.intro-page body { background: whitesmoke; overflow: hidden; }
 .accordion__title.is-active:before { -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); }
 .accordion__title:before { content: "\f106"; position: absolute; right: -13px; top: 0; font-family: FontAwesome; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-size: 16px; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
 
-.accordion__list { padding: 15px 0 0 20px; font-size: 14px; }
+.accordion__list { display: none; padding: 15px 0 0 20px; font-size: 14px; }
 .accordion__list li { border-top: 1px solid #d1d1d1; }
 .accordion__list li.is-active a { color: #00b4ff; }
 .accordion__list a { display: block; padding: 13px 0; color: #3e3e3e; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
