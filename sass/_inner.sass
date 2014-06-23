@@ -1,6 +1,8 @@
 .page-head
 	padding: 30px 0 
 	+clr
+.page-head_mod
+	padding-top: 0
 .page-head__title
 	float: left
 	max-width: 50%
@@ -239,13 +241,16 @@
 
 .user-box
 	position: relative
+	display: block
 	margin-bottom: 10px
 	width: 310px
 	border-radius: 5px 
 	border: 1px solid $border
 	+tr
+	color: $dark 
 	&.is-active,
-	&:hover
+	&:hover    
+		color: $dark 
 		+box-shadow(0 0 6px rgba(#000,.2))
 		.user-box__top
 			background: #fff 

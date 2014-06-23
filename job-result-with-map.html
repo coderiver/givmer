@@ -57,13 +57,13 @@
 						<ul class="drop-list js-drop-list">
 							<li>
 								<a href="#" class="drop-list__item">
-									<span class="drop-list__name">
+									<div class="drop-list__name">
 										Моя страница
 										<div class="rating">
 											<div class="rating__in js-rating-small-read" data-score="4"></div>
 											<span class="rating__text">(119)</span>
 										</div>
-									</span> 
+									</div> 
 									<span class="drop-list__right">
 										<span class="status is-approved"> <i class="fa fa-shield"></i>подтвержден!</span>
 									</span>
@@ -388,20 +388,19 @@
 						<div class="sidebar__item">
 							<div class="candidates" data-index="js-ancor-cand">
 								<div class="candidates__title">Кандидаты на выполнене этого задания:</div>
-								<div class="user-box">
+								<a class="user-box" href="#">
 									<div class="user-box__top">
 										<div class="user">
-											<a class="user__img" href="#">
+											<div class="user__img">
 												<img src="http://lorempixel.com/54/54" alt="">
-											</a>
+											</div>
 											<div class="user__info">
-												<a href="#" class="user__name">Леонид Корабельников </a>
+												<div class="user__name">Леонид Корабельников </div>
 												<div class="user__meta">
 													<div class="rating">
 														<div class="rating__in js-rating-small-read" data-score="5"></div>
 														<span class="rating__text">(119)</span>
 													</div>
-													<span class="status is-approved"> <i class="fa fa-shield"></i>подтвержден!</span>
 												</div>
 											</div>
 										</div>
@@ -412,18 +411,18 @@
 											<li>Специализация: курьер</li>
 										</ul>
 									</div>
-								</div>
-								<div class="user-box">
+								</a>
+								<a class="user-box" href="#">
 									<div class="user-box__top">
 										<div class="user">
-											<a class="user__img" href="#">
+											<div class="user__img">
 												<img src="http://lorempixel.com/54/54" alt="">
-											</a>
+											</div>
 											<div class="user__info">
-												<a href="#" class="user__name">Леонид Корабельников </a>
+												<div class="user__name">Леонид Корабельников </div>
 												<div class="user__meta">
 													<div class="rating">
-														<div class="rating__in js-rating-small-read" data-score="3"></div>
+														<div class="rating__in js-rating-small-read" data-score="5"></div>
 														<span class="rating__text">(119)</span>
 													</div>
 												</div>
@@ -436,18 +435,18 @@
 											<li>Специализация: курьер</li>
 										</ul>
 									</div>
-								</div>
-								<div class="user-box">
+								</a>
+								<a class="user-box" href="#">
 									<div class="user-box__top">
 										<div class="user">
-											<a class="user__img" href="#">
+											<div class="user__img">
 												<img src="http://lorempixel.com/54/54" alt="">
-											</a>
+											</div>
 											<div class="user__info">
-												<a href="#" class="user__name">Леонид Корабельников </a>
+												<div class="user__name">Леонид Корабельников </div>
 												<div class="user__meta">
 													<div class="rating">
-														<div class="rating__in js-rating-small-read" data-score="3"></div>
+														<div class="rating__in js-rating-small-read" data-score="5"></div>
 														<span class="rating__text">(119)</span>
 													</div>
 												</div>
@@ -460,7 +459,7 @@
 											<li>Специализация: курьер</li>
 										</ul>
 									</div>
-								</div>
+								</a>
 								<a href="#" class="link-all">Показать всех кандидатов</a>
 							</div>
 						</div>
@@ -541,27 +540,21 @@
 			<div class="payment">
 				<a href="#" class="payment__link js-payment-radio payment_mod">
 					<img src="img/pay1.png" alt="">
-					<input type="radio" hidden name="radio-pay">
 				</a>
 				<a href="#" class="payment__link js-payment-radio">
 					<img src="img/pay2.png" alt="">
-					<input type="radio" hidden name="radio-pay">
 				</a>
 				<a href="#" class="payment__link js-payment-radio">
 					<img src="img/pay3.png" alt="">
-					<input type="radio" hidden name="radio-pay">
 				</a>
 				<a href="#" class="payment__link js-payment-radio">
 					<img src="img/pay4.png" alt="">
-					<input type="radio" hidden name="radio-pay">
 				</a>
 				<a href="#" class="payment__link js-payment-radio payment_mod is-active">
 					<img src="img/pay5.png" alt="">
-					<input type="radio" hidden name="radio-pay" checked>
 				</a>
 				<a href="#" class="payment__link js-payment-radio">
 					<img src="img/pay6.png" alt="">
-					<input type="radio" hidden name="radio-pay">
 				</a>
 				<button class="btn-action">Отправить платеж!</button>
 			</div>

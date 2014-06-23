@@ -57,13 +57,13 @@
 						<ul class="drop-list js-drop-list">
 							<li>
 								<a href="#" class="drop-list__item">
-									<span class="drop-list__name">
+									<div class="drop-list__name">
 										Моя страница
 										<div class="rating">
 											<div class="rating__in js-rating-small-read" data-score="4"></div>
 											<span class="rating__text">(119)</span>
 										</div>
-									</span> 
+									</div> 
 									<span class="drop-list__right">
 										<span class="status is-approved"> <i class="fa fa-shield"></i>подтвержден!</span>
 									</span>
@@ -207,14 +207,14 @@
 			<div class="form-col">
 				<div class="field">
 					<div class="input-wrap">
-						<span class="input-wrap__title">Какое задание вам необходимо выполнить?<a href="js-window-lang" class="js-window-link">Хотите перевести на другие языки сайта?</a></span>
+						<div class="input-wrap__title">Какое задание вам необходимо выполнить?<a href="js-window-lang" class="js-window-link">Хотите перевести на другие языки сайта?</a></div>
 						<input type="text" class="input input_with-counter js-textarea" placeholder="например: “Вымыть окна в квартире”">
 						<span class="input-wrap__counter js-char-counter" data-max="255">255</span>
 					</div>
 				</div>
 				<div class="field">
 					<div class="input-wrap">
-						<span class="input-wrap__title">Опишите ваше задание в подробностях:<a href="js-window-lang-extend" class="js-window-link">Хотите перевести на другие языки сайта?</a></span>
+						<div class="input-wrap__title">Опишите ваше задание в подробностях:<a href="js-window-lang-extend" class="js-window-link">Хотите перевести на другие языки сайта?</a></div>
 						<div class="textarea">
 							<textarea class="js-textarea" placeholder="например: “Нужно вымыть окна в 4-х комнатной кваритре на третьем этаже. Всего 8 окон. Все моющие средства и я могу предоставить...”"></textarea>
 							<span class="textarea__counter js-char-counter" data-max="500">500</span>
@@ -223,7 +223,7 @@
 				</div>
 				<div class="field">
 					<div class="input-wrap input-wrap_half">
-						<span class="input-wrap__title">Если необходимо, прикрепите фотографии:</span>
+						<div class="input-wrap__title">Если необходимо, прикрепите фотографии:</div>
 						<div class="input-wrap__text">можно загрузить максимально 5 изображений</div>
 					</div>
 					<div class="input-wrap input-wrap_half">
@@ -290,7 +290,7 @@
 						</div>
 						<div class="radio-wrap js-radio">
 							<label class="radio radio_link js-radio-label">
-								<input type="radio"name="anyname">
+								<input type="radio" name="anyname">
 								<i class="fa fa-check-circle"></i>
 								<span>
 									<em>выполнить в указанный промежуток дат:</em>
@@ -338,7 +338,7 @@
 				</div>
 				<div class="field">
 					<div class="input-wrap">
-						<span class="input-wrap__title">Адрес выполнения задания</span>
+						<div class="input-wrap__title">Адрес выполнения задания</div>
 						<div class="input-address js-removeable">
 							<div class="map-address">
 								<span><i>A</i></span>
@@ -449,7 +449,7 @@
 				</div>
 				<div class="field">
 					<div class="input-wrap">
-						<span class="input-wrap__title">Сколько исполнителей требуется для вашего задания?</a></span>
+						<div class="input-wrap__title">Сколько исполнителей требуется для вашего задания?</div>
 						<div class="input-workers">	
 							<i class="fa fa-male"></i>
 							<div class="select select_digit">
@@ -632,27 +632,21 @@
 			<div class="payment">
 				<a href="#" class="payment__link js-payment-radio payment_mod">
 					<img src="img/pay1.png" alt="">
-					<input type="radio" hidden name="radio-pay">
 				</a>
 				<a href="#" class="payment__link js-payment-radio">
 					<img src="img/pay2.png" alt="">
-					<input type="radio" hidden name="radio-pay">
 				</a>
 				<a href="#" class="payment__link js-payment-radio">
 					<img src="img/pay3.png" alt="">
-					<input type="radio" hidden name="radio-pay">
 				</a>
 				<a href="#" class="payment__link js-payment-radio">
 					<img src="img/pay4.png" alt="">
-					<input type="radio" hidden name="radio-pay">
 				</a>
 				<a href="#" class="payment__link js-payment-radio payment_mod is-active">
 					<img src="img/pay5.png" alt="">
-					<input type="radio" hidden name="radio-pay" checked>
 				</a>
 				<a href="#" class="payment__link js-payment-radio">
 					<img src="img/pay6.png" alt="">
-					<input type="radio" hidden name="radio-pay">
 				</a>
 				<button class="btn-action">Отправить платеж!</button>
 			</div>
