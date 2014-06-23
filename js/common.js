@@ -666,5 +666,36 @@ head.ready(function() {
 		var	val = $(this).val();
 		$(this).parent().find(".js-select-text").text(val);
 	});
+
+   function accordion() {
+        $(".js-accordion-list").hide();
+        $(".js-accordion-title").click(function(){
+            if ($(this).parent().hasClass("js-one-active")) {
+                $(".js-accordion-title").removeClass("is-active");
+                $(".js-accordion-list").slideUp("fast");
+                $(this).toggleClass("is-active");
+                $(this).parents(".js-accordion").find(".js-accordion-list").slideToggle("fast");
+            }
+            else {
+                $(this).toggleClass("is-active");
+                $(this).parents(".js-accordion").find(".js-accordion-list").slideToggle("fast");
+            }
+            
+        });
+        $(".js-show-all-accordion").on("click",function(){
+            if ($(this).hasClass("is-active")) {
+                $(".js-show-all-accordion").removeClass("is-active");
+                $(".js-accordion-list").slideUp("fast");
+                $(".js-show-all-accordion").text("ПОКАЗАТЬ ВСЕ ПУНКТЫ");
+            }
+            else {
+                $(".js-show-all-accordion").addClass("is-active");
+                $(".js-accordion-list").slideDown("fast");
+                $(".js-show-all-accordion").text("скрыть все списки");
+            }
+            return false;
+        });
+    }
+    accordion();
 	
 });
