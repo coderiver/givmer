@@ -428,6 +428,7 @@
 				font-size: 20px 
 .user-box_liquid
 	width: 100%
+	+box
 .user-box__status
 	position: relative
 	border-top: 1px solid #fff
@@ -681,3 +682,165 @@
 	.status
 		.fa
 			color: #fff 
+			
+.wrap
+	.important-text
+		float: left
+	.select-simple
+		float: right
+		margin-right: 25px
+		
+.task
+	position: relative
+	margin-bottom: 9px
+	border: 1px solid $border
+	background: $light 
+	overflow: hidden
+	border-radius: 7px 
+	+tr
+	.btn-favorite
+		position: absolute
+		right: 10px
+		top: 9px
+	.price
+		+ .task-info
+			padding-left: 10px
+	&:hover    
+		color: $dark 
+		+box-shadow(0 0 6px rgba(#000,.2))
+		.task__row
+			&:first-child
+				background: #fff 
+.task__row 
+	padding: 13px 10px 13px 20px
+	+clr
+	+tr
+	border-top: 1px solid #e3e3e3 
+	+box-shadow(inset 0 1px 0 #fff)
+	&:first-child
+		border-top: 0
+		+box-shadow(none)
+	&:nth-child(2)
+		background: #f9f9f9 	
+	&:last-child
+		background: #fafafa
+	.btn-write,
+	.btn-choose 
+		float: none
+		display: inline-block
+		width: 200px
+		+box
+		vertical-align: middle
+	.btn-cancel
+		width: 185px
+.task__col-left
+	float: left
+	padding-right: 20px
+	width: 515px
+	+clr
+	.btn-choose,
+	.btn-write
+		float: right
+.task__col-right
+	overflow: hidden
+	padding-bottom: 2px
+	padding-right: 50px
+	.task-info
+		width: 100%  
+		float: none	
+.task__info
+	float: left
+	width: 380px
+.task__user
+	padding-left: 11px
+	overflow: hidden
+	.status
+		margin: 5px 0 0 -11px
+	.rating
+		margin: 15px 0 5px
+.task__link
+	color: $blue
+	font-size: 18px
+	+fb
+	.fa
+		margin-left: 10px
+		font-size: 14px
+.task__categ
+	margin-bottom: 10px
+	+arial
+	font-size: 12px
+	color: $gray 
+	+clr
+	span
+		float: left
+		padding-right: 1%
+		width: 50%
+		+box
+		font-style: italic
+	.task__date
+		float: right
+		width: 50%
+		text-align: right 
+.task__descr
+	margin-bottom: 12px
+	font-size: 12px
+.task__address
+	font-size: 12px
+	.fa
+		font-size: 16px
+		margin-right: 14px
+		color: $blue 
+		
+.task__message
+	display: inline-block
+	vertical-align: middle
+	margin-right: 30px
+	max-width: 210px
+	text-align: left
+	white-space: nowrap
+	span,div
+		display: inline-block
+		vertical-align: middle
+	div
+		white-space: normal
+	span
+		margin-right: 7px
+		width: 20px
+		height: 20px
+		border-radius: 50% 
+		background: $blue
+		color: #fff
+		text-align: center
+		line-height: 20px    
+		&.is-rose
+			background: $rose 
+			
+.task__left
+	float: left
+	width: 59%
+	+clr
+.task__right
+	float: right
+	width: 39%
+	+clr 
+	.btn-key
+		margin-bottom: 12px
+.task__group
+	padding: 12px 0
+	border-top: 1px solid #e3e3e3 
+	+box-shadow(inset 0 1px 0 #fff)
+	&:first-child
+		border-top: 0
+		+box-shadow(none)
+
+.task__comment
+	position: relative
+	padding: 0 40px 5px
+	display: none
+	background: #fff
+	&:last-child
+		background: #fff 
+	.btn-close
+		position: absolute
+		right: 11px
+		top: 11px

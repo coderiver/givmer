@@ -644,11 +644,13 @@ head.ready(function() {
 
    $(".js-message-key").on("click",function(){
 		$(this).parents(".user-box").find(".js-message").slideToggle(200);
+		$(this).parents(".task").find(".js-message").slideToggle(200);
 		return false;
 
 	});
    $(".js-message-close").on("click",function(){
 		$(this).parents(".user-box").find(".js-message").slideUp(200);
+		$(this).parents(".task").find(".js-message").slideUp(200);
 		return false;
 	});
    $(".js-show-task").on("click",function(){

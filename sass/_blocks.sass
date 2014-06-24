@@ -461,8 +461,17 @@
 		padding: 0 5px 
 .select-simple__link
 	display: inline-block
+	color: $dark 
 	span
 		border-bottom: 1px dashed $gray 
+	.fa
+		margin-left: 9px
+		vertical-align: middle
+		color: $gray 
+.select-simple_bold
+	.select-simple__link
+		+fb
+		font-size: 14px
 .files-wrap
 	+clr
 	padding: 18px 0 
@@ -723,6 +732,8 @@
 	&:active
 		position: relative
 		top: 1px
+	.fa
+		margin-right: 6px
 .btn-choose
 	float: left
 	padding: 6px 20px 
@@ -736,6 +747,25 @@
 	&:hover
 		color: #fff
 		background: $rose_d
+	&:active
+		position: relative
+		top: 1px
+	.fa
+		margin-right: 10px
+		font-size: 14px
+.btn-cancel
+	float: left
+	padding: 6px 15px 
+	text-align: center
+	color: #fff
+	font-size: 12px
+	+arial
+	background: $gray
+	border-radius: 20px 
+	+tr
+	&:hover
+		color: #fff
+		background: $gray_d
 	&:active
 		position: relative
 		top: 1px
