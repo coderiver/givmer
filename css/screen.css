@@ -60,7 +60,7 @@ a:hover { color: #0096d4; }
 
 .out { position: relative; }
 
-.header { position: relative; z-index: 2; padding: 14px 0 12px; background: white; border-bottom: 1px solid #d1d1d1; }
+.header { position: relative; z-index: 3; padding: 14px 0 12px; background: white; border-bottom: 1px solid #d1d1d1; }
 .header .l-container { *zoom: 1; }
 .header .l-container:after { content: " "; display: table; clear: both; }
 .header .logo { float: left; margin-right: 19px; }

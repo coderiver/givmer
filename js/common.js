@@ -1,11 +1,11 @@
 head.ready(function() {
 
-	var agent = navigator.userAgent,
-	event = (agent.match(/iPad/i)) ? "touchstart" : "click";
+	//var agent = navigator.userAgent,
+	//event = (agent.match(/iPad/i)) ? "touchstart" : "click";
 
 
 
-	$(document).bind(event, function(e){
+	$(document).click(function(){
 		$(".js-overlay").hide();
 		$("html").removeClass("has-open-popup");
 		//$(".js-select-list").hide();
