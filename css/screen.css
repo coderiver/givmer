@@ -286,7 +286,7 @@ a:hover { color: #0096d4; }
 
 .select-simple { display: inline-block; position: relative; }
 .select-simple:hover .select-simple__link span { border-color: transparent; }
-.select-simple select { position: absolute; z-index: 2; cursor: pointer; top: 0; left: 0; height: 100%; margin: 0; opacity: 0; padding: 0 5px; }
+.select-simple select { position: absolute; z-index: 2; cursor: pointer; top: 0; left: 0; min-width: 100%; height: 100%; margin: 0; opacity: 0; padding: 0 5px; }
 
 .select-simple__link { display: inline-block; color: #3e3e3e; }
 .select-simple__link span { border-bottom: 1px dashed gray; }
