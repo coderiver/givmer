@@ -86,8 +86,8 @@ a:hover { color: #0096d4; }
 .header__enter-links li { margin-bottom: 4px; }
 .header__enter-links a { color: #00b4ff; }
 
-.header__lang { float: right; margin-left: 18px; border-left: 1px solid #d1d1d1; height: 42px; line-height: 42px; }
-.header__lang .drop-list-link { padding: 0 24px 0 14px; }
+.header__lang { float: right; margin-left: 18px; border-left: 1px solid #d1d1d1; }
+.header__lang .drop-list-link { height: 42px; line-height: 42px; padding: 0 24px 0 14px; }
 .header__lang .drop-list { width: 150px; }
 .header__lang .drop-list__item { padding: 10px 24px; }
 
