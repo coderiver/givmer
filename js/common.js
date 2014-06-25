@@ -1,24 +1,25 @@
 head.ready(function() {
 
-	//var agent = navigator.userAgent,
-	//event = (agent.match(/iPad/i)) ? "touchstart" : "click";
+	
+	
 
-
-
-	$(document).click(function(){
+	$(document).on("click",function(){
 		$(".js-overlay").hide();
 		$("html").removeClass("has-open-popup");
 		//$(".js-select-list").hide();
 		//$(".js-select").removeClass("is-active");
 		$(".js-drop").removeClass("is-active");
 		$(".js-drop-link").removeClass("is-active");
+		$(".js-drop-list").hide();
 		//$(".js-item-popup").fadeOut(200);
 		$(".js-window").fadeOut(200);
 	});
 
 	$(".js-drop-link").on("click", function(event){
+		//alert();  
 		$(this).parents(".js-drop").toggleClass("is-active");
 		$(this).toggleClass("is-active");
+		$(this).parents(".js-drop").find(".js-drop-list").fadeToggle(200);
 		event.stopPropagation();
 		return false;
 	});

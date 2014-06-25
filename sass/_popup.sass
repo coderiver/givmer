@@ -339,10 +339,17 @@
 	padding: 0 22px
 .btn-close    
 	position: absolute
-	+s(close)   
 	opacity: .4
 	+tr(opacity .2s)
-	width: 15px  
+	width: 30px  
+	height: 30px
+	text-align: center
+	background: none
+	&:before
+		content: ""
+		display: inline-block 
+		+s(close) 
+		vertical-align: middle
 	&:hover
 		opacity: 1
 	&:active
