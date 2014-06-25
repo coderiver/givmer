@@ -353,7 +353,7 @@ a:hover { color: #0096d4; }
 .btn-del:hover { color: #ff0066; }
 .btn-del:active { top: 1px; }
 
-.btn-add { display: inline-block; position: relative; font-size: 13px; color: #00b4ff; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; background: none; }
+.btn-add { display: inline-block; position: relative; font-size: 13px; color: #00b4ff; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; font-family: "roboto-regular", Arial, sans-serif; background: none; }
 .btn-add .fa { margin-right: 3px; }
 .btn-add:hover { color: #0096d4; }
 .btn-add:active { top: 1px; }
@@ -1430,7 +1430,7 @@ html.intro-page body { background: whitesmoke; overflow: hidden; }
 .select_age { width: 77px; }
 .select_age .ui-multiselect { padding-left: 15px; }
 
-.form-section { border-top: 1px dashed #d1d1d1; padding: 25px 0; background: whitesmoke; }
+.form-section { margin-top: 23px; border-top: 1px dashed #d1d1d1; padding: 25px 0; background: whitesmoke; }
 
 .form-col { width: 768px; }
 
