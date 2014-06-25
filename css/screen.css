@@ -1478,7 +1478,7 @@ html.intro-page body { background: whitesmoke; overflow: hidden; }
 .checkbox .fa-male, .checkbox .fa-female { margin-right: 5px; color: gray; font-size: 17px; }
 
 .checkbox_link.is-checked em { color: #3e3e3e; border-color: transparent; }
-.checkbox_link em { display: inline-block; line-height: 1; font-style: normal; color: #00b4ff; border-bottom: 1px dashed; }
+.checkbox_link em { display: inline-block; line-height: 1.2; font-style: normal; color: #00b4ff; border-bottom: 1px dashed; }
 
 .checkbox_medium span { padding-top: 1px; font-size: 14px; font-family: "roboto-medium", Arial, sans-serif; }
 
