@@ -309,14 +309,14 @@ head.ready(function() {
 		return false;
 	});
 
-	// $(".js-radio input").on("change",function(){
-	// 	if ($(this).parent().attr("data-radio") == 1) {
-	// 		$(this).parents(".js-radio-group").addClass("is-active");
-	// 	}
-	// 	if ($(this).parent().attr("data-radio") == 0) {
-	// 		$(this).parents(".js-radio-group").removeClass("is-active");
-	// 	} 
-	// }); 
+	$(".js-radio input").on("change",function(){
+		if ($(this).parent().attr("data-radio") == 1) {
+			$(this).parents(".js-radio-group").addClass("is-active");
+		}
+		if ($(this).parent().attr("data-radio") == 0) {
+			$(this).parents(".js-radio-group").removeClass("is-active");
+		} 
+	}); 
 	$(".js-check input").on("change",function(){
 		var checkGroup = $(this).parents(".js-check-group");
 		var checkHidden = checkGroup.find(".js-check-hidden");
