@@ -25,6 +25,12 @@
 	top: 15px
 	bottom: 0
 	width: 43%
+	.header__right
+		width: 100%
+		+box
+		padding-left: 24px
+	.header__search
+		float: right
 .header__right-part
 	position: absolute
 	left: 43%
@@ -33,14 +39,18 @@
 	bottom: 0
 	width: 57%
 .header__right-in
-	width: 720px
+	padding: 0 24px 
+	max-width: 720px
+	+box
 	+clr
+	.btn-action
+		margin-left: 0
 .map
 	position: absolute
 	left: 0
-	top: 71px
+	top: 71px 
 	bottom: 0
-	width: 43%
+	width: 43% 
 	background: #e9e6da
 .result
 	position: absolute
@@ -55,7 +65,7 @@
 			position: absolute
 			top: 0
 			left: 0
-			right: 0
+			right: 8px
 			z-index: 10
 		.result__scroll
 			//padding-top: 70px
@@ -92,8 +102,8 @@
 	.show-filter
 		display: none
 .result__in
-	padding-left: 24px
-	width: 722px
+	padding: 0 24px
+	max-width: 746px
 	+box
 	.input-wrap
 		margin-bottom: 9px
@@ -187,19 +197,18 @@
 			opacity: 1
 			visibility: visible
 .job__in
-	padding: 15px 0 24px 24px
-	width: 722px
+	padding: 15px 24px 24px
+	max-width: 746px
 	+box
 	+clr
 .job__main
 	position: relative
-	padding-top: 6px
-	float: left
-	width: 387px
+	padding: 6px 6px 0 0
+	overflow: hidden
 	+box
 	.btn-favorite
 		position: absolute
-		top: -1px
+		top: 0
 		right: 7px
 .job__title
 	width: 335px
@@ -222,7 +231,7 @@
 		color: $blue 
 		font-size: 16px
 .job__employer
-	float: left
+	float: right
 	padding-top: 12px
 	width: 127px
 	text-align: center
@@ -233,7 +242,9 @@
 	text-align: center
 	max-width: 90%
 .job__info
-	overflow: hidden
+	float: right
+	min-width: 185px
+	+box
 	padding-left: 22px
 	.fa
 		font-size: 16px
